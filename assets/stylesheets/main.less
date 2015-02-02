@@ -31,7 +31,7 @@ li {
 }
 
 .layout {
-  max-width: 1215px;
+  width: 1215px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -40,56 +40,6 @@ li {
   -webkit-font-smoothing: antialiased;
 }
 
-/*======================================================================
-      Function
-  ======================================================================*/
-
-.box-sizing(@value){
-  -webkit-box-sizing: @value;
-  -moz-box-sizing: @value;
-  box-sizing: @value
-}
-
-
-.transition(@key:all, @duration:.2s){
-  -webkit-transition: @key @duration;
-  -moz-transition: @key @duration;
-  -ms-transition: @key @duration;
-  -o-transition: @key @duration;
-  transition: @key @duration;
-}
-
-.transform(@property){
-  -webkit-transform: @property;
-  -moz-transform: @property;
-  -ms-transform: @property;
-  -o-transform: @property;
-  transform: @property;
-}
-
-.transform-origin(@origin){
-  -webkit-transform-origin: @origin;
-  -moz-transform-origin: @origin;
-  -ms-transform-origin: @origin;
-  -o-transform-origin: @origin;
-  transform-origin: @origin;
-}
-
-.box-shadow(@x, @y, @size, @color){
-  box-shadow: @x @y @size @color;
-  -webkit-box-shadow: @x @y @size @color;
-  -moz-box-shadow: @x @y @size @color;
-  -o-box-shadow: @x @y @size @color;
-  -ms-box-shadow: @x @y @size @color;
-}
-
-.animation(@name, @seconds, @style, @totaltime) {
-  animation: @name @seconds @style @totaltime;
-  -ms-animation: @name @seconds @style @totaltime;
-  -webkit-animation: @name @seconds @style @totaltime;
-  -moz-animation: @name @seconds @style @totaltime;
-  -o-animation: @name @seconds @style @totaltime;
-}
 
 /*======================================================================
       Main
@@ -148,6 +98,43 @@ header {
   }
 }
 
+.pr {
+  position: relative;
+}
+
+.header-float {
+  position: absolute;
+  right: -65px;
+  top: 25px;
+  width: 65px;
+  height: 254px;
+  z-index: 100;
+
+  .item {
+    display: block;
+  }
+
+  .item01 {
+    height: 65px;
+    background: #ffc600 url('../images/header-float01.png') no-repeat center center;
+  }
+
+  .item02 {
+    height: 65px;
+    background: #1aa9eb url('../images/header-float02.png') no-repeat center center;
+  }
+
+  .item03 {
+    height: 65px;
+    background: #00ba9d url('../images/header-float03.png') no-repeat center center;
+  }
+
+  .item04 {
+    height: 58px;
+    background: #dd3d57 url('../images/header-float04.png') no-repeat center center;
+  }
+}
+
 /* KV */
 .kv {
   position: relative;
@@ -179,9 +166,10 @@ header {
     margin: 0 10px;
     background: #fff;
     border-radius: 12px;
+    cursor: pointer;
   }
 
-  .active {
+  .on {
     background: #1aa9eb;
   }
 }
@@ -218,6 +206,14 @@ header {
       margin-right: 18px;
       background: #fff;
       border: 1px solid #d9d9de;
+    }
+
+    .thumb img{
+      .transition(.2s);
+    }
+
+    .thumb:hover img{
+      opacity: .8;
     }
 
     .desc {
@@ -433,8 +429,15 @@ header {
     }
 
     li {
+      display: none;
       width: 570px;
       height: 330px;
+
+      .transition(.2s);
+    }
+
+    li.active {
+      display: block;
     }
   }
 
@@ -496,6 +499,7 @@ header {
     top: 82px;
     left: -46px;
     cursor: pointer;
+    .enableSelect;
   }
 
   .next {
@@ -514,6 +518,11 @@ header {
     top: 82px;
     right: -46px;
     cursor: pointer;
+    .enableSelect;
+  }
+
+  .enable {
+    background: gray;
   }
 }
 
@@ -525,11 +534,109 @@ footer {
   background: #fff url("../images/footer-bg.png") repeat-x;
 }
 
+@keyframes logoRotate {
+  from {
+    .transform(rotate(0deg));
+  }
+  to {
+    .transform(rotate(360deg));
+  }
+}
+
+@-webkit-keyframes logoRotate {
+  from {
+    .transform(rotate(0deg));
+  }
+  to {
+    .transform(rotate(360deg));
+  }
+}
+
+@-o-keyframes logoRotate {
+  from {
+    .transform(rotate(0deg));
+  }
+  to {
+    .transform(rotate(360deg));
+  }
+}
+
+@-moz-keyframes logoRotate {
+  from {
+    .transform(rotate(0deg));
+  }
+  to {
+    .transform(rotate(360deg));
+  }
+}
+
 .footer-logo {
   width: 187px;
   height: 118px;
   margin-right: 120px;
-  background: url("../images/footer-logo.png") no-repeat;
+
+  .footer-logo-container {
+    display: inline-block;
+    width: 186px;
+    height: 110px;
+    background: url("../images/footer-logo.png") no-repeat;
+    position: relative;
+
+    .trangle01 {
+      position: absolute;
+      top: 10px;
+      left: 137px;
+      width: 6px;
+      height: 12px;
+      background: url("../images/footer-logo-trangle01.png") no-repeat;
+
+      .animation(logoRotate, 2s, infinite);
+    }
+
+    .trangle02 {
+      position: absolute;
+      top: 4px;
+      left: 145px;
+      width: 11px;
+      height: 11px;
+      background: url("../images/footer-logo-trangle02.png") no-repeat;
+
+      .animation(logoRotate, 2.5s, infinite);
+    }
+
+    .trangle03 {
+      position: absolute;
+      top: 20px;
+      left: 145px;
+      width: 8px;
+      height: 10px;
+      background: url("../images/footer-logo-trangle03.png") no-repeat;
+
+      .animation(logoRotate, 3s, infinite);
+    }
+
+    .trangle04 {
+      position: absolute;
+      top: 29px;
+      left: 150px;
+      width: 9px;
+      height: 8px;
+      background: url("../images/footer-logo-trangle04.png") no-repeat;
+
+      .animation(logoRotate, 3.5s, infinite);
+    }
+
+    .trangle05 {
+      position: absolute;
+      top: 20px;
+      left: 163px;
+      width: 10px;
+      height: 7px;
+      background: url("../images/footer-logo-trangle05.png") no-repeat;
+
+      .animation(logoRotate, 5s, infinite);
+    }
+  }
 }
 
 .footer-nav {
@@ -548,6 +655,10 @@ footer {
   a {
     color: #000;
     font-size: 14px;
+  }
+
+  a:hover {
+    color: #2694bb;
   }
 }
 

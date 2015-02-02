@@ -143,3 +143,61 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input
 .ml70 { .margin-left(70px)}
 .ml80 { .margin-left(80px)}
 .ml100 { .margin-left(100px)}
+
+/* --------------------------------------------
+ * Function
+ * -------------------------------------------- */
+.enableSelect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.box-sizing(@value){
+  -webkit-box-sizing: @value;
+  -moz-box-sizing: @value;
+  box-sizing: @value
+}
+
+
+.transition(@key:all, @duration:.2s){
+  -webkit-transition: @key @duration;
+  -moz-transition: @key @duration;
+  -ms-transition: @key @duration;
+  -o-transition: @key @duration;
+  transition: @key @duration;
+}
+
+.transform(@property){
+  -webkit-transform: @property;
+  -moz-transform: @property;
+  -ms-transform: @property;
+  -o-transform: @property;
+  transform: @property;
+}
+
+.transform-origin(@origin){
+  -webkit-transform-origin: @origin;
+  -moz-transform-origin: @origin;
+  -ms-transform-origin: @origin;
+  -o-transform-origin: @origin;
+  transform-origin: @origin;
+}
+
+.box-shadow(@x, @y, @size, @color){
+  box-shadow: @x @y @size @color;
+  -webkit-box-shadow: @x @y @size @color;
+  -moz-box-shadow: @x @y @size @color;
+  -o-box-shadow: @x @y @size @color;
+  -ms-box-shadow: @x @y @size @color;
+}
+
+.animation(@name, @duration, @infinite){
+  animation: @name @duration @infinite;
+  -webkit-animation: @name @duration @infinite;
+  -moz-animation: @name @duration @infinite;
+  -o-animation: @name @duration @infinite;
+}
