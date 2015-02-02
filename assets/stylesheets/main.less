@@ -14,6 +14,8 @@ html {
 }
 
 body {
+  min-width: 1215px;
+  width: 100%;
   padding: 0;
   margin: 0;
 }
@@ -32,6 +34,7 @@ li {
 
 .layout {
   width: 1215px;
+  min-width: 1215px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -45,11 +48,14 @@ li {
       Main
   ======================================================================*/
 body {
+  overflow-x: hidden;
+  min-width: 1215px;
   background: #f7f9fa;
 }
 
 /* header */
 header {
+  min-width: 1215px;
   height: 90px;
   background: #fff;
   .box-shadow(0, 1px, 9px, rgba(4, 0, 0, .12));
@@ -137,6 +143,7 @@ header {
 
 /* KV */
 .kv {
+  overflow: hidden;
   position: relative;
 }
 
@@ -185,6 +192,7 @@ header {
 
   .more:hover {
     color: #2694bb;
+    background: url("../images/more-arrow-active.png") no-repeat right center;
   }
 }
 
@@ -332,7 +340,7 @@ header {
 
   .item01 {
     top: 10px;
-    left: 313px;
+    left: 293px;
   }
 
   .item02 {
@@ -344,7 +352,7 @@ header {
 
   .item03 {
     top: 200px;
-    left: 923px;
+    left: 890px;
     width: 313px;
     height: 180px;
   }
@@ -355,25 +363,25 @@ header {
 
   .item04 {
     top: 399px;
-    left: 313px;
+    left: 293px;
     width: 386px;
     height: 246px;
   }
 
   .item04.active {
-    top: 340px;
+    top: 310px;
     left: 280px;
   }
 
   .item05 {
     top: 399px;
-    left: 699px;
+    left: 679px;
     width: 314px;
     height: 180px;
   }
 
   .item05.active {
-    top: 340px;
+    top: 310px;
     left: 650px;
   }
 }
@@ -681,5 +689,8 @@ footer {
       Responsive
   ======================================================================*/
 
-@media screen and (max-width: 1260px){
+@media screen and (max-width: 1215px){
+  .header-float {
+    right: 0;
+  }
 }
