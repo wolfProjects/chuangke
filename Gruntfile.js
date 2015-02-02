@@ -59,7 +59,7 @@ module.exports = function (grunt){
         // compressor js
         uglify: {
             build: {
-                src:'assets/scripts/*.js',
+                src:['assets/scripts/*.js', '!assets/scripts/less.min.js'],
                 dest:'dist/assets/scripts/main.min.js'
             }
         },
