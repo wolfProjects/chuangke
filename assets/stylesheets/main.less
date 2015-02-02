@@ -26,6 +26,10 @@ li {
   list-style: none;
 }
 
+.block {
+  display: block;
+}
+
 .layout {
   max-width: 1215px;
   margin-left: auto;
@@ -281,27 +285,36 @@ header {
 
 .chuangke-activity-bd {
   position: relative;
-  width: 100%;
-  height: 710px;
   margin-top: 27px;
 
   .item {
     position: absolute;
     width: 610px;
     height: 389px;
+
+    img {
+      display: block;
+      width: 100%;
+    }
   }
 
+  .item.active,
   .item:hover{
-    z-index: 200!important;
-    opacity: 1!important;
-    .box-shadow(0, 0, 10px, #333);
+    width: 610px;
+    height: 389px;
+    z-index: 2;
 
     .txt {
       opacity: 1;
-    };
+    }
+  }
+
+  .item:hover {
+    box-shadow: 0 0 10px #333;
   }
 
   .txt {
+    opacity: 0;
     padding: 30px 35px;
     color: #fff;
     background: rgba(29, 146, 205, .8);
@@ -309,8 +322,6 @@ header {
     right: 0;
     left: 0;
     bottom: 0;
-    opacity: 0;
-    .transition(.2s);
 
     dt {
       font-size: 32px;
@@ -329,23 +340,45 @@ header {
   }
 
   .item02 {
-    top: 210px;
+    top: 200px;
     left: 0;
+    width: 313px;
+    height: 180px;
   }
 
   .item03 {
-    top: 210px;
+    top: 200px;
     left: 915px;
+    width: 313px;
+    height: 180px;
+  }
+
+  .item03:hover {
+    left: 600px;
   }
 
   .item04 {
-    top: 300px;
+    top: 399px;
     left: 305px;
+    width: 386px;
+    height: 246px;
+  }
+
+  .item04:hover {
+    top: 340px;
+    left: 280px;
   }
 
   .item05 {
-    top: 280px;
-    left: 610px;
+    top: 399px;
+    left: 690px;
+    width: 314px;
+    height: 180px;
+  }
+
+  .item05:hover {
+    top: 340px;
+    left: 650px;
   }
 }
 
