@@ -3,6 +3,9 @@
 /* --------------------------------------------
  * font reset
  * -------------------------------------------- */
+/* font family */
+.ffam {  font-family: "microsoft yahei", Arial, "Helvetica Neue", Helvetica, sans-serif;  }
+
 /* font size */
 .font-size(@size){
   font-size: @size!important;
@@ -30,6 +33,10 @@
 .fsn{ font-style: normal;}
 .fsi{ font-style: italic;}
 
+.text-left { text-align: left;}
+.text-center { text-align: center;}
+.text-right { text-align: right;}
+
 /* color */
 .c_black { color: #000;}
 .c_heavy { color: #333;}
@@ -37,6 +44,8 @@
 .c_normal { color: #666;}
 .c_light { color: #999;}
 .c_white { color: #fff;}
+
+.c_blue { color: #1aa9eb;}
 
 /* --------------------------------------------
  * view reset
@@ -62,6 +71,8 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input
 .clearfix {
   zoom:1;
 }
+
+button { border: none; cursor: pointer;}
 
 /* margin */
 .margin-top(@margin-top){

@@ -43,6 +43,22 @@ li {
   -webkit-font-smoothing: antialiased;
 }
 
+/*======================================================================
+      Units
+  ======================================================================*/
+/* button */
+.btn {
+  display: inline-block;
+}
+
+.btn-primary {
+  min-width: 112px;
+  line-height: 45px;
+  text-align: center;
+  .c_white;
+  .fs16;
+  background: #34b3ed;
+}
 
 /*======================================================================
       Main
@@ -59,6 +75,8 @@ header {
   height: 90px;
   background: #fff;
   .box-shadow(0, 1px, 9px, rgba(4, 0, 0, .12));
+  position: relative;
+  z-index: 1000;
 }
 
 .header-logo {
@@ -538,8 +556,9 @@ header {
 /* footer */
 footer {
   min-height: 262px;
-  padding: 58px 0 0 0;
-  background: #fff url("../images/footer-bg.png") repeat-x;
+  padding: 58px 0 0 0!important;
+  background: #fff;
+  border-top: 1px solid #d9d9de;
 }
 
 @keyframes logoRotate {

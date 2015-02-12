@@ -51,8 +51,8 @@ module.exports = function (grunt){
         // concat js
         concat: {
             build: {
-                src:'assets/scripts/main.js',
-                dest:'dist/assets/scripts/main.js'
+                src:'assets/scripts/index.js',
+                dest:'dist/assets/scripts/index.js'
             }
         },
 

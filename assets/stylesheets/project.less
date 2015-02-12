@@ -1,0 +1,388 @@
+/* Qianglong Mo (SukeBeta) 2015 */
+
+@import "base";
+
+/*======================================================================
+      Project
+  ======================================================================*/
+/* Page: project introduce */
+.project-introduce {
+  margin-bottom: 65px;
+
+  .section-title {
+    padding: 52px 0 12px 0;
+    font-size: 26px;
+    color: #333;
+  }
+
+  /* section summary */
+  .summary {
+    background: #fbfcfc;
+
+    .section-inner {
+      min-height: 508px;
+      background-position: right top;
+      background-repeat: no-repeat;
+    }
+
+    h1 {
+      .c_blue;
+      .fs30;
+      padding-top: 34px;
+      margin-bottom: 30px;
+      font-weight: normal;
+    }
+
+    li {
+      .c_blue;
+      .fs18;
+      line-height: 30px;
+    }
+
+    .desc {
+      width: 465px;
+      line-height: 30px;
+      margin-top: 28px;
+      .fs14;
+      .c_normal;
+    }
+  }
+
+  /* section logic */
+  .logic {
+    padding: 0 0 45px 0;
+    background: #fff;
+    border-bottom: 1px solid #d9d9de;
+  }
+
+  /* section information */
+  .information {
+    aside {
+      width: 809px;
+    }
+
+    main {
+      width: 378px;
+      margin-left: 28px;
+    }
+  }
+  /* progress */
+  .progress {
+    background: #f7f9fa;
+
+    .item {
+      padding: 24px 28px;
+      margin-bottom: 28px;
+      background: #fff;
+    }
+
+    .user {
+      width: 80px;
+      margin-right: 25px;
+      text-align: center;
+
+      .thumb {
+        display: block;
+        width: 80px;
+        height: 80px;
+        margin-bottom: 9px;
+        border-radius: 80px;
+        background: #f7f9fa;
+
+        .transition(all, .2s);
+      }
+
+      .thumb:hover {
+        opacity: .85;
+        .transform(rotate(15deg));
+      }
+
+      .name {
+        .fs16;
+        .c_heavy;
+      }
+    }
+
+    .detail {
+      width: 645px;
+
+      h3 {
+        padding: 0 0 18px 0;
+        .fn;
+        .fs24;
+        .c_heavy;
+        border-bottom: 1px solid #c7c7c7;
+        position: relative;
+
+        .date {
+          .fs14;
+          .c_normal;
+          position: absolute;
+          top: 14px;
+          right: 0;
+        }
+      }
+
+      .content {
+        line-height: 30px;
+        padding: 20px 0 15px 0;
+        .fs14;
+        .c_heavy;
+      }
+
+      .thumbList {
+        overflow: hidden;
+      }
+
+      .thumbList-bd {
+        width: 120%;
+      }
+
+      .thumbList-item {
+        float: left;
+        width: 125px;
+        height: 80px;
+        margin-right: 12px;
+        border: 1px solid #c7c7c7;
+
+        img {
+          display: block;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .progress-hd {
+    margin-bottom: 18px;
+  }
+
+  .progress-bd{
+  }
+
+  /* team member */
+  .team-member {
+  }
+
+  .team-member-hd {
+    margin-bottom: 18px;
+  }
+
+  .team-member-bd {
+    padding:  24px 0 0 0;
+    background: #fff;
+
+    .listWrap {
+      margin: 0 20px;
+    }
+
+    .item {
+      float: left;
+      width: 80px;
+      height: 80px;
+      margin: 0 48px 40px 0;
+      position: relative;
+    }
+
+    .item:nth-child(3n) {
+      margin-right: 0;
+    }
+
+    .thumb {
+      width: 80px;
+      height: 80px;
+      border-radius: 80px;
+      overflow: hidden;
+      .transition(all, .2s);
+    }
+
+    .thumb:hover {
+      opacity: .85;
+      .transform(rotate(15deg));
+      
+      .info {
+        display: block;
+      }
+    }
+
+    .team-member-add {
+      display: block;
+      width: 80px;
+      height: 80px;
+      background: url("../images/project-team-member-add.png") no-repeat;
+      cursor: pointer;
+    }
+
+    .team-member-add:active {
+      position: relative;
+      top: 1px;
+    }
+
+      .info {
+      display: none;
+      position: absolute;
+      right: 94px;
+      top: 45px;
+      width: 302px;
+      background: #fff;
+      border: 1px solid #efefef;
+    }
+
+    .info-bd {
+      padding: 20px 20px 9px 20px;
+
+      dl {
+        padding-top: 22px;
+        margin: 0 0 3px 15px;
+
+        a {
+          .c_heavy;
+        }
+      }
+
+      .desc {
+        .fs12;
+        .c_normal;
+      }
+    }
+
+    .info-ft {
+      border-top: 1px solid #efefef;
+      padding: 10px 0;
+      background: #fcfcfc;
+
+      .btn {
+        display: inline-block;
+        line-height: 32px;
+        padding: 0 30px;
+        .c_normal;
+        .fs16;
+        background: #fff;
+        border: 1px solid #efefef;
+      }
+    }
+
+    .arrow{
+      width: 7px;
+      height: 15px;
+      background: url("../images/project-team-member-info-arror.png") no-repeat;
+      position: absolute;
+      top: 34px;
+      right: -7px;
+    }
+
+    .close{
+      width: 12px;
+      height: 12px;
+      background: url("../images/project-team-member-close.png") no-repeat;
+      position: absolute;
+      top: 20px;
+      right:20px;
+    }
+  }
+
+  .team-member-ft {
+    padding: 20px;
+    margin-top: -14px;
+    background: #fff;
+    border-top: 1px solid #efefef;
+
+    .team-member-invalid {
+      border: 1px solid #efefef;
+
+      input {
+        width: 255px;
+        height: 18px;
+        line-height: 18px;
+        padding: 10px;
+        tab-index: 0.5em;
+        .fs14;
+        .c_normal;
+        .ffam;
+        border: none;
+        outline: none;
+        background: #fff;
+      }
+
+      .btn {
+        width: 58px;
+        height: 38px;
+        line-height: 38px;
+        .fs16;
+        .c_light;
+        border-left: 1px solid #efefef;
+        text-align: center;
+        background: #fff;
+      }
+    }
+  }
+
+  .progress-ft {
+  }
+
+    /* project units */
+  .project-units {
+  }
+
+  .project-units-hd {
+    .section-title {
+      padding: 23px 0;
+    }
+  }
+
+  .project-units-bd {
+    padding: 25px 0 25px 18px;
+    background: #fff;
+
+    .item {
+      margin-bottom: 20px;
+    }
+
+    .thumb {
+      width: 160px;
+      height: 112px;
+      margin-right: 18px;
+      background: #f7f9fa;
+    }
+
+    .thumb img {
+      .transition(all, .25s);
+    }
+
+    .thumb:hover img {
+      opacity: .85;
+    }
+
+    .info {
+      width: 170px;
+
+      .title {
+        display: inline-block;
+        margin: 25px 0 17px 0;
+        .fs18;
+        .c_normal;
+        .fb;
+      }
+
+      p {
+        .fs14;
+        .c_normal;
+      }
+    }
+  }
+
+  .project-units-more {
+    margin-right: 32px;
+    .fs16;
+    color: #1aa9eb;
+  }
+}
+
+
+/*======================================================================
+      Responsive
+  ======================================================================*/
+
+@media screen and (max-width: 1215px){
+
+}
