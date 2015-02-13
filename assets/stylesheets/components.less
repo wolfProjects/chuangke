@@ -8,7 +8,6 @@
 /* project-list */
 .project-list {
   width: 120%;
-  margin-top: 45px;
 
   .item {
     width: 288px;
@@ -99,6 +98,61 @@
   .box-sizing(border-box);
 }
 
+/* pagination */
+.pagination {
+  margin: 18px 0;
+  text-align: right;
+  font-size: 12px;
+  .enableSelect;
+
+  ul {
+    display: inline-block;
+  }
+
+  li {
+    display: inline-block;
+    font-size: 18px;
+    margin: 0 4px;
+
+    a {
+      display: inline-block;
+      min-width: 24px;
+      line-height: 24px;
+      color: #b9b9b9;
+      text-align: center;
+      .box-sizing(border-box);
+    }
+  }
+
+  li.active a,
+  li:hover a {
+    .c_white;
+    background: #1aa9eb;
+  }
+
+  li.another:hover a{
+    color: #b9b9b9;
+    background: none;
+  }
+
+  li.first {
+    margin-right: 8px;
+  }
+
+  li.last {
+    margin-left: 8px;
+  }
+
+  .split {
+    i {
+      display: inline-block;
+      width: 8px;
+      margin: 0;
+      line-height: 24px;
+      background: url("../images/pagination-split.png") no-repeat center center;
+    }
+  }
+}
 /*======================================================================
       Responsive
   ======================================================================*/
