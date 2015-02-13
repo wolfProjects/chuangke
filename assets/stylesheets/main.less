@@ -109,7 +109,9 @@ header {
   line-height: 60px;
   margin: 16px 0 0 37px;
   border-left: 1px solid #ccc;
+}
 
+.header-sign-before {
   a {
     display: inline-block;
     margin: 0 25px;
@@ -121,6 +123,64 @@ header {
 
   a:hover {
     color: #2694bb;
+  }
+}
+
+.header-sign-after {
+  margin-left: 50px;
+  position: relative;
+
+  .header-droplist-wrap {
+    display: inline-block;
+
+  }
+
+  .header-user {
+    padding: 0 20px 0 0;
+    color: #6c7280;
+    .fs14;
+
+    background: url("../images/trangle-down-small.png") no-repeat right center;
+  }
+
+  ul {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: -25px;
+    width: 122px;
+    padding: 10px 0 12px 0;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+
+    li {
+      padding: 9px 0;
+      line-height: 18px;
+    }
+
+    a {
+      display: block;
+      .c_normal;
+    }
+
+    a:hover{
+      .c_blue;
+    }
+  }
+
+  ul:after {
+    content:'';
+    width: 17px;
+    height: 8px;
+    background: url("../images/border-arrow-up.png") no-repeat;
+    position: absolute;
+    top: -8px;
+    left: 53px;
+  }
+
+  .header-droplist-wrap:hover ul{
+    display: block;
   }
 }
 
