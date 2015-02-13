@@ -55,16 +55,11 @@ var index = {
             }
         }
     },
-
-    indexKv: function (){
-        jQuery(".kv").slide({titCell: '.kv-head ul', mainCell:".kv-body ul", delayTime: 450, autoPlay:true, autoPage: '<li></li>'});
-    }
 };
 
 $(function (){
     index.activity.core();
     index.tab.core({wrap: '.recommend-components-bd', items: '.itemWrap li', prev: '.prev', next: '.next'});
-    index.indexKv();
 
     $(window).resize(function (){
     });
