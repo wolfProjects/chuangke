@@ -6,7 +6,13 @@
     <title></title>
 
     <!-- injector:css -->
-    <link rel="stylesheet" href="assets/stylesheets/main.min.css" />
+    <link rel="stylesheet" href="assets/stylesheets/activity.css" />
+    <link rel="stylesheet" href="assets/stylesheets/base.css" />
+    <link rel="stylesheet" href="assets/stylesheets/components.css" />
+    <link rel="stylesheet" href="assets/stylesheets/index.css" />
+    <link rel="stylesheet" href="assets/stylesheets/main.css" />
+    <link rel="stylesheet" href="assets/stylesheets/project.css" />
+    <link rel="stylesheet" href="assets/stylesheets/sugguestion.css" />
     <!-- endinjector -->
 </head>
 <body>
@@ -23,8 +29,19 @@
             <a class="item" href="">关于</a>
         </nav>
         <div class="header-signbar fl fs14">
-            <a href="">登陆</a>
-            <a href="">注册</a>
+            <div class="header-sign-before hide">
+                <a href="">登陆</a>
+                <a href="">注册</a>
+            </div>
+            <div class="header-sign-after">
+                <div class="header-droplist-wrap">
+                    <a class="header-user" href="">pastyou</a>
+                    <ul>
+                        <li><a href="">个人中心</a></li>
+                        <li><a href="">退出登陆</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <div class="header-float">
             <a class="item item01" href=""></a>
@@ -36,100 +53,99 @@
 </header>
 <!-- end header -->
 
-<!-- KV -->
-<section class="kv">
-    <div class="kv-body">
+<!-- component: kv -->
+<section class="m-kv">
+    <div class="m-kv-body">
         <ul>
-            <li class="kv-item" style="background-image: url('assets/images/index-kv-01.jpg')"></li>
-            <li class="kv-item" style="background-image: url('assets/images/index-kv-01.jpg')"></li>
-            <li class="kv-item" style="background-image: url('assets/images/index-kv-01.jpg')"></li>
+            <li class="m-kv-item" style="background-image: url(http://localhost:63342/project/assets/images/index-kv-01.jpg);"></li>
+            <li class="m-kv-item" style="background-image: url(http://localhost:63342/project/assets/images/index-kv-01.jpg);"></li>
+            <li class="m-kv-item" style="background-image: url(http://localhost:63342/project/assets/images/index-kv-01.jpg);"></li>
         </ul>
     </div>
-    <div class="kv-head">
+    <div class="m-kv-head">
         <ul>
-
         </ul>
     </div>
 </section>
-<!-- end KV -->
+<!-- end kv -->
 
 <!-- hot project -->
 <section class="hot-project">
     <div class="layout">
         <div class="row-title clearfix">
-            <a class="more fr fs18 c_light" href="">更多</a>
-            <h2 class="tt fl fs30 fw c_heavy">热门项目</h2>
+            <a class="more fr" href="">更多</a>
+            <h2 class="tt fl">热门项目</h2>
         </div>
 
         <div class="hot-project-bd">
-            <!-- product list -->
-            <div class="project-list">
+            <!-- component: product list -->
+            <div class="m-project-list mt45">
                 <ul class="clearfix">
-                    <li class="item fl">
+                    <li class="m-project-list-item fl finished">
                         <a class="thumb" href=""><img class="block" src="assets/images/index-project01.jpg" width="288" height="288" alt=""/></a>
                         <div class="desc">
                             <dl>
                                 <dt><a class="fs18 fw c_normal" href="">力沃开关面板无线模块遥控触摸开关智能家居产品</a></dt>
                                 <dd class="fs12 c_normal">是进行刺激性户外运动的首选测量装备，他不仅了最新的实用特点如深度计、日出和日落时间。</dd>
                             </dl>
-                            <div class="meta clearfix">
+                            <div class="m-info-meta clearfix">
                                 <div class="main">
                                     <p>创建人 : Wayne</p>
                                     <p>关注人数: 2564856</p>
                                     <p>创建时间: 2015.02.15</p>
                                 </div>
-                                <div class="status finish">已完成</div>
+                                <div class="status">已完成</div>
                             </div>
                         </div>
                     </li>
-                    <li class="item fl">
+                    <li class="m-project-list-item fl doing">
                         <a class="thumb" href=""><img class="block" src="assets/images/index-project02.jpg" width="288" height="288" alt=""/></a>
                         <div class="desc">
                             <dl>
                                 <dt><a class="fs18 fw c_normal" href="">爱维视IVS-2便携3D视频眼镜</a></dt>
                                 <dd class="fs12 c_normal">是进行刺激性户外运动的首选测量装备，他不仅具有先进的高度计、气压计和罗盘功能</dd>
                             </dl>
-                            <div class="meta">
+                            <div class="m-info-meta">
                                 <div class="main">
                                     <p>创建人 : Wayne</p>
                                     <p>关注人数: 2564856</p>
                                     <p>创建时间: 2015.02.15</p>
                                 </div>
-                                <div class="status doing">进行中</div>
+                                <div class="status">进行中</div>
                             </div>
                         </div>
                     </li>
-                    <li class="item fl">
+                    <li class="m-project-list-item fl doing">
                         <a class="thumb" href=""><img class="block" src="assets/images/index-project03.jpg" width="288" height="288" alt=""/></a>
                         <div class="desc">
                             <dl>
                                 <dt><a class="fs18 fw c_normal" href="">智能眼镜 98寸头戴式眼镜影院</a></dt>
                                 <dd class="fs12 c_normal">是进行刺激性户外运动的首选测量装备，他不仅具有先进的高度计、气压计和罗盘功能</dd>
                             </dl>
-                            <div class="meta">
+                            <div class="m-info-meta">
                                 <div class="main">
                                     <p>创建人 : Wayne</p>
                                     <p>关注人数: 2564856</p>
                                     <p>创建时间: 2015.02.15</p>
                                 </div>
-                                <div class="status doing">进行中</div>
+                                <div class="status">进行中</div>
                             </div>
                         </div>
                     </li>
-                    <li class="item fl">
+                    <li class="m-project-list-item fl doing">
                         <a class="thumb" href=""><img class="block" src="assets/images/index-project04.jpg" width="288" height="288" alt=""/></a>
                         <div class="desc">
                             <dl>
                                 <dt><a class="fs18 fw c_normal" href="">家用台式嵌入式小型家庭用</a></dt>
                                 <dd class="fs12 c_normal">是进行刺激性户外运动的首选测量装备，他不仅具有先进的高度计、气压计和罗盘功能</dd>
                             </dl>
-                            <div class="meta">
+                            <div class="m-info-meta">
                                 <div class="main">
                                     <p>创建人 : Wayne</p>
                                     <p>关注人数: 2564856</p>
                                     <p>创建时间: 2015.02.15</p>
                                 </div>
-                                <div class="status doing">进行中</div>
+                                <div class="status">进行中</div>
                             </div>
                         </div>
                     </li>
@@ -145,8 +161,8 @@
 <section class="chuangke-activity">
     <div class="layout">
         <div class="row-title clearfix">
-            <a class="more fr fs18 c_light" href="">更多</a>
-            <h2 class="tt fl fs30 fw c_heavy">创客活动</h2>
+            <a class="more fr" href="">更多</a>
+            <h2 class="tt fl">创客活动</h2>
         </div>
 
         <div class="chuangke-activity-bd" id="rotate">
@@ -216,8 +232,8 @@
     <!-- chuangke-point -->
     <div class="chuangke-point fl">
         <div class="row-title clearfix">
-            <a class="more fr fs18 c_light" href="">更多</a>
-            <h2 class="tt fl fs30 fw c_heavy">创客观点</h2>
+            <a class="more fr" href="">更多</a>
+            <h2 class="tt fl">创客观点</h2>
         </div>
 
         <div class="chuangke-point-bd">
@@ -242,8 +258,8 @@
     <!-- recommend components -->
     <div class="recommend-components fr">
         <div class="row-title clearfix">
-            <a class="more fr fs18 c_light" href="">更多</a>
-            <h2 class="tt fl fs30 fw c_heavy">推荐套件</h2>
+            <a class="more fr" href="">更多</a>
+            <h2 class="tt fl">推荐套件</h2>
         </div>
 
         <div class="recommend-components-bd">
@@ -255,7 +271,7 @@
                             <dl>
                                 <dt><a href="">ARM Cortex-M0+</a></dt>
                                 <dd>低外围资源，具备低功耗，二次开发简易拥有32位ARM的计算性能</dd>
-                                <dd class="count fs12 c_light">关注人数：389</dd>
+                                <dd class="count">关注人数：389</dd>
                             </dl>
                         </div>
                         <div class="fr item">
@@ -263,7 +279,7 @@
                             <dl>
                                 <dt><a href="">ARM Cortex-M0+</a></dt>
                                 <dd>低外围资源，具备低功耗，二次开发简易拥有32位ARM的计算性能</dd>
-                                <dd class="count fs12 c_light">关注人数：389</dd>
+                                <dd class="count">关注人数：389</dd>
                             </dl>
                         </div>
                     </li>
@@ -274,7 +290,7 @@
                             <dl>
                                 <dt><a href="">ARM Cortex-M0+</a></dt>
                                 <dd>低外围资源，具备低功耗，二次开发简易拥有32位ARM的计算性能</dd>
-                                <dd class="count fs12 c_light">关注人数：389</dd>
+                                <dd class="count">关注人数：389</dd>
                             </dl>
                         </div>
                         <div class="fr item">
@@ -282,7 +298,7 @@
                             <dl>
                                 <dt><a href="">ARM Cortex-M0+</a></dt>
                                 <dd>低外围资源，具备低功耗，二次开发简易拥有32位ARM的计算性能</dd>
-                                <dd class="count fs12 c_light">关注人数：389</dd>
+                                <dd class="count">关注人数：389</dd>
                             </dl>
                         </div>
                     </li>
@@ -293,7 +309,7 @@
                             <dl>
                                 <dt><a href="">ARM Cortex-M0+</a></dt>
                                 <dd>低外围资源，具备低功耗，二次开发简易拥有32位ARM的计算性能</dd>
-                                <dd class="count fs12 c_light">关注人数：389</dd>
+                                <dd class="count">关注人数：389</dd>
                             </dl>
                         </div>
                         <div class="fr item">
@@ -301,7 +317,7 @@
                             <dl>
                                 <dt><a href="">ARM Cortex-M0+</a></dt>
                                 <dd>低外围资源，具备低功耗，二次开发简易拥有32位ARM的计算性能</dd>
-                                <dd class="count fs12 c_light">关注人数：389</dd>
+                                <dd class="count">关注人数：389</dd>
                             </dl>
                         </div>
                     </li>
@@ -353,7 +369,15 @@
 <!-- end footer -->
 
 <!-- injector:js -->
-<script src="assets/scripts/main.min.js"></script>
+<script src="assets/scripts/activity.js"></script>
+<script src="assets/scripts/index.js"></script>
+<script src="assets/scripts/jquery-2.1.3.min.js"></script>
+<script src="assets/scripts/jquery.effectSlide.2.1.1.js"></script>
+<script src="assets/scripts/less.min.js"></script>
+<script src="assets/scripts/main.js"></script>
+<script src="assets/scripts/masonry-docs.min.js"></script>
+<script src="assets/scripts/project.js"></script>
+<script src="assets/scripts/redactor.js"></script>
 <!-- endinjector -->
 </body>
 </html>

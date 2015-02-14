@@ -25,7 +25,7 @@ module.exports = function (grunt){
         copy: {
             build: {
                 files: [
-                    {src: [ 'assets/images/**', 'index.html'], dest: 'dist/'}
+                    {src: [ 'assets/images/**', 'assets/scripts/**', '*.html'], dest: 'dist/'}
                 ]
             }
         },
@@ -33,9 +33,11 @@ module.exports = function (grunt){
         // less compiler
         less: {
             build: {
-                files: {
-                    "dist/assets/stylesheets/main.css" : "assets/stylesheets/*.less"
-                }
+                expand: true,
+                cwd: 'assets/stylesheets/',
+                src: ['*.less'],
+                dest: 'dist/assets/stylesheets',
+                ext: '.css'
             }
         },
 
@@ -77,10 +79,17 @@ module.exports = function (grunt){
                         return '<link rel="stylesheet" href="' + filePath + '" />';
                     },
                     starttag: '<!-- injector:css -->',
-                    endtag: '<!-- endinjector -->'
+                    endtag: '<!-- endinjector -->',
                 },
                 files: {
-                    'dist/index.html': ['dist/assets/stylesheets/main.min.css']
+                    'dist/index.html': ['dist/assets/stylesheets/*.css'],
+                    'dist/activity-list.html': ['dist/assets/stylesheets/*.css'],
+                    'dist/activity-project.html': ['dist/assets/stylesheets/*.css'],
+                    'dist/activity-schedule.html': ['dist/assets/stylesheets/*.css'],
+                    'dist/project.html': ['dist/assets/stylesheets/*.css'],
+                    'dist/project-list.html': ['dist/assets/stylesheets/*.css'],
+                    'dist/project-unit.html': ['dist/assets/stylesheets/*.css'],
+                    'dist/suggestion-feedback.html': ['dist/assets/stylesheets/*.css']
                 }
             },
             scripts: {
@@ -94,8 +103,13 @@ module.exports = function (grunt){
                     endtag: '<!-- endinjector -->'
                 },
                 files: {
-                    'dist/index.html': ['dist/assets/scripts/main.min.js']
-                }
+                    'dist/index.html': ['dist/assets/scripts/*.js'],
+                    'dist/activity-list.html': ['dist/assets/scripts/*.js'],
+                    'dist/activity-project.html': ['dist/assets/scripts/*.js'],
+                    'dist/activity-schedule.html': ['dist/assets/scripts/*.js'],
+                    'dist/project.html': ['dist/assets/scripts/*.js'],
+                    'dist/project-list.html': ['dist/assets/scripts/*.js'],
+                    'dist/project-unit.html': ['dist/assets/scripts/*.js']                }
             }
         },
 
@@ -129,7 +143,8 @@ module.exports = function (grunt){
     grunt.registerTask('makeJs', ['concat:build', 'uglify:build']); //ok
     grunt.registerTask('injectFileToHtml', ['injector']); //ok
     // main task
-    grunt.registerTask('deploy', ['cleanDir', 'copyFileToDist', 'compileLess', 'concatCompressorCss', 'makeJs', 'injectFileToHtml']);
+    //grunt.registerTask('deploy', ['cleanDir', 'copyFileToDist', 'compileLess', 'concatCompressorCss', 'makeJs', 'injectFileToHtml']);
+    grunt.registerTask('deploy', ['cleanDir', 'copyFileToDist', 'compileLess', 'injectFileToHtml']);
     grunt.registerTask('live', ['watch']);
 
 
