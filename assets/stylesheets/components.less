@@ -84,23 +84,19 @@
  * ---------------------------------------- */
 .m-project-list {
   margin: 0 -9px 0 -9px;
-  .item {
-    width: 288px;
-    height: 518px;
-    margin: 0 9px 18px 9px;
-    background: #fff;
-    border: 1px solid #d9d9de;
-  }
+}
 
-  .item:hover {
-    -webkit-box-shadow: 0 10px 8px -6px #ccc;
-    -moz-box-shadow: 0 10px 8px -6px #ccc;
-    box-shadow: 0 10px 8px -6px #ccc;
-  }
+.m-project-list-item {
+  width: 288px;
+  height: 518px;
+  margin: 0 9px 18px 9px;
+  background: #fff;
+  border: 1px solid #d9d9de;
 
   .thumb {
     img {
       display: block;
+      width: 100%;
     }
   }
 
@@ -155,24 +151,37 @@
       border-left: 1px solid #ccc;
     }
   }
+}
 
-  /* item status */
-  .item.doing {
-    .status {
-      color: #1aa9eb;
-    }
+.m-project-list-item:hover {
+  -webkit-box-shadow: 0 10px 8px -6px #ccc;
+  -moz-box-shadow: 0 10px 8px -6px #ccc;
+  box-shadow: 0 10px 8px -6px #ccc;
+}
+
+/* item status */
+.m-project-list-item.doing {
+  .status {
+    color: #1aa9eb;
   }
+}
 
-  .item.finished{
-    .status {
-      color: #dd3d57;
-    }
+.m-project-list-item.finished{
+  .status {
+    color: #dd3d57;
   }
 }
 
 /* m-project-list: waterfall */
 .m-project-list-waterfall {
-  .item {
+  margin: 0 -18px 0 -18px;
+
+  .m-project-list-item {
+    width: 378px;
+    height: auto;
+    padding: 0 0 30px 0;
+    margin: 0 18px 36px 18px;
+    
     .meta {
       .main {
         width: 240px;
