@@ -235,6 +235,16 @@
         padding-top: 22px;
         margin: 0 0 3px 15px;
 
+        dt {
+          .fs16;
+          .c_heavy;
+        }
+
+        dd {
+          .fs12;
+          .c_light;
+        }
+
         a {
           .c_heavy;
         }
@@ -249,6 +259,7 @@
     .info-ft {
       border-top: 1px solid #efefef;
       padding: 10px 0;
+      .text-center;
       background: #fcfcfc;
 
       .btn {
@@ -343,10 +354,12 @@
       height: 112px;
       margin-right: 18px;
       background: #f7f9fa;
-    }
 
-    .thumb img {
-      .transition(all, .25s);
+      img {
+        display: block;
+        .transition(all, .25s);
+      }
+
     }
 
     .thumb:hover img {
@@ -474,7 +487,7 @@
   .item {
     width: 588px;
     height: 288px;
-    margin: 0 35px 35px 0;
+    margin: 0 18px 35px 17px;
     background: #fff;
     .border1;
     position: relative;

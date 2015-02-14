@@ -3,7 +3,7 @@
 var app = {
     components: {
         kv: function(){
-            jQuery(".kv").slide({titCell: '.kv-head ul', mainCell:".kv-body ul", delayTime: 450, autoPlay:true, autoPage: '<li></li>'});
+            jQuery(".m-kv").slide({titCell: '.m-kv-head ul', mainCell:".m-kv-body ul", delayTime: 450, autoPlay:true, autoPage: '<li></li>'});
         }
     },
     initApp: function (){

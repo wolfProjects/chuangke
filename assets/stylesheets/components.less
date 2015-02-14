@@ -5,13 +5,89 @@
 /*======================================================================
       Components
   ======================================================================*/
-/* m-project-list */
+/* ----------------------------------------
+ * button
+ * ---------------------------------------- */
+.btn {
+  display: inline-block;
+}
+
+.btn-primary {
+  min-width: 112px;
+  line-height: 45px;
+  text-align: center;
+  .c_white;
+  .fs16;
+  background: #34b3ed;
+}
+
+.btn-gray {
+  min-width: 180px;
+  line-height: 40px;
+  text-align: center;
+  .c_black;
+  .fs16;
+  background: url("../images/btn-gray.png") repeat-x;
+  border: 1px solid #edecec;
+}
+
+.btn-gray:hover {
+  .c_white;
+  background-position: 0 -40px;
+}
+
+
+/* ----------------------------------------
+ * Kv
+ * ---------------------------------------- */
+.m-kv {
+  overflow: hidden;
+  position: relative;
+}
+
+.m-kv-body {
+  .m-kv-item {
+    height: 508px;
+    background-repeat: no-repeat;
+    background-position: center top;
+
+    a {
+      display: block;
+      height: 508px;
+    }
+  }
+}
+
+.m-kv-head {
+  position: absolute;
+  bottom: 36px;
+  width: 100%;
+  text-align: center;
+
+  li {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 10px;
+    background: #fff;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+
+  .on {
+    background: #1aa9eb;
+  }
+}
+
+/* ----------------------------------------
+ * m-project-list
+ * ---------------------------------------- */
 .m-project-list {
   margin: 0 -9px 0 -9px;
   .item {
     width: 288px;
     height: 518px;
-    margin: 0 9px;
+    margin: 0 9px 18px 9px;
     background: #fff;
     border: 1px solid #d9d9de;
   }
@@ -20,6 +96,12 @@
     -webkit-box-shadow: 0 10px 8px -6px #ccc;
     -moz-box-shadow: 0 10px 8px -6px #ccc;
     box-shadow: 0 10px 8px -6px #ccc;
+  }
+
+  .thumb {
+    img {
+      display: block;
+    }
   }
 
   .desc {
@@ -32,6 +114,12 @@
       margin-bottom: 18px;
       font-weight: bolder;
 
+      a {
+        .fs18;
+        .fb;
+        .c_normal;
+      }
+
       a:hover {
         color: #2694bb;
       }
@@ -39,6 +127,8 @@
 
     dd {
       line-height: 18px;
+      .fs12;
+      .c_normal;
     }
   }
 
@@ -50,7 +140,7 @@
 
     .main {
       float: left;
-      width: 154px;
+      width: 145px;
       padding: 0 0 0 6px;
     }
 
@@ -64,18 +154,36 @@
       font-weight: bold;
       border-left: 1px solid #ccc;
     }
+  }
 
-    .status.doing {
+  /* item status */
+  .item.doing {
+    .status {
       color: #1aa9eb;
     }
+  }
 
-    .status.finish {
+  .item.finished{
+    .status {
       color: #dd3d57;
     }
   }
 }
 
-/* comment */
+/* m-project-list: waterfall */
+.m-project-list-waterfall {
+  .item {
+    .meta {
+      .main {
+        width: 240px;
+      }
+    }
+  }
+}
+
+/* ----------------------------------------
+ * m-comment
+ * ---------------------------------------- */
 .m-comment {
   padding: 30px 22px;
   background: #fff;
@@ -96,7 +204,9 @@
   .box-sizing(border-box);
 }
 
-/* pagination */
+/* ----------------------------------------
+ * m-pagination
+ * ---------------------------------------- */
 .m-pagination {
   margin: 18px 0;
   text-align: right;
