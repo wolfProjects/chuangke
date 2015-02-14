@@ -394,14 +394,15 @@
 
 /* Page: project list */
 .project-list {
+  .body-hd {
+    margin-bottom: 20px;
+  }
 
   .body-bd {
-    margin-bottom: 110px;
+    margin-bottom: 126px;
 
-    .pagination {
-      margin-top: 25px;
-      position: relative;
-      right: -4px;
+    .m-pagination {
+      margin: 8px 0 0 0;
     }
   }
 }
@@ -410,48 +411,18 @@
 /* Page: project unit */
 .project-unit{
   background: #fff;
-}
 
-/* p-unit  prefix p is the inner module in project */
-.p-unit { padding-bottom: 90px;}
-
-.p-unit-hd {
-  padding: 52px 0 45px 0;
-
-  h2 {
-    .fs26;
-    .c_blue;
-    font-weight: bolder;
+  .body-hd {
+    margin-bottom: 45px;
   }
-}
 
-.p-unit-edit {
-  width: 300px;
-  .fs26;
-  .fb;
-  .c_blue;
-  cursor: pointer;
-
-  .trash {
-    display: none;
-    width: 21px;
-    height: 26px;
-    margin: 5px 7px 0 0;
-    background: url("../images/icon-trash.png") no-repeat;
+  .body-bd {
+    padding: 0 0 144px 0;
   }
-}
-
-.p-unit-edit-item {
-  float: right;
-  margin-left: 10px;
-  font-weight: bolder;
-}
-
-.p-unit-bd {
 }
 
 /* create unit */
-.p-unit-create {
+.project-unit-create {
   padding: 30px 60px;
   .border1;
   background: #fefefe;
@@ -518,7 +489,7 @@
     }
   }
 
-  .p-unit-bd {
+  .m-unit-list {
     .select-icon {
       display: block;
     }
