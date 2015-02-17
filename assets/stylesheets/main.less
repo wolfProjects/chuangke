@@ -45,6 +45,18 @@ p, a {
   .font-smooth;
 }
 
+input {
+  outline: none;
+}
+
+/* line height preset */
+.lh16 { line-height: 16px;}
+.lh18 { line-height: 18px;}
+.lh20 { line-height: 20px;}
+.lh22 { line-height: 22px;}
+.lh24 { line-height: 24px;}
+.lh25 { line-height: 25px;}
+.lh26 { line-height: 26px;}
 /*======================================================================
       Main
   ======================================================================*/
@@ -62,6 +74,7 @@ header {
   .box-shadow(0, 1px, 9px, rgba(4, 0, 0, .12));
   position: relative;
   z-index: 1000;
+  .enableSelect;
 }
 
 .header-logo {
@@ -95,16 +108,16 @@ header {
 }
 
 .header-sign-before {
-  a {
+  span {
     display: inline-block;
     margin: 0 25px;
     .fs12;
     text-decoration: none;
-
     .c_light;
+    cursor: pointer;
   }
 
-  a:hover {
+  span:hover {
     color: #2694bb;
   }
 }
@@ -370,6 +383,21 @@ footer {
   .c_black;
 }
 
+/* header float panel */
+.m-floatpanel {
+  .m-form {
+    margin: 0 0 0 168px;
+  }
+}
+
+.m-floatpanel.noLabel {
+  .m-form {
+    margin-left: 320px;
+  }
+}
+
+
+
 /*======================================================================
       Responsive
   ======================================================================*/
@@ -377,5 +405,11 @@ footer {
 @media screen and (max-width: 1215px){
   .header-float {
     right: 0;
+  }
+}
+
+@media screen and (max-height: 980px){
+  .m-floatpanel-bd {
+    top: 100px!important;
   }
 }
