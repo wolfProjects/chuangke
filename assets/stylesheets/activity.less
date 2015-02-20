@@ -41,39 +41,120 @@
   }
 }
 
-/* Page: activity-project */
-.activity-project {
-  margin: 0 0 115px 0;
-
-  .body-hd {
-    margin-bottom: 45px;
-  }
-
-  .m-pagination {
-    margin: 0;
-    position: relative;
-    top: -10px;
-  }
-}
-
-/* Page: activity-schedule */
-.activity-schedule {
+/* Page: activity-detail */
+.activity-detail {
   background: #fff;
 
-  .body-hd {
-    margin-bottom: 30px;
+  .information {
+    background: #f7f9fa;
+
+    .body-hd {
+      margin-bottom: 40px;
+
+      .activity-join-btn {
+        min-width: 180px;
+        height:40px;
+        line-height: 40px;
+        text-align: center;
+        .fs16;
+        .c_white;
+        border: 1px solid #edecec;
+        background: url("../images/btn-gray.png") repeat-x 0 -40px;
+      }
+
+      .activity-join-btn:active {
+        position: relative;
+        top: 1px;
+      }
+
+      .activity-status {
+        .fs14;
+        .c_normal;
+        margin-top: 9px;
+
+        strong {
+          color: #69c54c;
+          font-weight: bolder;
+          .fs30;
+        }
+
+        .timer {
+          height: 28px;
+          line-height: 28px;
+          padding: 0 0 0 26px;
+          margin: 3px 0 0 26px;
+          border-left: 1px solid #dfdfdf;
+        }
+      }
+    }
+
+    .body-bd {
+      padding: 0 0 40px 0;
+
+      .text-content {
+        line-height: 30px;
+        color: #555;
+        .fs14;
+      }
+    }
+  }
+
+  .joined {
+    border-top: 1px solid #d9d9de;
+
+    .body {
+      padding-top: 50px;
+    }
+
+    .body-hd {
+      margin-bottom: 25px;
+    }
+
+    .m-page-title {
+      .title {
+        margin-bottom: 37px;
+      }
+
+      ul {
+        margin-bottom: 0;
+      }
+
+      li {
+        margin-bottom: 0;
+      }
+    }
+
+    .body-bd {
+      padding-bottom: 94px;
+    }
   }
 }
 
-.activity-schedule-img {
-  margin-bottom: 43px;
 
-  img {
-    display: block;
-    text-align: center;
-    max-width: 100%;
+
+.activity-detail-kv {
+  height: 500px;
+  background-repeat: no-repeat!important;
+  background-position: center center;
+
+  .description {
+    h1 {
+      padding: 105px 0 23px 0;
+      font-size: 48px;
+      line-height: 60px;
+      .c_black;
+      font-weight: bolder;
+    }
+
+    p {
+      width: 600px;
+      font-size: 24px;
+      line-height: 36px;
+      .c_normal;
+    }
   }
 }
+
 
 /*======================================================================
       Responsive
