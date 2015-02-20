@@ -69,11 +69,22 @@
   /* progress */
   .progress {
     background: #f7f9fa;
+  }
+
+  .progress-hd {
+    margin-bottom: 18px;
+  }
+
+  .progress-bd{
+    .m-comment {
+      margin: 0 0 28px 0;
+    }
 
     .item {
       padding: 24px 28px;
       margin-bottom: 28px;
       background: #fff;
+      border: 1px solid #dfdfdf;
     }
 
     .user {
@@ -151,13 +162,33 @@
         }
       }
     }
-  }
 
-  .progress-hd {
-    margin-bottom: 18px;
-  }
+    .post-operate {
+      text-align: right;
+      margin: 16px 0 -10px 0;
+      .enableSelect;
 
-  .progress-bd{
+      .icon {
+        display: inline-block;
+        width: 22px;
+        height: 25px;
+        margin-left: 25px;
+        cursor: pointer;
+      }
+
+      .icon:active {
+        position: relative;
+        top: 1px;
+      }
+
+      .icon-reply {
+        background: url("../images/icon-reply.png") no-repeat center center;
+      }
+
+      .icon-trash {
+        background: url("../images/icon-trash2.png") no-repeat center center;
+      }
+    }
   }
 
   /* team member */
@@ -171,6 +202,7 @@
   .team-member-bd {
     padding:  24px 0 0 0;
     background: #fff;
+    .border1;
 
     .listWrap {
       margin: 0 20px;
@@ -178,9 +210,7 @@
 
     .item {
       float: left;
-      width: 80px;
-      height: 80px;
-      margin: 0 48px 40px 0;
+      margin: 0 48px 20px 0;
       position: relative;
     }
 
@@ -189,6 +219,7 @@
     }
 
     .thumb {
+      display: block;
       width: 80px;
       height: 80px;
       border-radius: 80px;
@@ -203,6 +234,13 @@
       .info {
         display: block;
       }
+    }
+
+    .thumb-name {
+      padding: 14px 0 8px 0;
+      text-align: center;
+      .fs14;
+      .c_heavy;
     }
 
     .team-member-add {
@@ -296,6 +334,7 @@
     padding: 20px;
     margin-top: -14px;
     background: #fff;
+    .border1;
     border-top: 1px solid #efefef;
 
     .team-member-invalid {
@@ -320,10 +359,10 @@
         height: 38px;
         line-height: 38px;
         .fs16;
-        .c_light;
+        .c_white;
         border-left: 1px solid #efefef;
         text-align: center;
-        background: #fff;
+        background: #1aa9eb;
       }
     }
   }
@@ -388,6 +427,56 @@
     margin-right: 32px;
     .fs16;
     color: #1aa9eb;
+  }
+
+  /* join activity */
+  .join-activity {
+  }
+
+  .join-activity-bd {
+    .item {
+      padding: 20px;
+      margin-bottom: 30px;
+      background: #fff;
+      border: 1px solid #dfdfdf;
+
+      dt {
+        line-height: 30px;
+        padding: 1px 0 13px 0;
+        .fs16;
+        border-bottom: 1px solid #e9e9e9;
+
+        a {
+          .c_normal;
+          font-weight: bolder;
+        }
+
+        a:hover {
+          .c_blue;
+        }
+      }
+
+      dd {
+        line-height: 24px;
+        padding: 15px 0 0 0;
+        .fs14;
+        .c_normal;
+      }
+    }
+  }
+
+    /* work tile */
+  .work-tile {
+    border: 1px solid #d9d9de;
+  }
+
+  .work-tile-link {
+    display: block;
+    background: #fff;
+
+    img {
+      display: block;
+    }
   }
 }
 

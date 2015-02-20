@@ -91,6 +91,24 @@
                         <h2 class="section-title">项目进展</h2>
                     </div>
                     <div class="progress-bd">
+                        <!-- component: comment -->
+                        <div class="m-comment">
+                            <form action="">
+                                <div class="m-comment-hd">
+                                    <input class="m-comment-title" type="text" name="" id="" placeholder="输入更新标题"/>
+                                </div>
+                                <div class="m-comment-bd mt10">
+                                    <!-- html editor -->
+                                    <div class="redactor-main"></div>
+                                    <!-- end html editor -->
+                                </div>
+                                <div class="m-comment-ft mt20">
+                                    <button type="submit" class="btn btn-primary" href="">发布</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- end comment -->
+
                         <!-- item -->
                         <div class="item clearfix">
                             <div class="user fl">
@@ -112,6 +130,11 @@
                                         <a class="thumbList-item" href=""><img src="assets/images/product-log-thumb02.png" alt="" width="125" height="80"/></a>
                                         <a class="thumbList-item" href=""><img src="assets/images/product-log-thumb03.png" alt="" width="125" height="80"/></a>
                                     </div>
+                                </div>
+
+                                <div class="post-operate">
+                                    <div class="icon icon-reply"></div>
+                                    <div class="icon icon-trash"></div>
                                 </div>
                             </div>
                         </div>
@@ -139,33 +162,17 @@
                                         <a class="thumbList-item" href=""><img src="assets/images/product-log-thumb03.png" alt="" width="125" height="80"/></a>
                                     </div>
                                 </div>
+
+                                <div class="post-operate">
+                                    <div class="icon icon-reply"></div>
+                                    <div class="icon icon-trash"></div>
+                                </div>
                             </div>
                         </div>
                         <!-- end item -->
                     </div>
-                    <div class="progress-ft text-right">
-                        <a class="btn btn-primary" href="">发布更新</a>
-                    </div>
                 </div>
                 <!-- end project progress -->
-
-                <!-- component: comment -->
-                <div class="m-comment mt30">
-                    <form action="">
-                        <div class="m-comment-hd">
-                            <input class="m-comment-title" type="text" name="" id="" placeholder="输入更新标题"/>
-                        </div>
-                        <div class="m-comment-bd mt10">
-                            <!-- html editor -->
-                            <div class="redactor-main"></div>
-                            <!-- end html editor -->
-                        </div>
-                        <div class="m-comment-ft text-right mt20">
-                            <button type="submit" class="btn btn-primary" href="">发布</button>
-                        </div>
-                    </form>
-                </div>
-                <!-- end comment -->
             </aside>
             <main class="fl">
                 <!-- team member -->
@@ -179,6 +186,7 @@
                                 <!-- item -->
                                 <li class="item">
                                     <a class="thumb" href=""><img src="assets/images/project-team-member01.jpg" alt="" width="80" height="80"/></a>
+                                    <p class="thumb-name">张学进</p>
                                     <div class="info">
                                         <div class="info-bd">
                                             <div class="clearfix">
@@ -202,6 +210,7 @@
                                 <!-- item -->
                                 <li class="item">
                                     <a class="thumb" href=""><img src="assets/images/project-team-member01.jpg" alt="" width="80" height="80"/></a>
+                                    <p class="thumb-name">张学进</p>
                                     <div class="info">
                                         <div class="info-bd">
                                             <div class="clearfix">
@@ -225,6 +234,7 @@
                                 <!-- item -->
                                 <li class="item">
                                     <a class="thumb" href=""><img src="assets/images/project-team-member01.jpg" alt="" width="80" height="80"/></a>
+                                    <p class="thumb-name">张学进</p>
                                     <div class="info">
                                         <div class="info-bd">
                                             <div class="clearfix">
@@ -248,6 +258,7 @@
                                 <!-- item -->
                                 <li class="item">
                                     <a class="thumb" href=""><img src="assets/images/project-team-member01.jpg" alt="" width="80" height="80"/></a>
+                                    <p class="thumb-name">张学进</p>
                                     <div class="info">
                                         <div class="info-bd">
                                             <div class="clearfix">
@@ -271,6 +282,7 @@
                                 <!-- item -->
                                 <li class="item">
                                     <a class="thumb" href=""><img src="assets/images/project-team-member01.jpg" alt="" width="80" height="80"/></a>
+                                    <p class="thumb-name">张学进</p>
                                     <div class="info">
                                         <div class="info-bd">
                                             <div class="clearfix">
@@ -291,68 +303,56 @@
                                     </div>
                                 </li>
                                 <!-- end item -->
-                                <!-- add member -->
-                                <li class="item">
-                                    <i class="team-member-add"></i>
-                                </li>
-                                <!-- end add member -->
                             </ul>
                         </div>
                     </div>
                     <div class="team-member-ft">
-                        <div class="team-member-invalid clearfix">
+                        <p class="fs14 c_normal">邀请队员</p>
+                        <div class="team-member-invalid clearfix mt10">
                             <input class="fl" type="email" name="" id="" placeholder="请输入邮箱地址"/>
-                            <a class="btn fl" href="">添加</a>
+                            <a class="btn fl" href="">邀请</a>
                         </div>
                     </div>
                 </div>
                 <!-- end team member -->
 
-                <!-- project units -->
-                <div class="project-units">
-                    <div class="project-units-hd">
-                        <h2 class="section-title">项目套件</h2>
+                <!-- join-activity -->
+                <div class="join-activity">
+                    <div class="join-activity-hd mb20">
+                        <h2 class="section-title">参与活动</h2>
                     </div>
-                    <div class="project-units-bd">
-                        <!-- list -->
-                        <div class="listWrap">
-                            <ul class="list">
-                                <li class="item clearfix">
-                                    <a class="thumb fl" href="">
-                                        <img src="assets/images/project-unit-thumb01.jpg" alt="" width="159" height="112"/>
-                                    </a>
-                                    <div class="info fl">
-                                        <a class="title" href="">3d打印机用高温玻璃</a>
-                                        <p>机械框架</p>
-                                    </div>
-                                </li>
-                                <li class="item clearfix">
-                                    <a class="thumb fl" href="">
-                                        <img src="assets/images/project-unit-thumb01.jpg" alt="" width="159" height="112"/>
-                                    </a>
-                                    <div class="info fl">
-                                        <a class="title" href="">3d打印机用高温玻璃</a>
-                                        <p>机械框架</p>
-                                    </div>
-                                </li>
-                                <li class="item clearfix">
-                                    <a class="thumb fl" href="">
-                                        <img src="assets/images/project-unit-thumb01.jpg" alt="" width="159" height="112"/>
-                                    </a>
-                                    <div class="info fl">
-                                        <a class="title" href="">3d打印机用高温玻璃</a>
-                                        <p>机械框架</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- end list -->
-                        <p class="text-right">
-                            <a class="project-units-more" href="">更多&gt;&gt;</a>
-                        </p>
+                    <div class="join-activity-bd">
+                        <ul class="list">
+                            <li class="item">
+                                <dl>
+                                    <dt><a href="">网络摄像头远程启停装置硬件创造远程启停装置网络摄像头</a></dt>
+                                    <dd>希望孩子脱离对电子屏幕的沉迷在可触碰的实体玩具中
+                                        发挥眼耳手脑的自然本体，希望孩子脱离对电子屏幕的
+                                        沉迷在可触碰的实体玩具中，发挥眼耳手脑的自然本体。
+                                        希望孩子脱离对电子屏幕的沉迷。</dd>
+                                </dl>
+                            </li>
+                            <li class="item">
+                                <dl>
+                                    <dt><a href="">网络摄像头远程启停装置硬件创造远程启停装置网络摄像头</a></dt>
+                                    <dd>希望孩子脱离对电子屏幕的沉迷在可触碰的实体玩具中
+                                        发挥眼耳手脑的自然本体，希望孩子脱离对电子屏幕的
+                                        沉迷在可触碰的实体玩具中，发挥眼耳手脑的自然本体。
+                                        希望孩子脱离对电子屏幕的沉迷。</dd>
+                                </dl>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <!-- end project units -->
+                <!-- join-activity -->
+
+                <!-- worktile-->
+                <div class="work-tile">
+                    <div class="work-tile-bd">
+                        <a href="" class="work-tile-link"><img src="assets/images/work-tile.png" alt="" width="376" height="60"/></a>
+                    </div>
+                </div>
+                <!-- worktile-->
             </main>
         </div>
     </section>
