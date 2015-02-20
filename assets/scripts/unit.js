@@ -1,6 +1,6 @@
 /* Qianglong Mo (SukeBeta) 2015 */
 
-var activity = {
+var unit = {
     component: {
     },
     initUi: function (){

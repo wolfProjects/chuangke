@@ -96,26 +96,67 @@
  * ---------------------------------------- */
 
 .m-page-title {
+  .title {
+    margin-bottom: 20px;
+
+    h1 {
+      .fs30;
+      font-weight: bolder;
+      .c_black;
+    }
+
+    .search {
+      padding: 2px;
+      background: #1aa9eb;
+
+      .text {
+        width: 410px;
+        height: 38px;
+        line-height: 18px;
+        padding: 10px 10px;
+        .fs14;
+        .c_normal;
+        background: #fff;
+        .box-sizing(border-box);
+        border:none;
+      }
+
+      .submit {
+        width: 85px;
+        height: 38px;
+        line-height: 38px;
+        text-align: center;
+        .fs18;
+        .c_white;
+        background: #1aa9eb;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+
+
   ul {
-    margin: 5px 0 0 -43px;
+    margin: 5px 0 -28px -40px;
   }
 
   li {
     float: left;
     padding: 0 40px;
+    margin-bottom: 28px;
     .fs24;
-    font-weight: bolder;
     background: url("../images/project-list-hd-split.png") no-repeat left center;
 
     a {
       .c_normal;
-      font-weight: bolder;
+      font-weight: normal;
       -webkit-font-smoothing: subpixel-antialiased;
     }
   }
 
   li.active {
     a {
+      font-weight: bolder;
       .c_blue;
     }
   }
@@ -423,6 +464,77 @@
     }
   }
 }
+
+
+/* ----------------------------------------
+ * m-unit-list02
+ * use: unit-list
+ * ---------------------------------------- */
+.m-unit-list02 {
+  .row {
+    margin-bottom: 30px;
+  }
+
+  .item {
+    width: 301px;
+    height: 348px;
+    margin: 0 0 0 -1px;
+    border: 1px solid #d9d9de;
+  }
+
+  .item-content {
+  }
+
+  .thumb {
+    overflow: hidden;
+
+    img {
+      display: block;
+      width: 301px;
+      height: 260px;
+    }
+  }
+
+  .info {
+    padding: 23px 23px 16px 23px;
+    border-top: 1px solid #d9d9de;
+
+
+  }
+
+  .icon-tool {
+    width: 38px;
+    height: 38px;
+    margin-right: 22px;
+    background: url("../images/icon-tool.png") no-repeat;
+  }
+
+  .desc {
+    width: 180px;
+    line-height: 24px;
+    margin-top: -2px;
+    .fs18;
+    .c_normal;
+  }
+
+  .item:hover {
+    .item-content {
+      overflow: hidden;
+      border: 3px solid #eaeaeb;
+
+      .thumb {
+        img {
+          margin: -3px 0 0 -3px;
+        }
+      }
+    }
+
+    .info {
+      margin: 0 0 -1px -3px;
+    }
+  }
+}
+
 /* ----------------------------------------
  * m-comment
  * ---------------------------------------- */
