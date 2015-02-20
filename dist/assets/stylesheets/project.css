@@ -583,6 +583,8 @@ button {
   /* progress */
   /* team member */
   /* project units */
+  /* join activity */
+  /* work tile */
 }
 .project-introduce .section-title {
   padding: 52px 0 12px 0;
@@ -631,17 +633,24 @@ button {
 .project-introduce .progress {
   background: #f7f9fa;
 }
-.project-introduce .progress .item {
+.project-introduce .progress-hd {
+  margin-bottom: 18px;
+}
+.project-introduce .progress-bd .m-comment {
+  margin: 0 0 28px 0;
+}
+.project-introduce .progress-bd .item {
   padding: 24px 28px;
   margin-bottom: 28px;
   background: #fff;
+  border: 1px solid #dfdfdf;
 }
-.project-introduce .progress .user {
+.project-introduce .progress-bd .user {
   width: 80px;
   margin-right: 25px;
   text-align: center;
 }
-.project-introduce .progress .user .thumb {
+.project-introduce .progress-bd .user .thumb {
   display: block;
   width: 80px;
   height: 80px;
@@ -654,7 +663,7 @@ button {
   -o-transition: all 0.2s;
   transition: all 0.2s;
 }
-.project-introduce .progress .user .thumb:hover {
+.project-introduce .progress-bd .user .thumb:hover {
   opacity: .85;
   -webkit-transform: rotate(15deg);
   -moz-transform: rotate(15deg);
@@ -662,14 +671,14 @@ button {
   -o-transform: rotate(15deg);
   transform: rotate(15deg);
 }
-.project-introduce .progress .user .name {
+.project-introduce .progress-bd .user .name {
   font-size: 16px !important;
   color: #333;
 }
-.project-introduce .progress .detail {
+.project-introduce .progress-bd .detail {
   width: 645px;
 }
-.project-introduce .progress .detail h3 {
+.project-introduce .progress-bd .detail h3 {
   padding: 0 0 18px 0;
   font-weight: normal;
   font-size: 24px !important;
@@ -677,38 +686,62 @@ button {
   border-bottom: 1px solid #c7c7c7;
   position: relative;
 }
-.project-introduce .progress .detail h3 .date {
+.project-introduce .progress-bd .detail h3 .date {
   font-size: 14px !important;
   color: #666;
   position: absolute;
   top: 14px;
   right: 0;
 }
-.project-introduce .progress .detail .content {
+.project-introduce .progress-bd .detail .content {
   line-height: 30px;
   padding: 20px 0 15px 0;
   font-size: 14px !important;
   color: #333;
 }
-.project-introduce .progress .detail .thumbList {
+.project-introduce .progress-bd .detail .thumbList {
   overflow: hidden;
 }
-.project-introduce .progress .detail .thumbList-bd {
+.project-introduce .progress-bd .detail .thumbList-bd {
   width: 120%;
 }
-.project-introduce .progress .detail .thumbList-item {
+.project-introduce .progress-bd .detail .thumbList-item {
   float: left;
   width: 125px;
   height: 80px;
   margin-right: 12px;
   border: 1px solid #c7c7c7;
 }
-.project-introduce .progress .detail .thumbList-item img {
+.project-introduce .progress-bd .detail .thumbList-item img {
   display: block;
   width: 100%;
 }
-.project-introduce .progress-hd {
-  margin-bottom: 18px;
+.project-introduce .progress-bd .post-operate {
+  text-align: right;
+  margin: 16px 0 -10px 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.project-introduce .progress-bd .post-operate .icon {
+  display: inline-block;
+  width: 22px;
+  height: 25px;
+  margin-left: 25px;
+  cursor: pointer;
+}
+.project-introduce .progress-bd .post-operate .icon:active {
+  position: relative;
+  top: 1px;
+}
+.project-introduce .progress-bd .post-operate .icon-reply {
+  background: url("../images/icon-reply.png") no-repeat center center;
+}
+.project-introduce .progress-bd .post-operate .icon-trash {
+  background: url("../images/icon-trash2.png") no-repeat center center;
 }
 .project-introduce .team-member-hd {
   margin-bottom: 18px;
@@ -716,21 +749,21 @@ button {
 .project-introduce .team-member-bd {
   padding: 24px 0 0 0;
   background: #fff;
+  border: 1px solid #d9d9de;
 }
 .project-introduce .team-member-bd .listWrap {
   margin: 0 20px;
 }
 .project-introduce .team-member-bd .item {
   float: left;
-  width: 80px;
-  height: 80px;
-  margin: 0 48px 40px 0;
+  margin: 0 48px 20px 0;
   position: relative;
 }
 .project-introduce .team-member-bd .item:nth-child(3n) {
   margin-right: 0;
 }
 .project-introduce .team-member-bd .thumb {
+  display: block;
   width: 80px;
   height: 80px;
   border-radius: 80px;
@@ -751,6 +784,12 @@ button {
 }
 .project-introduce .team-member-bd .thumb:hover .info {
   display: block;
+}
+.project-introduce .team-member-bd .thumb-name {
+  padding: 14px 0 8px 0;
+  text-align: center;
+  font-size: 14px !important;
+  color: #333;
 }
 .project-introduce .team-member-bd .team-member-add {
   display: block;
@@ -829,6 +868,7 @@ button {
   padding: 20px;
   margin-top: -14px;
   background: #fff;
+  border: 1px solid #d9d9de;
   border-top: 1px solid #efefef;
 }
 .project-introduce .team-member-ft .team-member-invalid {
@@ -852,10 +892,10 @@ button {
   height: 38px;
   line-height: 38px;
   font-size: 16px !important;
-  color: #999;
+  color: #fff;
   border-left: 1px solid #efefef;
   text-align: center;
-  background: #fff;
+  background: #1aa9eb;
 }
 .project-introduce .project-units-hd .section-title {
   padding: 23px 0;
@@ -903,12 +943,51 @@ button {
   font-size: 16px !important;
   color: #1aa9eb;
 }
+.project-introduce .join-activity-bd .item {
+  padding: 20px;
+  margin-bottom: 30px;
+  background: #fff;
+  border: 1px solid #dfdfdf;
+}
+.project-introduce .join-activity-bd .item dt {
+  line-height: 30px;
+  padding: 1px 0 13px 0;
+  font-size: 16px !important;
+  border-bottom: 1px solid #e9e9e9;
+}
+.project-introduce .join-activity-bd .item dt a {
+  color: #666;
+  font-weight: bolder;
+}
+.project-introduce .join-activity-bd .item dt a:hover {
+  color: #1aa9eb;
+}
+.project-introduce .join-activity-bd .item dd {
+  line-height: 24px;
+  padding: 15px 0 0 0;
+  font-size: 14px !important;
+  color: #666;
+}
+.project-introduce .work-tile {
+  border: 1px solid #d9d9de;
+}
+.project-introduce .work-tile-link {
+  display: block;
+  background: #fff;
+}
+.project-introduce .work-tile-link img {
+  display: block;
+}
 /* Page: project list */
+.project-list .m-page-title li.active {
+  font-size: 30px !important;
+  margin-top: -2px;
+}
 .project-list .body-hd {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 .project-list .body-bd {
-  margin-bottom: 126px;
+  margin-bottom: 16px;
 }
 .project-list .body-bd .m-pagination {
   margin: 8px 0 0 0;

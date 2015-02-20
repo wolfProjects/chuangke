@@ -575,6 +575,10 @@ button {
       Activity
   ======================================================================*/
 /* Page: activity list */
+.activity-list .m-page-title ul {
+  margin-top: 8px;
+  margin-bottom: -22px;
+}
 .activity-list .body-bd {
   margin-bottom: 38px;
 }

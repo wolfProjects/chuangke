@@ -1,6 +1,6 @@
 /* Qianglong Mo (SukeBeta) 2015 */
 
-var project = {
+var activity = {
     component: {
     },
     initUi: function (){

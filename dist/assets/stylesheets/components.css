@@ -648,22 +648,60 @@ button {
 /* ----------------------------------------
  * m-project-list
  * ---------------------------------------- */
+.m-page-title .title {
+  margin-bottom: 20px;
+}
+.m-page-title .title h1 {
+  font-size: 30px !important;
+  font-weight: bolder;
+  color: #000;
+}
+.m-page-title .title .search {
+  padding: 2px;
+  margin-top: 3px;
+  background: #1aa9eb;
+}
+.m-page-title .title .search .text {
+  width: 410px;
+  height: 38px;
+  line-height: 18px;
+  padding: 10px 10px;
+  font-size: 14px !important;
+  color: #666;
+  background: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: none;
+}
+.m-page-title .title .search .submit {
+  width: 85px;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  font-size: 18px !important;
+  color: #fff;
+  background: #1aa9eb;
+  border: none;
+  cursor: pointer;
+}
 .m-page-title ul {
-  margin: 5px 0 0 -43px;
+  margin: 5px 0 -28px -40px;
 }
 .m-page-title li {
   float: left;
-  padding: 0 43px;
-  font-size: 26px !important;
-  font-weight: bolder;
+  padding: 0 40px;
+  margin-bottom: 28px;
+  font-size: 24px !important;
   background: url("../images/project-list-hd-split.png") no-repeat left center;
 }
 .m-page-title li a {
-  color: #333;
-  font-weight: bolder;
+  color: #666;
+  font-weight: normal;
   -webkit-font-smoothing: subpixel-antialiased;
 }
 .m-page-title li.active a {
+  font-weight: bolder;
   color: #1aa9eb;
 }
 .m-page-title .btn-primary {
@@ -908,11 +946,60 @@ button {
   border-color: #1aa9eb;
 }
 /* ----------------------------------------
+ * m-unit-list02
+ * use: unit-list
+ * ---------------------------------------- */
+.m-unit-list02 .row {
+  margin-bottom: 30px;
+}
+.m-unit-list02 .item {
+  width: 301px;
+  height: 348px;
+  margin: 0 0 0 -1px;
+  border: 1px solid #d9d9de;
+}
+.m-unit-list02 .thumb {
+  overflow: hidden;
+}
+.m-unit-list02 .thumb img {
+  display: block;
+  width: 301px;
+  height: 260px;
+}
+.m-unit-list02 .info {
+  padding: 23px 23px 16px 23px;
+  border-top: 1px solid #d9d9de;
+}
+.m-unit-list02 .icon-tool {
+  width: 38px;
+  height: 38px;
+  margin-right: 22px;
+  background: url("../images/icon-tool.png") no-repeat;
+}
+.m-unit-list02 .desc {
+  width: 180px;
+  line-height: 24px;
+  margin-top: -2px;
+  font-size: 18px !important;
+  color: #666;
+}
+.m-unit-list02 .item:hover .item-content {
+  overflow: hidden;
+  border: 3px solid #eaeaeb;
+}
+.m-unit-list02 .item:hover .item-content .thumb img {
+  margin: -3px 0 0 -3px;
+}
+.m-unit-list02 .item:hover .info {
+  margin: 0 0 -1px -3px;
+}
+/* ----------------------------------------
  * m-comment
  * ---------------------------------------- */
 .m-comment {
   padding: 30px 22px;
-  background: #fff;
+  background: #fefefe;
+  border: 1px solid #dfdfdf;
 }
 .m-comment-title {
   display: block;
@@ -926,6 +1013,9 @@ button {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+.m-comment-ft .btn-primary {
+  min-width: 180px;
 }
 /* ----------------------------------------
  * m-pagination
