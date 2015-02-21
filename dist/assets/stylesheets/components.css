@@ -824,6 +824,9 @@ button {
 .incoming .m-info-meta .status {
   color: #1aa9eb;
 }
+.ready .m-info-meta .status {
+  color: #ef8116;
+}
 /* ----------------------------------------
  * m-article-content
  * ---------------------------------------- */
@@ -994,6 +997,24 @@ button {
   margin: 0 0 -1px -3px;
 }
 /* ----------------------------------------
+ * work tile
+ * ---------------------------------------- */
+.work-tile {
+  border: 1px solid #d9d9de;
+}
+.work-tile-link {
+  display: block;
+  background: #fff;
+}
+.work-tile-link img {
+  display: block;
+  width: 100%;
+}
+.work-tile:active {
+  position: relative;
+  top: 1px;
+}
+/* ----------------------------------------
  * m-comment
  * ---------------------------------------- */
 .m-comment {
@@ -1106,6 +1127,31 @@ button {
   height: 14px;
   margin-right: 5px !important;
   background: url("../images/icon-form-tips.png") no-repeat;
+}
+.m-floatpanel-bd .form-textarea {
+  display: inline-block;
+  width: 318px;
+  height: 220px;
+  line-height: 18px;
+  padding: 15px;
+  margin: 15px 0 0 0;
+  font-size: 12px !important;
+  color: #999;
+  border: 1px solid #ccc;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  resize: none;
+}
+.m-floatpanel-bd .form-textcount {
+  padding: 6px 0;
+  text-align: right;
+  font-size: 12px !important;
+  color: #999;
+}
+.m-floatpanel-bd .form-textcount {
+  width: 320px;
 }
 .m-floatpanel-title {
   line-height: 45px;

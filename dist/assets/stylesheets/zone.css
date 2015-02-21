@@ -572,119 +572,310 @@ button {
   user-select: none;
 }
 /*======================================================================
-      Activity
+      Zone
   ======================================================================*/
-/* Page: activity list */
-.activity-list .m-page-title ul {
-  margin-top: 8px;
-  margin-bottom: -22px;
+.zone {
+  padding: 0 0 65px 0;
+  /* progress */
+  /* personal info */
+  /* joined project */
 }
-.activity-list .body-bd {
-  margin-bottom: 38px;
+.zone aside {
+  width: 350px;
+  padding-top: 47px;
+  margin-left: 60px;
 }
-.activity-list .body-bd .join {
-  margin: 24px 0 0 0;
+.zone aside .section-title {
+  padding: 25px 0;
+  font-size: 24px !important;
+  color: #000;
 }
-.activity-list .m-project-list {
-  margin: 0 -18px 0 -18px;
+.zone main {
+  width: 805px;
 }
-.activity-list .m-project-list .item {
-  width: 378px;
-  height: auto;
-  padding: 0 0 30px 0;
-  margin: 0 18px;
-  overflow: visible;
+.zone main .section-title {
+  padding: 23px 0;
+  font-size: 30px !important;
+  color: #000;
 }
-.activity-list .m-project-list .item .thumb img {
-  max-width: 100%;
-}
-/* Page: activity-detail */
-.activity-detail {
-  background: #fff;
-}
-.activity-detail .information {
+.zone .progress {
   background: #f7f9fa;
 }
-.activity-detail .information .body-hd {
-  margin-bottom: 40px;
+.zone .progress-hd {
+  margin-bottom: 18px;
 }
-.activity-detail .information .body-hd .activity-join-btn {
-  min-width: 180px;
-  height: 40px;
-  line-height: 40px;
+.zone .progress-bd .m-comment {
+  margin: 0 0 28px 0;
+}
+.zone .progress-bd .item {
+  padding: 24px 28px;
+  margin-bottom: 28px;
+  background: #fff;
+  border: 1px solid #dfdfdf;
+}
+.zone .progress-bd .user {
+  width: 80px;
+  margin-right: 25px;
   text-align: center;
-  font-size: 16px !important;
-  color: #fff;
-  border: 1px solid #edecec;
-  background: url("../images/btn-gray.png") repeat-x 0 -40px;
 }
-.activity-detail .information .body-hd .activity-join-btn:active {
+.zone .progress-bd .user .thumb {
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin-bottom: 9px;
+  border-radius: 64px;
+  background: #f7f9fa;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.zone .progress-bd .user .thumb:hover {
+  opacity: .85;
+  -webkit-transform: rotate(15deg);
+  -moz-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  -o-transform: rotate(15deg);
+  transform: rotate(15deg);
+}
+.zone .progress-bd .user .name {
+  font-size: 16px !important;
+  color: #333;
+}
+.zone .progress-bd .detail {
+  width: 642px;
+}
+.zone .progress-bd .detail h3 {
+  padding: 0 0 18px 0;
+  margin-bottom: 20px;
+  font-weight: normal;
+  font-size: 24px !important;
+  color: #333;
+  border-bottom: 1px solid #c7c7c7;
+  position: relative;
+}
+.zone .progress-bd .detail h3 .date {
+  font-size: 14px !important;
+  color: #666;
+  position: absolute;
+  top: 14px;
+  right: 0;
+}
+.zone .progress-bd .detail .content {
+  line-height: 30px;
+  padding: 0 0 15px 0;
+  font-size: 14px !important;
+  color: #333;
+}
+.zone .progress-bd .detail .thumbList {
+  overflow: hidden;
+}
+.zone .progress-bd .detail .thumbList-bd {
+  width: 120%;
+}
+.zone .progress-bd .detail .thumbList-item {
+  float: left;
+  width: 125px;
+  height: 80px;
+  margin-right: 12px;
+  border: 1px solid #c7c7c7;
+}
+.zone .progress-bd .detail .thumbList-item img {
+  display: block;
+  width: 100%;
+}
+.zone .progress-bd .post-operate {
+  text-align: right;
+  margin: 16px 0 -10px 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.zone .progress-bd .post-operate .icon {
+  display: inline-block;
+  width: 22px;
+  height: 25px;
+  margin-left: 25px;
+  cursor: pointer;
+}
+.zone .progress-bd .post-operate .icon:active {
   position: relative;
   top: 1px;
 }
-.activity-detail .information .body-hd .activity-status {
+.zone .progress-bd .post-operate .icon-reply {
+  background: url("../images/icon-reply.png") no-repeat center center;
+}
+.zone .progress-bd .post-operate .icon-trash {
+  background: url("../images/icon-trash2.png") no-repeat center center;
+}
+.zone .personal-info-bd {
+  padding: 0 0 28px 0;
+  margin-top: 36px;
+  border-bottom: 1px solid #dfdfdf;
+}
+.zone .personal-info-bd .summary .thumb {
+  width: 80px;
+  height: 80px;
+  margin-right: 30px;
+  border-radius: 80px;
+  overflow: hidden;
+}
+.zone .personal-info-bd .summary dl {
+  width: 225px;
+}
+.zone .personal-info-bd .summary dt {
+  font-size: 24px !important;
+  color: #333;
+  margin: 5px 0 10px 0;
+}
+.zone .personal-info-bd .summary dd {
+  font-size: 14px !important;
+  line-height: 18px;
+  color: #333;
+}
+.zone .personal-info-bd .options {
+  margin-top: 40px;
+}
+.zone .personal-info-bd .options li {
+  margin-bottom: 20px;
+}
+.zone .personal-info-bd .options li p {
+  float: left;
+  width: 290px;
+  color: #666;
+}
+.zone .personal-info-bd .options .icon {
+  float: left;
+  width: 22px;
+  height: 22px;
+  margin-right: 23px;
+}
+.zone .personal-info-bd .options .icon-map {
+  background: url("../images/icon-map.png") no-repeat center center;
+}
+.zone .personal-info-bd .options .icon-email {
+  background: url("../images/icon-mail.png") no-repeat center center;
+}
+.zone .personal-info-bd .options .icon-timer {
+  background: url("../images/icon-timer.png") no-repeat center center;
+}
+.zone .personal-info-bd .operate-switch a {
+  color: #1aa9eb;
+  font-size: 14px !important;
+  margin-right: 40px;
+}
+.zone .joined-project {
+  padding: 0 0 37px 0;
+  border-bottom: 1px solid #dfdfdf;
+}
+.zone .joined-project .section-title {
+  padding: 35px 0 47px 0;
+}
+.zone .joined-project-bd .item .thumb {
+  width: 98px;
+  height: 98px;
+  margin: 0 24px 30px 0;
+  border: 1px solid #d9d9de;
+}
+.zone .joined-project-bd .item .info {
+  width: 214px;
+}
+.zone .joined-project-bd .item dt {
+  margin: 1px 0 14px 0;
+}
+.zone .joined-project-bd .item dt a {
+  color: #333;
+  font-size: 18px !important;
+}
+.zone .joined-project-bd .item dd {
+  line-height: 18px;
   font-size: 14px !important;
   color: #666;
-  margin-top: 9px;
 }
-.activity-detail .information .body-hd .activity-status strong {
-  color: #69c54c;
+.zone .joined-project-bd .item .status {
   font-weight: bolder;
-  font-size: 30px !important;
+  margin-top: 10px;
 }
-.activity-detail .information .body-hd .activity-status .timer {
-  height: 28px;
-  line-height: 28px;
-  padding: 0 0 0 26px;
-  margin: 3px 0 0 26px;
-  border-left: 1px solid #dfdfdf;
+.zone .joined-project-bd .item.doing .status {
+  color: #16b245;
 }
-.activity-detail .information .body-bd {
-  padding: 0 0 40px 0;
+.zone .joined-project-bd .item.finished .status {
+  color: #cc0000;
 }
-.activity-detail .information .body-bd .text-content {
+.zone .joined-project-ft {
+  padding-top: 8px;
+}
+.editPersonalInfo .m-form {
+  margin-left: 91px;
+}
+.editPersonalInfo .main {
+  width: 480px;
+}
+.editPersonalInfo .form-control,
+.editPersonalInfo .form-textarea,
+.editPersonalInfo .form-textcount {
+  width: 478px;
+}
+.editPersonalInfo .avatarUpload {
+  margin-bottom: 28px;
+}
+.editPersonalInfo .avatarUpload .label {
+  padding-top: 42px;
+}
+.editPersonalInfo .avatarUpload .main {
+  width: 480px;
+}
+.editPersonalInfo .avatarUpload .avatar-preview {
+  width: 100px;
+  height: 100px;
+  margin-right: 23px;
+  border: 1px solid #ccc;
+  background: url("../images/avatarUpload.png") no-repeat center center;
+}
+.editPersonalInfo .avatarUpload .avatar-upload {
+  padding: 20px 0 0 0;
+}
+.editPersonalInfo .avatarUpload .avatar-upload p {
+  width: 100px;
+  text-align: center;
+  color: #999;
+  font-size: 12px !important;
+}
+.editPersonalInfo .avatarUpload .avatar-upload .btnWrap {
+  display: inline-block;
+  overflow: hidden;
+  width: 90px;
+  height: 30px;
+  margin-top: 14px;
+  position: relative;
+}
+.editPersonalInfo .avatarUpload .avatar-upload .avatarUploadFile {
+  font-size: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  opacity: 0;
+  cursor: pointer;
+}
+.editPersonalInfo .avatarUpload .avatar-upload .btn {
+  height: 30px;
   line-height: 30px;
-  color: #555;
+  min-width: 90px;
+  cursor: pointer;
+}
+.editPersonalInfo .avatarUpload .loginName {
+  margin-top: 42px;
+  color: #666;
   font-size: 14px !important;
-}
-.activity-detail .joined {
-  border-top: 1px solid #d9d9de;
-}
-.activity-detail .joined .body {
-  padding-top: 50px;
-}
-.activity-detail .joined .body-hd {
-  margin-bottom: 25px;
-}
-.activity-detail .joined .m-page-title .title {
-  margin-bottom: 37px;
-}
-.activity-detail .joined .m-page-title ul {
-  margin-bottom: 0;
-}
-.activity-detail .joined .m-page-title li {
-  margin-bottom: 0;
-}
-.activity-detail .joined .body-bd {
-  padding-bottom: 94px;
-}
-.activity-detail-kv {
-  height: 500px;
-  background-repeat: no-repeat !important;
-  background-position: center center;
-}
-.activity-detail-kv .description h1 {
-  padding: 105px 0 23px 0;
-  font-size: 48px;
-  line-height: 60px;
-  color: #000;
   font-weight: bolder;
 }
-.activity-detail-kv .description p {
-  width: 600px;
-  font-size: 24px;
-  line-height: 36px;
-  color: #666;
+.editPersonalInfo .form-btn-submit {
+  width: 235px;
 }
 /*======================================================================
       Responsive

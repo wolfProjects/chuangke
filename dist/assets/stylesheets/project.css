@@ -584,7 +584,6 @@ button {
   /* team member */
   /* project units */
   /* join activity */
-  /* work tile */
 }
 .project-introduce .section-title {
   padding: 52px 0 12px 0;
@@ -680,6 +679,7 @@ button {
 }
 .project-introduce .progress-bd .detail h3 {
   padding: 0 0 18px 0;
+  margin-bottom: 20px;
   font-weight: normal;
   font-size: 24px !important;
   color: #333;
@@ -695,7 +695,7 @@ button {
 }
 .project-introduce .progress-bd .detail .content {
   line-height: 30px;
-  padding: 20px 0 15px 0;
+  padding: 0 0 15px 0;
   font-size: 14px !important;
   color: #333;
 }
@@ -967,16 +967,6 @@ button {
   padding: 15px 0 0 0;
   font-size: 14px !important;
   color: #666;
-}
-.project-introduce .work-tile {
-  border: 1px solid #d9d9de;
-}
-.project-introduce .work-tile-link {
-  display: block;
-  background: #fff;
-}
-.project-introduce .work-tile-link img {
-  display: block;
 }
 /* Page: project list */
 .project-list .m-page-title li.active {
