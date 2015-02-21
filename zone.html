@@ -227,8 +227,8 @@
 
                 <!-- operate switch -->
                 <div class="operate-switch text-right">
-                    <a href="">编辑个人信息</a>
-                    <a href="">修改密码</a>
+                    <a href="javascript:$('.editPersonalInfo').fadeIn();">编辑个人信息</a>
+                    <a href="javascript:$('.resetPasswordPanel').fadeIn();">修改密码</a>
                 </div>
                 <!-- end operate switch -->
             </div>
@@ -371,6 +371,146 @@
     <div class="footer-layer f12 c_heavy">Copyright © 2015 Maker collider  All Rights Reserved.</div>
 </footer>
 <!-- end footer -->
+
+<!-- float panel -->
+<!-- resetPasswordPanel -->
+<div class="m-floatpanel resetPasswordPanel hide">
+    <div class="m-floatpanel-bd">
+        <div class="m-floatpanel-title clearfix">
+            <i class="m-floatpanel-close"></i>
+            <h2 class="fl">重置密码</h2>
+        </div>
+
+        <!-- form -->
+        <div class="m-form">
+            <form action="">
+                <div class="form-group clearfix">
+                    <label class="label" for="">旧密码：</label>
+                    <div class="main">
+                        <input class="form-control" type="password" name="" id=" tabindex="6"/>
+                    </div>
+                </div>
+                <div class="form-group clearfix">
+                    <label class="label" for="">新密码：</label>
+                    <div class="main">
+                        <input class="form-control" type="password" name="" id="" tabindex="6"/>
+                    </div>
+                </div>
+                <div class="form-group clearfix">
+                    <label class="label" for="">确认新密码：</label>
+                    <div class="main">
+                        <input class="form-control" type="password" name="" id="" tabindex="6"/>
+                    </div>
+                </div>
+                <div class="form-group clearfix pt10">
+                    <label class="label" for="">&nbsp;</label>
+                    <div class="main">
+                        <input class="form-btn-submit enableSelect resetPasswordNextStep" type="button" name="" id="" value="确认修改" tabindex="6"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- end form -->
+
+        <!-- success panel -->
+        <div class="m-floatpanel-success text-center hide">
+            <i class="icon-floatpanel-success"></i>
+            <p class="text">重置密码成功</p>
+            <p><span class="btn toLogIn">登陆</span></p>
+        </div>
+    </div>
+    <div class="m-floatpanel-mask"></div>
+</div>
+<!-- end resetPasswordPanel -->
+
+<!-- edit-personal-info -->
+<div class="m-floatpanel editPersonalInfo">
+    <div class="m-floatpanel-bd">
+        <div class="m-floatpanel-title clearfix">
+            <i class="m-floatpanel-close"></i>
+            <h2 class="fl">编辑个人信息</h2>
+        </div>
+
+        <!-- form -->
+        <div class="m-form">
+            <form action="">
+                <div class="form-group clearfix avatarUpload">
+                    <label class="label" for="">头像：</label>
+                    <div class="main clearfix">
+                        <div class="fr">
+                            <div class="loginName">登录名：Wayne</div>
+                        </div>
+                        <div class="fl">
+                            <div class="avatar-preview fl"></div>
+                            <div class="avatar-upload fl">
+                                <p>在此上传头像</p>
+                                <div class="btnWrap">
+                                    <input type="file" name="" id="" class="avatarUploadFile"/>
+                                    <div class="btn btn-primary">上传图片</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group clearfix">
+                    <label class="label" for="">用户名：</label>
+                    <div class="main">
+                        <input class="form-control" type="text" name="" id="" tabindex="6" placeholder="Wayne"/>
+                    </div>
+                </div>
+                <div class="form-group clearfix">
+                    <label class="label" for="">所在地：</label>
+                    <div class="main">
+                        <input class="form-control" type="text" name="" id="" tabindex="6"/>
+                    </div>
+                </div>
+                <div class="form-group clearfix">
+                    <label class="label" for="">邮箱：</label>
+                    <div class="main">
+                        <input class="form-control" type="text" name="" id="" tabindex="6"/>
+                    </div>
+                </div>
+                <div class="form-group code clearfix">
+                    <label class="label" for="">验证码：</label>
+                    <div class="main">
+                        <input class="form-control" type="text" style="width: 188px;" name="" id="" placeholder="输入验证码" tabindex="6">
+                        <span class="form-code getValidationCode enableSelect">获取验证码</span>
+                        <!-- tips如果需要隐藏, 请给下面的.form-tips挂class:hide -->
+                        <p class="form-tips">
+                            <span class="c_normal fs12">验证码已发送至你的邮箱186********@163.com</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="form-group clearfix">
+                    <label class="label" for="">个人简介：</label>
+                    <div class="main">
+                        <textarea name="" id="" class="form-textarea"></textarea>
+                        <p class="form-textcount">0/350</p>
+                    </div>
+                </div>
+                <div class="form-group clearfix">
+                    <label class="label" for="">&nbsp;</label>
+                    <div class="main">
+                        <input class="form-btn-submit enableSelect resetPasswordNextStep" type="button" name="" id="" value="确认修改" tabindex="6"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- end form -->
+
+        <!-- success panel -->
+        <div class="m-floatpanel-success text-center hide">
+            <i class="icon-floatpanel-success"></i>
+            <p class="text">重置密码成功</p>
+            <p><span class="btn toLogIn">登陆</span></p>
+        </div>
+    </div>
+    <div class="m-floatpanel-mask"></div>
+</div>
+<!-- end edit-personal-info -->
+<!-- end float panel -->
+
+
 
 <!-- injector:js -->
 <!-- page script -->
