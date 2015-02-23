@@ -812,6 +812,10 @@ button {
 .zone .joined-project-ft {
   padding-top: 8px;
 }
+/* edit personal info */
+.editPersonalInfo {
+  /* form validation */
+}
 .editPersonalInfo .m-form {
   margin-left: 91px;
 }
@@ -879,6 +883,9 @@ button {
 }
 .editPersonalInfo .form-btn-submit {
   width: 235px;
+}
+.editPersonalInfo .form-validation {
+  margin-top: 8px;
 }
 /*======================================================================
       Responsive

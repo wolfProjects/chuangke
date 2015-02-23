@@ -1265,6 +1265,9 @@ button {
 /* ----------------------------------------
  * m-form
  * ---------------------------------------- */
+.m-form {
+  /* validation state */
+}
 .m-form .label {
   float: left;
   width: 135px;
@@ -1334,6 +1337,27 @@ button {
   background: #1aa9eb;
   border: none;
   cursor: pointer;
+}
+.m-form .form-validation {
+  display: none;
+  margin-left: 15px;
+  color: #eb4f38;
+}
+.m-form .form-validation .icon {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  margin-right: 10px;
+}
+.m-form .form-error input,
+.m-form .form-error textarea {
+  border-color: #eb4f38;
+}
+.m-form .form-error .form-validation {
+  display: inline-block;
+}
+.m-form .form-error .form-validation .icon {
+  background: url("../images/icon-error.png") no-repeat center center;
 }
 /*======================================================================
       Responsive
