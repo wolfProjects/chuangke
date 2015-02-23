@@ -97,6 +97,9 @@
 .c_blue {
   color: #1aa9eb;
 }
+.c_red {
+  color: #ed0000;
+}
 /* --------------------------------------------
  * view reset
  * -------------------------------------------- */
@@ -828,6 +831,43 @@ button {
   color: #ef8116;
 }
 /* ----------------------------------------
+ * m-refer-article
+ * reference: sidebar
+ * ---------------------------------------- */
+.m-refer-article-hd .section-title {
+  padding: 47px 0 24px 0;
+  font-size: 24px !important;
+}
+.m-refer-article-bd .item {
+  padding-right: 20px;
+  margin-bottom: 24px;
+}
+.m-refer-article-bd .item .title {
+  line-height: 24px;
+}
+.m-refer-article-bd .item .title a {
+  font-size: 18px !important;
+  color: #333;
+}
+.m-refer-article-bd .item .title a:hover {
+  color: #1aa9eb;
+}
+.m-refer-article-bd .item .date {
+  margin-top: 12px;
+  font-size: 14px !important;
+  color: #666;
+}
+.m-refer-article-bd .item .date a {
+  color: #666;
+  margin-left: 18px;
+}
+.m-refer-article-bd .item .more {
+  padding-top: 4px;
+}
+.m-refer-article-bd .item .more a {
+  text-decoration: underline;
+}
+/* ----------------------------------------
  * m-article-content
  * ---------------------------------------- */
 .m-article-content-hd .title {
@@ -1119,6 +1159,7 @@ button {
   text-decoration: underline;
 }
 .m-floatpanel-bd .form-tips {
+  width: 320px;
   margin: 5px 0 -10px 0;
 }
 .m-floatpanel-bd .icon-form-tips {

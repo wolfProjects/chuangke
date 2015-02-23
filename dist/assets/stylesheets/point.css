@@ -575,189 +575,245 @@ button {
   user-select: none;
 }
 /*======================================================================
-      Unit
+      Point
   ======================================================================*/
-/* Page: unit list */
-.unit-list {
-  background: #fff;
+/* Page: Point list */
+.point-list {
+  /* point list */
 }
-.unit-list .m-page-title ul {
-  margin-left: -37px;
+.point-list .body {
+  padding-top: 52px;
 }
-.unit-list .m-page-title li {
-  padding: 0 37px;
+.point-list .body-hd {
+  margin-bottom: 27px;
 }
-.unit-list .body-bd {
-  padding: 10px 0 80px 0;
+.point-list .body-bd {
+  padding-bottom: 90px;
 }
-/* Page: unit detail */
-.unit-detail {
-  margin-top: 60px;
-  /* summary */
-  /* detail */
-  /* example project */
-  /* refer project */
+.point-list .point-lists .listWrap {
+  width: 120%;
 }
-.unit-detail .summary {
-  margin-bottom: 37px;
-}
-.unit-detail .summary .thumbList {
-  width: 450px;
-  margin-right: 52px;
-}
-.unit-detail .summary .thumbList-hd {
-  height: 330px;
-  background: #eee;
+.point-list .point-lists .item {
+  float: left;
+  width: 590px;
+  height: 372px;
+  margin: 0 30px 30px 0;
   border: 1px solid #d9d9de;
 }
-.unit-detail .summary .thumbList-hd img {
-  display: none;
-  width: 100%;
-  height: 330px;
+.point-list .point-lists .item:hover {
+  -webkit-box-shadow: 0 10px 8px -6px #cccccc;
+  -moz-box-shadow: 0 10px 8px -6px #cccccc;
+  box-shadow: 0 10px 8px -6px #cccccc;
 }
-.unit-detail .summary .thumbList-bd .listWrap {
+.point-list .point-lists .item:hover .thumb img {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+.point-list .point-lists .thumb {
+  display: block;
+  height: 200px;
+  background: #ccc;
   overflow: hidden;
 }
-.unit-detail .summary .thumbList-bd ul {
-  width: 110%;
-}
-.unit-detail .summary .thumbList-bd li {
-  float: left;
-  width: 77px;
-  height: 77px;
-  line-height: 77px;
-  text-align: center;
-  margin: 0 13px 13px 0;
-  border: 1px solid #d9d9de;
-  background: #fff;
-  cursor: pointer;
-}
-.unit-detail .summary .thumbList-bd li img {
-  display: inline-block;
-  max-width: 77px;
-  max-height: 77px;
-  line-height: 77px;
-  vertical-align: top;
-}
-.unit-detail .summary .thumbList-bd li.active {
-  border-color: #1aa9eb;
-}
-.unit-detail .summary .information {
-  width: 640px;
-}
-.unit-detail .summary .information h1 {
-  line-height: 36px;
-  margin-bottom: 34px;
-  font-size: 30px !important;
-  font-weight: bolder;
-  color: #000;
-}
-.unit-detail .summary .information .desc {
-  height: 165px;
-  margin-bottom: 15px;
-  font-size: 18px !important;
-  line-height: 30px;
-  color: #666;
-}
-.unit-detail .summary .information .btn {
-  display: inline-block;
-  min-width: 183px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  font-size: 16px !important;
-  color: #fff;
-  background: url("../images/btn-gray.png") repeat-x 0 -40px;
-  border: 1px solid #edecec;
-}
-.unit-detail .detail {
-  padding: 0 0 60px 0;
-  border-top: 1px solid #dfdfdf;
-  background: #fff;
-}
-.unit-detail .detail aside {
-  width: 810px;
-  margin-right: 55px;
-}
-.unit-detail .detail main {
-  width: 350px;
-}
-.unit-detail .detail .section-title {
-  padding: 52px 0 37px 0;
-  font-size: 30px !important;
-  color: #333;
-}
-.unit-detail .unit-intro-bd .text-content * {
-  margin-bottom: 30px;
-  font-size: 14px !important;
-  line-height: 23px;
-  color: #666;
-}
-.unit-detail .unit-intro-bd .text-content img {
+.point-list .point-lists .thumb img {
   display: block;
-  max-width: 100%;
+  width: 100%;
+  height: 200px;
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
+  transform: scale(1.02);
+  -webkit-transition: all 0.45s;
+  -moz-transition: all 0.45s;
+  -ms-transition: all 0.45s;
+  -o-transition: all 0.45s;
+  transition: all 0.45s;
 }
-.unit-detail .unit-intro-bd .description > dt {
-  padding: 40px 0 19px 0;
-  margin-bottom: 20px;
-  font-size: 24px !important;
+.point-list .point-lists .bd {
+  padding: 0 30px;
+}
+.point-list .point-lists dt {
+  padding: 22px 0 15px 0;
+}
+.point-list .point-lists dt a {
+  font-size: 18px !important;
   color: #666;
   font-weight: bolder;
-  border-bottom: 1px solid #d9d9de;
 }
-.unit-detail .unit-intro-bd .description dd li {
-  line-height: 22px;
-  padding: 0 0 0 20px;
-  margin-bottom: 20px;
-  font-size: 14px !important;
-  color: #666;
-  background: url("../images/listStyle01.png") no-repeat left center;
-}
-.unit-detail .unit-intro-bd .description dd li a {
+.point-list .point-lists dt a:hover {
   color: #1aa9eb;
 }
-.unit-detail .unit-intro-bd .description dd li a:hover {
+.point-list .point-lists dd {
+  font-size: 14px !important;
+  line-height: 19px;
+  color: #666;
+}
+.point-list .point-lists .from {
+  margin-top: 18px;
+  color: #666;
+  font-size: 14px !important;
+}
+.point-list .point-lists .from a {
+  color: #666;
+  margin-right: 18px;
+}
+.point-list .point-lists .from a:hover {
   text-decoration: underline;
 }
-.unit-detail .example-project-bd {
-  padding: 7px 0 50px 0;
-  border-bottom: 1px solid #d9d9de;
+/* Page: Point detail */
+.point-detail {
+  padding: 47px 0 110px 0;
+  background: #fff;
+  /* product list */
+  /* content */
+  /* author info */
+  /* personal info */
 }
-.unit-detail .project-item .thumb {
-  width: 98px;
-  height: 98px;
-  margin-right: 24px;
+.point-detail main {
+  width: 805px;
+  margin-right: 60px;
+}
+.point-detail aside {
+  width: 350px;
+}
+.point-detail .article-detail-hd h1 {
+  font-size: 30px !important;
+  color: #000;
+  font-weight: bolder;
+}
+.point-detail .article-detail-hd .author {
+  margin: 25px 0 52px 0;
+  font-size: 14px !important;
+  color: #666;
+}
+.point-detail .article-detail-hd .author a {
+  color: #555;
+  margin-right: 25px;
+}
+.point-detail .article-detail-hd .author a:hover {
+  text-decoration: underline;
+}
+.point-detail .product-list {
+  overflow: hidden;
+}
+.point-detail .product-list .listWrap {
+  width: 120%;
+}
+.point-detail .product-list .item {
+  float: left;
+  width: 252px;
+  height: 290px;
+  margin: 0 20px 30px 0;
   border: 1px solid #d9d9de;
 }
-.unit-detail .project-item .info {
-  width: 214px;
+.point-detail .product-list .item:hover {
+  -webkit-box-shadow: 0 10px 8px -6px #cccccc;
+  -moz-box-shadow: 0 10px 8px -6px #cccccc;
+  box-shadow: 0 10px 8px -6px #cccccc;
 }
-.unit-detail .project-item dt {
-  margin-bottom: 16px;
+.point-detail .product-list .item:hover .bd a {
+  color: #1aa9eb;
 }
-.unit-detail .project-item dt a {
-  color: #333;
-  font-size: 18px !important;
+.point-detail .product-list .hd {
+  height: 217px;
 }
-.unit-detail .project-item dd {
+.point-detail .product-list .thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.point-detail .product-list .bd {
+  display: table;
+  width: 100%;
+  margin: 0 1px;
+  line-height: 18px;
+  border-top: 1px solid #d9d9de;
+}
+.point-detail .product-list .bd p {
+  display: table-cell;
+  height: 73px;
+  padding: 0 26px;
+  vertical-align: middle;
+}
+.point-detail .product-list .bd a {
   line-height: 18px;
   font-size: 14px !important;
   color: #666;
 }
-.unit-detail .refer-project .section-title {
-  padding: 47px 0 42px 0;
+.point-detail .article-detail-content {
+  line-height: 30px;
+  margin-bottom: 30px;
+  text-indent: 2em;
+  color: #555;
+}
+.point-detail .article-detail-content img {
+  display: block;
+  max-width: 100%;
+  margin-bottom: 43px;
+  border: 1px solid #ebebeb;
+}
+.point-detail .author-info-bd {
+  padding: 0 0 54px 0;
+  margin-top: 42px;
+  border-bottom: 1px solid #dfdfdf;
+}
+.point-detail .author-info-bd .summary .thumb {
+  width: 80px;
+  height: 80px;
+  margin-right: 30px;
+  border-radius: 80px;
+  overflow: hidden;
+}
+.point-detail .author-info-bd .summary dl {
+  width: 225px;
+}
+.point-detail .author-info-bd .summary dt {
   font-size: 24px !important;
+  color: #333;
+  margin: 5px 0 10px 0;
 }
-.unit-detail .refer-project-bd .project-item {
-  margin-bottom: 32px;
-}
-.unit-detail .refer-project-ft .more {
-  display: inline-block;
-  padding: 0 30px 0 0;
+.point-detail .author-info-bd .summary dd {
+  font-size: 14px !important;
   line-height: 18px;
+  color: #333;
+}
+.point-detail .author-info-bd .options {
+  margin-top: 40px;
+}
+.point-detail .author-info-bd .options li {
+  margin-bottom: 20px;
+}
+.point-detail .author-info-bd .options li p {
+  float: left;
+  width: 290px;
+  color: #666;
+}
+.point-detail .author-info-bd .options .icon {
+  float: left;
+  width: 22px;
+  height: 22px;
+  margin-right: 23px;
+}
+.point-detail .author-info-bd .options .icon-map {
+  background: url("../images/icon-map.png") no-repeat center center;
+}
+.point-detail .author-info-bd .options .icon-email {
+  background: url("../images/icon-mail.png") no-repeat center center;
+}
+.point-detail .author-info-bd .options .icon-timer {
+  background: url("../images/icon-timer.png") no-repeat center center;
+}
+.point-detail .author-info-bd .operate-switch a {
   color: #1aa9eb;
-  font-size: 18px !important;
-  background: url("../images/more-arrow.png") no-repeat right center;
+  font-size: 14px !important;
+  margin-right: 40px;
+}
+.point-detail-footer {
+  background: #f7f9fa;
 }
 /*======================================================================
       Responsive

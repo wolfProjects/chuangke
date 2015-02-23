@@ -6,16 +6,11 @@
     <title></title>
 
     <!-- injector:css -->
-    <link rel="stylesheet" href="assets/stylesheets/activity.css" />
-    <link rel="stylesheet" href="assets/stylesheets/base.css" />
-    <link rel="stylesheet" href="assets/stylesheets/components.css" />
-    <link rel="stylesheet" href="assets/stylesheets/index.css" />
-    <link rel="stylesheet" href="assets/stylesheets/main.css" />
-    <link rel="stylesheet" href="assets/stylesheets/point.css" />
-    <link rel="stylesheet" href="assets/stylesheets/project.css" />
-    <link rel="stylesheet" href="assets/stylesheets/sugguestion.css" />
-    <link rel="stylesheet" href="assets/stylesheets/unit.css" />
-    <link rel="stylesheet" href="assets/stylesheets/zone.css" />
+    <!-- basic css-->
+    <link rel="stylesheet/less" href="assets/stylesheets/base.less"/>
+    <link rel="stylesheet/less" href="assets/stylesheets/main.less"/>
+    <link rel="stylesheet/less" href="assets/stylesheets/components.less"/>
+    <link rel="stylesheet/less" href="assets/stylesheets/zone.less"/>
     <!-- endinjector -->
 </head>
 <body>
@@ -518,18 +513,16 @@
 
 
 <!-- injector:js -->
-<script src="assets/scripts/activity.js"></script>
-<script src="assets/scripts/index.js"></script>
+<!-- page script -->
+<script src="//localhost:35729/livereload.js"></script>
 <script src="assets/scripts/jquery-2.1.3.min.js"></script>
 <script src="assets/scripts/jquery.effectSlide.2.1.1.js"></script>
-<script src="assets/scripts/less.min.js"></script>
 <script src="assets/scripts/main.js"></script>
-<script src="assets/scripts/masonry-docs.min.js"></script>
-<script src="assets/scripts/point.js"></script>
-<script src="assets/scripts/project.js"></script>
-<script src="assets/scripts/redactor.js"></script>
-<script src="assets/scripts/unit.js"></script>
 <script src="assets/scripts/zone.js"></script>
+<!-- end page script -->
+
+<!-- less compiler -->
+<script src="assets/scripts/less.min.js"></script>
 <!-- endinjector -->
 </body>
 </html>

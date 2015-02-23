@@ -25,7 +25,11 @@ module.exports = function (grunt){
         copy: {
             build: {
                 files: [
-                    {src: [ 'assets/images/**', 'assets/scripts/**', '*.html'], dest: 'dist/'}
+                    {
+                        src: [ 'assets/images/*', 'assets/scripts/*', '*.html'],
+                        dest: 'dist/',
+                        expand: true
+                    }
                 ]
             }
         },
@@ -84,12 +88,16 @@ module.exports = function (grunt){
                 files: {
                     'dist/index.html': ['dist/assets/stylesheets/*.css'],
                     'dist/activity-list.html': ['dist/assets/stylesheets/*.css'],
-                    'dist/activity-project.html': ['dist/assets/stylesheets/*.css'],
-                    'dist/activity-schedule.html': ['dist/assets/stylesheets/*.css'],
+                    'dist/activity-detail.html': ['dist/assets/stylesheets/*.css'],
+                    'dist/point-detail.html': ['dist/assets/stylesheets/*.css'],
+                    'dist/point-list.html': ['dist/assets/stylesheets/*.css'],
                     'dist/project.html': ['dist/assets/stylesheets/*.css'],
                     'dist/project-list.html': ['dist/assets/stylesheets/*.css'],
                     'dist/project-unit.html': ['dist/assets/stylesheets/*.css'],
-                    'dist/suggestion-feedback.html': ['dist/assets/stylesheets/*.css']
+                    'dist/suggestion-feedback.html': ['dist/assets/stylesheets/*.css'],
+                    'dist/unit-detail.html': ['dist/assets/stylesheets/*.css'],
+                    'dist/unit-list.html': ['dist/assets/stylesheets/*.css'],
+                    'dist/zone.html': ['dist/assets/stylesheets/*.css']
                 }
             },
             scripts: {
@@ -105,11 +113,17 @@ module.exports = function (grunt){
                 files: {
                     'dist/index.html': ['dist/assets/scripts/*.js'],
                     'dist/activity-list.html': ['dist/assets/scripts/*.js'],
-                    'dist/activity-project.html': ['dist/assets/scripts/*.js'],
-                    'dist/activity-schedule.html': ['dist/assets/scripts/*.js'],
+                    'dist/activity-detail.html': ['dist/assets/scripts/*.js'],
+                    'dist/point-detail.html': ['dist/assets/scripts/*.js'],
+                    'dist/point-list.html': ['dist/assets/scripts/*.js'],
                     'dist/project.html': ['dist/assets/scripts/*.js'],
                     'dist/project-list.html': ['dist/assets/scripts/*.js'],
-                    'dist/project-unit.html': ['dist/assets/scripts/*.js']                }
+                    'dist/project-unit.html': ['dist/assets/scripts/*.js'],
+                    'dist/suggestion-feedback.html': ['dist/assets/scripts/*.js'],
+                    'dist/unit-detail.html': ['dist/assets/scripts/*.js'],
+                    'dist/unit-list.html': ['dist/assets/scripts/*.js'],
+                    'dist/zone.html': ['dist/assets/scripts/*.js']
+                }
             }
         },
 
