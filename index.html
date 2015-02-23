@@ -378,9 +378,16 @@
         <!-- form -->
         <div class="m-form">
             <form action="">
-                <div class="form-group clearfix">
+                <!-- 表单验证API(使用方法看下方dom示例)：
+                        - 为需要出现错误提示的表单行div.form-group加上class: .form-error
+                        - 在input或者textarea的dom后面追加div.form-validation的dom
+                -->
+                <div class="form-group clearfix form-error">
                     <div class="main">
                         <input class="form-control" type="text" name="" id="" placeholder="输入用户名/邮箱" tabindex="6"/>
+                        <div class="form-validation">
+                            <i class="icon"></i><span>用户名或密码不正确</span>
+                        </div>
                     </div>
                 </div>
                 <div class="form-group clearfix">
@@ -388,12 +395,15 @@
                         <input class="form-control" type="text" name="" id="" placeholder="输入密码" tabindex="6"/>
                     </div>
                 </div>
-                <div class="form-group code clearfix">
+                <div class="form-group code clearfix form-error">
                     <div class="main">
                         <input class="form-control" type="text" style="width: 188px;" name="" id="" placeholder="输入图片密码" tabindex="6"/>
                         <a class="form-validationImgCode" href="">
                             <img src="assets/images/vCode.jpg" alt="" width="126" height="48"/>
                         </a>
+                        <div class="form-validation">
+                            <i class="icon"></i><span>验证码不正确</span>
+                        </div>
                     </div>
                 </div>
                 <div class="form-group clearfix pt10">

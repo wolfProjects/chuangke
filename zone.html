@@ -384,10 +384,17 @@
         <!-- form -->
         <div class="m-form">
             <form action="">
-                <div class="form-group clearfix">
+                <!-- 表单验证API(使用方法看下方dom示例)：
+                        - 为需要出现错误提示的表单行div.form-group加上class: .form-error
+                        - 在input或者textarea的dom后面追加div.form-validation的dom
+                -->
+                <div class="form-group clearfix form-error">
                     <label class="label" for="">旧密码：</label>
                     <div class="main">
                         <input class="form-control" type="password" name="" id=" tabindex="6"/>
+                        <div class="form-validation">
+                            <i class="icon"></i><span>旧密码输入不正确</span>
+                        </div>
                     </div>
                 </div>
                 <div class="form-group clearfix">
@@ -458,10 +465,17 @@
                         <input class="form-control" type="text" name="" id="" tabindex="6" placeholder="Wayne"/>
                     </div>
                 </div>
-                <div class="form-group clearfix">
+                <!-- 表单验证API(使用方法看下方dom示例)：
+                        - 为需要出现错误提示的表单行div.form-group加上class: .form-error
+                        - 在input或者textarea的dom后面追加div.form-validation的dom
+                -->
+                <div class="form-group clearfix form-error">
                     <label class="label" for="">所在地：</label>
                     <div class="main">
                         <input class="form-control" type="text" name="" id="" tabindex="6"/>
+                        <div class="form-validation">
+                            <i class="icon"></i><span>您必须填写您的所在地</span>
+                        </div>
                     </div>
                 </div>
                 <div class="form-group clearfix">

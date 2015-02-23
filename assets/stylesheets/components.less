@@ -924,6 +924,35 @@
     border: none;
     cursor: pointer;
   }
+
+  .form-validation {
+    display: none;
+    margin-left: 15px;
+
+    .icon {
+      display: inline-block;
+      width: 26px;
+      height: 26px;
+      margin-right: 10px;
+    }
+
+    color: #eb4f38;
+  }
+
+  /* validation state */
+  .form-error {
+    input,textarea {
+      border-color: #eb4f38;
+    }
+
+    .form-validation {
+      display: inline-block;
+
+      .icon {
+        background: url("../images/icon-error.png") no-repeat center center;
+      }
+    }
+  }
 }
 
 /*======================================================================
