@@ -56,31 +56,32 @@
 <!-- end header -->
 
 <!-- project introduce -->
-<!-- 编辑状态:
-        - 为 .project-introduce 挂一个 class: editing
+<!-- 创建状态:
+        - 为 .project-introduce 挂一个 class: creating
 -->
-<div class="project-introduce editing">
+<div class="project-introduce creating">
     <!-- summary -->
     <section class="summary">
         <div class="layout section-inner clearfix">
-            <div class="main fl">
-                <strong class="project-status doing">进行中</strong>
-                <h1>在RAYEAGER PX2上搭建WEB服务器ANMPP</h1>
-                <p class="desc">创客运动激发了普通大众的创造潜能。在互联网的推动下，开源和在线创造将获得更快更大范围拓展，加之技术创造的门槛业已降低，普通大众进行技术创造更为简单。这将会激发深植在人类本性之中的创造欲望。随着”人人</p>
-            </div>
-            <div class="summary-picture fr">
-                <!-- upload picture-->
-                <div class="summary-picture-hd">
-                    <div class="upload-picture">
-                        <input class="file" type="file" name="" id=""/>
-                        <span class="btn btn-primary uploadPicture">上传项目封面</span>
+            <!--form -->
+            <form action="">
+                <div class="main fl">
+                        <textarea class="name" name="" id="" placeholder="输入项目名称"></textarea>
+                        <textarea class="description" name="" id="" placeholder="输入项目简介"></textarea>
+                </div>
+                <div class="summary-picture fr">
+                    <div class="uploadImg">
+                        <div class="uploadImg-before">
+                            <div class="btnWrap">
+                                <input type="file" name="" id=""/>
+                                <span class="btn btn-primary">上传项目封面</span>
+                            </div>
+                            <p class="tips">建议图片尺寸：580x340px<br/>文件不大于300k</p>
+                        </div>
                     </div>
                 </div>
-                <!-- end upload picture-->
-                <div class="summary-picture-bd">
-                    <img src="assets/images/summary-picture01.jpg" alt="" width="576" height="340"/>
-                </div>
-            </div>
+            </form>
+            <!-- form -->
         </div>
     </section>
     <!-- end  summary -->
@@ -89,7 +90,6 @@
     <section class="logic">
         <div class="layout section-inner">
             <div class="logic-hd">
-                <span class="btn btn-primary changeLogic">更改项目逻辑</span>
                 <ul class="clearfix">
                     <li class="active"><span>项目逻辑</span></li>
                     <li><span>项目套件</span></li>
@@ -101,7 +101,14 @@
                     <img class="show" src="assets/images/project-logic.png" alt="" width="1215" height="516"/>
                 </div>
                 <div class="item logic-item-unit">
-                    <img class="show" src="assets/images/project-logic.png" alt="" width="1215" height="516"/>
+                    <!-- unit select -->
+                    <select class="unitSelect" name="" id="">
+                        <option value="">主板</option>
+                        <option value="">CPU</option>
+                        <option value="">内存条</option>
+                    </select>
+                    <!-- end unit select -->
+                    <img class="show" src="assets/images/project-units.jpg" alt="" width="1215" height="511"/>
                 </div>
                 <!-- end tab body -->
             </div>
@@ -131,89 +138,16 @@
                                     <!-- end html editor -->
                                 </div>
                                 <div class="m-comment-ft mt20">
-                                    <button type="submit" class="btn btn-primary" href="">发布</button>
+                                    <!--<button type="submit" class="btn btn-primary" href="">发布</button>-->
                                 </div>
                             </form>
                         </div>
                         <!-- end comment -->
-
-                        <!-- item -->
-                        <div class="item clearfix">
-                            <div class="user fl">
-                                <a class="thumb" href=""><img src="assets/images/project-team-member01.jpg" alt="" width="80" height="80"/></a>
-                                <a class="name" href="">张学进</a>
-                            </div>
-                            <div class="detail fl">
-                                <h3><span class="date">2015-02-11</span><span>v0.18 测试版更新日志</span></h3>
-                                <div class="content">
-                                    <!-- TODO: 正文请用p标签包裹, 否则样式会掉 -->
-                                    <p>新增了用户添加释义和报错功能</p>
-                                    <p>优化了查词历史删除功能</p>
-                                    <p>优化了网络查询和下载毛快，增加了系统稳定性</p>
-                                </div>
-
-                                <div class="thumbList">
-                                    <div class="thumbList-bd">
-                                        <a class="thumbList-item" href=""><img src="assets/images/product-log-thumb01.png" alt="" width="125" height="80"/></a>
-                                        <a class="thumbList-item" href=""><img src="assets/images/product-log-thumb02.png" alt="" width="125" height="80"/></a>
-                                        <a class="thumbList-item" href=""><img src="assets/images/product-log-thumb03.png" alt="" width="125" height="80"/></a>
-                                    </div>
-                                </div>
-
-                                <div class="post-operate">
-                                    <div class="icon icon-reply"></div>
-                                    <div class="icon icon-trash"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end item -->
-
-                        <!-- item -->
-                        <div class="item clearfix">
-                            <div class="user fl">
-                                <a class="thumb" href=""><img src="assets/images/project-team-member02.jpg" alt="" width="80" height="80"/></a>
-                                <a class="name" href="">李新立</a>
-                            </div>
-                            <div class="detail fl">
-                                <h3><span class="date">2015-02-11</span><span>v0.18 测试版更新日志</span></h3>
-                                <div class="content">
-                                    <!-- TODO: 正文请用p标签包裹, 否则样式会掉 -->
-                                    <p>新增了用户添加释义和报错功能</p>
-                                    <p>优化了查词历史删除功能</p>
-                                    <p>优化了网络查询和下载毛快，增加了系统稳定性</p>
-                                </div>
-
-                                <div class="thumbList">
-                                    <div class="thumbList-bd">
-                                        <a class="thumbList-item" href=""><img src="assets/images/product-log-thumb01.png" alt="" width="125" height="80"/></a>
-                                        <a class="thumbList-item" href=""><img src="assets/images/product-log-thumb02.png" alt="" width="125" height="80"/></a>
-                                        <a class="thumbList-item" href=""><img src="assets/images/product-log-thumb03.png" alt="" width="125" height="80"/></a>
-                                    </div>
-                                </div>
-
-                                <div class="post-operate">
-                                    <div class="icon icon-reply"></div>
-                                    <div class="icon icon-trash"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end item -->
                     </div>
                     <div class="progress-ft clearfix">
-                        <a class="btn btn-primary saveEdit" href="" style="width: 180px;">保存修改</a>
-                        <!-- component: m-pagination -->
-                        <div class="m-pagination">
-                            <ul>
-                                <li class="another first"><a href="">上一页</a></li>
-                                <li class="active"><a href="">1</a></li>
-                                <li><a href="">2</a></li>
-                                <li><a href="">3</a></li>
-                                <li class="split"><i>&nbsp;</i></li>
-                                <li><a href="">12</a></li>
-                                <li class="another last"><a href="">下一页</a></li>
-                            </ul>
-                        </div>
-                        <!-- end m-pagination -->
+                        <p style="margin-top: 18px;">
+                            <a class="btn btn-primary" style="width: 180px;">创建项目</a>
+                        </p>
                     </div>
                 </div>
                 <!-- end project progress -->
@@ -229,107 +163,6 @@
                             <ul class="list clearfix">
                                 <!-- item -->
                                 <li class="item">
-                                    <i class="operate-remove"></i>
-                                    <a class="thumb" href=""><img src="assets/images/project-team-member01.jpg" alt="" width="80" height="80"/></a>
-                                    <p class="thumb-name">张学进</p>
-                                    <div class="info">
-                                        <div class="info-bd">
-                                            <div class="clearfix">
-                                                <a class="avatar fl" href=""><img src="assets/images/project-team-member01.jpg" alt="" width="80" height="80"/></a>
-                                                <dl class="fl">
-                                                    <dt><a href="">张学进</a></dt>
-                                                    <dd>项目发起人</dd>
-                                                </dl>
-                                            </div>
-                                            <p class="desc">个人说明，没有个人说明没有个人说明没有个人</p>
-                                        </div>
-                                        <div class="info-ft">
-                                            <a class="btn" href="">移除</a>
-                                        </div>
-
-                                        <i class="arrow"></i>
-                                        <i class="close"></i>
-                                    </div>
-                                </li>
-                                <!-- end item -->
-                                <!-- item -->
-                                <li class="item">
-                                    <i class="operate-remove"></i>
-                                    <a class="thumb" href=""><img src="assets/images/project-team-member01.jpg" alt="" width="80" height="80"/></a>
-                                    <p class="thumb-name">张学进</p>
-                                    <div class="info">
-                                        <div class="info-bd">
-                                            <div class="clearfix">
-                                                <a class="avatar fl" href=""><img src="assets/images/project-team-member01.jpg" alt="" width="80" height="80"/></a>
-                                                <dl class="fl">
-                                                    <dt><a href="">张学进</a></dt>
-                                                    <dd>项目发起人</dd>
-                                                </dl>
-                                            </div>
-                                            <p class="desc">个人说明，没有个人说明没有个人说明没有个人</p>
-                                        </div>
-                                        <div class="info-ft">
-                                            <a class="btn" href="">移除</a>
-                                        </div>
-
-                                        <i class="arrow"></i>
-                                        <i class="close"></i>
-                                    </div>
-                                </li>
-                                <!-- end item -->
-                                <!-- item -->
-                                <li class="item">
-                                    <i class="operate-remove"></i>
-                                    <a class="thumb" href=""><img src="assets/images/project-team-member01.jpg" alt="" width="80" height="80"/></a>
-                                    <p class="thumb-name">张学进</p>
-                                    <div class="info">
-                                        <div class="info-bd">
-                                            <div class="clearfix">
-                                                <a class="avatar fl" href=""><img src="assets/images/project-team-member01.jpg" alt="" width="80" height="80"/></a>
-                                                <dl class="fl">
-                                                    <dt><a href="">张学进</a></dt>
-                                                    <dd>项目发起人</dd>
-                                                </dl>
-                                            </div>
-                                            <p class="desc">个人说明，没有个人说明没有个人说明没有个人</p>
-                                        </div>
-                                        <div class="info-ft">
-                                            <a class="btn" href="">移除</a>
-                                        </div>
-
-                                        <i class="arrow"></i>
-                                        <i class="close"></i>
-                                    </div>
-                                </li>
-                                <!-- end item -->
-                                <!-- item -->
-                                <li class="item">
-                                    <i class="operate-remove"></i>
-                                    <a class="thumb" href=""><img src="assets/images/project-team-member01.jpg" alt="" width="80" height="80"/></a>
-                                    <p class="thumb-name">张学进</p>
-                                    <div class="info">
-                                        <div class="info-bd">
-                                            <div class="clearfix">
-                                                <a class="avatar fl" href=""><img src="assets/images/project-team-member01.jpg" alt="" width="80" height="80"/></a>
-                                                <dl class="fl">
-                                                    <dt><a href="">张学进</a></dt>
-                                                    <dd>项目发起人</dd>
-                                                </dl>
-                                            </div>
-                                            <p class="desc">个人说明，没有个人说明没有个人说明没有个人</p>
-                                        </div>
-                                        <div class="info-ft">
-                                            <a class="btn" href="">移除</a>
-                                        </div>
-
-                                        <i class="arrow"></i>
-                                        <i class="close"></i>
-                                    </div>
-                                </li>
-                                <!-- end item -->
-                                <!-- item -->
-                                <li class="item">
-                                    <i class="operate-remove"></i>
                                     <a class="thumb" href=""><img src="assets/images/project-team-member01.jpg" alt="" width="80" height="80"/></a>
                                     <p class="thumb-name">张学进</p>
                                     <div class="info">
