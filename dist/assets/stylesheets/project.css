@@ -590,45 +590,107 @@ button {
 }
 .project-introduce .section-title {
   padding: 52px 0 12px 0;
-  font-size: 26px;
+  font-size: 30px !important;
   color: #333;
 }
 .project-introduce .summary {
   background: #fbfcfc;
+  /* summary picture */
 }
 .project-introduce .summary .section-inner {
+  position: relative;
   min-height: 508px;
   background-position: right top;
   background-repeat: no-repeat;
 }
-.project-introduce .summary h1 {
-  color: #1aa9eb;
+.project-introduce .summary .main .project-status {
+  position: absolute;
+  top: 56px;
+  left: 0;
+  font-size: 26px;
+  color: #333;
+}
+.project-introduce .summary .main h1 {
+  width: 512px;
+  color: #000;
   font-size: 30px !important;
-  padding-top: 34px;
+  padding-top: 112px;
   margin-bottom: 30px;
-  font-weight: normal;
+  font-weight: bolder;
 }
-.project-introduce .summary li {
-  color: #1aa9eb;
-  font-size: 18px !important;
-  line-height: 30px;
-}
-.project-introduce .summary .desc {
+.project-introduce .summary .main .desc {
   width: 465px;
   line-height: 30px;
-  margin-top: 28px;
+  margin-top: 33px;
   font-size: 14px !important;
   color: #666;
+}
+.project-introduce .summary .main .project-status.doing {
+  color: #17b346;
+}
+.project-introduce .summary .summary-picture {
+  margin-top: 115px;
+}
+.project-introduce .summary .summary-picture-bd {
+  width: 576px;
+  height: 340px;
+  background: #fff;
+  border: 1px solid #dfdfdf;
+}
+.project-introduce .summary .summary-picture-bd img {
+  display: block;
+  width: 100%;
+  height: 340px;
+}
+.project-introduce .summary-picture-hd {
+  display: none;
 }
 .project-introduce .logic {
   padding: 0 0 45px 0;
   background: #fff;
   border-bottom: 1px solid #d9d9de;
 }
-.project-introduce .information aside {
-  width: 809px;
+.project-introduce .logic-hd {
+  overflow: hidden;
+  padding: 52px 0 12px 0;
+}
+.project-introduce .logic-hd .btn.changeLogic {
+  display: none;
+}
+.project-introduce .logic-hd ul {
+  margin-left: -39px;
+}
+.project-introduce .logic-hd li {
+  float: left;
+  padding-left: 39px;
+  margin-right: 39px;
+  font-size: 30px !important;
+  color: #333;
+  background: url("../images/logic-split.png") no-repeat left center;
+}
+.project-introduce .logic-hd li span {
+  cursor: pointer;
+}
+.project-introduce .logic-hd li.active {
+  color: #1aa9eb;
+  font-weight: bolder;
+}
+.project-introduce .logic-bd {
+  position: relative;
+}
+.project-introduce .logic-bd .item {
+  min-height: 516px;
+}
+.project-introduce .logic-bd .logic-item-unit {
+  display: none;
+}
+.project-introduce .logic-bd .unitSelect {
+  display: none;
 }
 .project-introduce .information main {
+  width: 809px;
+}
+.project-introduce .information aside {
   width: 378px;
   margin-left: 28px;
 }
@@ -642,7 +704,8 @@ button {
   margin: 0 0 28px 0;
 }
 .project-introduce .progress-bd .item {
-  padding: 24px 28px;
+  position: relative;
+  padding: 24px 28px 30px 28px;
   margin-bottom: 28px;
   background: #fff;
   border: 1px solid #dfdfdf;
@@ -720,6 +783,9 @@ button {
   width: 100%;
 }
 .project-introduce .progress-bd .post-operate {
+  position: absolute;
+  bottom: 25px;
+  right: 28px;
   text-align: right;
   margin: 16px 0 -10px 0;
   -webkit-touch-callout: none;
@@ -753,6 +819,7 @@ button {
   padding: 24px 0 0 0;
   background: #fff;
   border: 1px solid #d9d9de;
+  /* member operate */
 }
 .project-introduce .team-member-bd .listWrap {
   margin: 0 20px;
@@ -867,9 +934,22 @@ button {
   top: 20px;
   right: 20px;
 }
+.project-introduce .team-member-bd .operate-remove {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 24px;
+  height: 24px;
+  background: url("../images/icon-remove.png") no-repeat center center;
+  cursor: pointer;
+}
+.project-introduce .team-member-bd .operate-remove:active {
+  top: 1px;
+}
 .project-introduce .team-member-ft {
   padding: 20px;
-  margin-top: -14px;
+  margin-top: -6px;
   background: #fff;
   border: 1px solid #d9d9de;
   border-top: 1px solid #efefef;
@@ -899,6 +979,12 @@ button {
   border-left: 1px solid #efefef;
   text-align: center;
   background: #1aa9eb;
+}
+.project-introduce .progress-ft .saveEdit {
+  float: left;
+}
+.project-introduce .progress-ft .m-pagination {
+  float: right;
 }
 .project-introduce .project-units-hd .section-title {
   padding: 23px 0;
@@ -946,9 +1032,15 @@ button {
   font-size: 16px !important;
   color: #1aa9eb;
 }
+.project-introduce .join-activity-bd {
+  overflow: hidden;
+}
+.project-introduce .join-activity-bd .list {
+  margin-top: -30px;
+}
 .project-introduce .join-activity-bd .item {
   padding: 20px;
-  margin-bottom: 30px;
+  margin-top: 30px;
   background: #fff;
   border: 1px solid #dfdfdf;
 }
@@ -970,6 +1062,123 @@ button {
   padding: 15px 0 0 0;
   font-size: 14px !important;
   color: #666;
+}
+/* Editing status */
+.project-introduce.editing {
+  /* summary */
+  /* logic */
+}
+.project-introduce.editing .summary-picture-hd {
+  display: block;
+  position: absolute;
+  top: 38px;
+  right: 20px;
+}
+.project-introduce.editing .summary-picture-hd .upload-picture {
+  display: inline-block;
+  width: 168px;
+  height: 45px;
+  overflow: hidden;
+  position: relative;
+}
+.project-introduce.editing .summary-picture-hd .btn {
+  min-width: inherit;
+  padding: 0 36px;
+}
+.project-introduce.editing .summary-picture-hd .file {
+  font-size: 200px;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+}
+.project-introduce.editing .logic-bd .btn.changeLogic {
+  display: block;
+  position: absolute;
+  top: -62px;
+  right: 20px;
+  padding: 0 35px;
+}
+/* Creating status */
+.project-introduce.creating {
+  /* summary */
+  /* logic */
+}
+.project-introduce.creating .summary .section-inner {
+  min-height: 440px;
+}
+.project-introduce.creating .summary .name {
+  display: block;
+  width: 532px;
+  height: 120px;
+  padding: 15px 10px;
+  margin: 50px 0 22px 0;
+  border: 1px solid #dfdfdf;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #666;
+  font-size: 30px !important;
+  outline: none;
+  resize: none;
+}
+.project-introduce.creating .summary .description {
+  display: block;
+  width: 532px;
+  height: 200px;
+  line-height: 30px;
+  padding: 15px 10px;
+  border: 1px solid #dfdfdf;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #666;
+  font-size: 14px !important;
+  outline: none;
+  resize: none;
+}
+.project-introduce.creating .summary .summary-picture {
+  width: 660px;
+  height: 340px;
+  margin-top: 50px;
+  background: #fff;
+  border: 1px solid #dfdfdf;
+}
+.project-introduce.creating .summary .uploadImg-before {
+  padding: 118px;
+  text-align: center;
+}
+.project-introduce.creating .summary .uploadImg-before .btnWrap {
+  display: inline-block;
+  overflow: hidden;
+  width: 167px;
+  position: relative;
+}
+.project-introduce.creating .summary .uploadImg-before .btnWrap .btn {
+  min-width: 0;
+  padding: 0 35px;
+}
+.project-introduce.creating .summary .uploadImg-before .btnWrap input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 200px;
+  opacity: 0;
+  cursor: pointer;
+}
+.project-introduce.creating .summary .uploadImg-before .tips {
+  line-height: 22px;
+  margin-top: 25px;
+  font-size: 14px !important;
+  color: #999;
+}
+.project-introduce.creating .logic-bd .unitSelect {
+  display: block;
+  position: absolute;
+  top: -38px;
+  right: 20px;
+  padding: 0 20px;
 }
 /* Page: project list */
 .project-list .m-page-title li.active {

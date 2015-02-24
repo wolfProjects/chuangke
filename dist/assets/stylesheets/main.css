@@ -607,7 +607,9 @@ li {
   -webkit-font-smoothing: antialiased;
 }
 p,
-a {
+a,
+button,
+span {
   -webkit-font-smoothing: antialiased;
 }
 input {
