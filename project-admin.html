@@ -56,7 +56,10 @@
 <!-- end header -->
 
 <!-- project introduce -->
-<div class="project-introduce">
+<!-- 编辑状态:
+        - 为 .project-introduce 挂一个 class: editing
+-->
+<div class="project-introduce editing">
     <!-- summary -->
     <section class="summary">
         <div class="layout section-inner clearfix">
@@ -66,6 +69,14 @@
                 <p class="desc">创客运动激发了普通大众的创造潜能。在互联网的推动下，开源和在线创造将获得更快更大范围拓展，加之技术创造的门槛业已降低，普通大众进行技术创造更为简单。这将会激发深植在人类本性之中的创造欲望。随着”人人</p>
             </div>
             <div class="summary-picture fr">
+                <!-- upload picture-->
+                <div class="summary-picture-hd">
+                    <div class="upload-picture">
+                        <input class="file" type="file" name="" id=""/>
+                        <span class="btn btn-primary uploadPicture">上传项目封面</span>
+                    </div>
+                </div>
+                <!-- end upload picture-->
                 <div class="summary-picture-bd">
                     <img src="assets/images/summary-picture01.jpg" alt="" width="576" height="340"/>
                 </div>
@@ -78,6 +89,7 @@
     <section class="logic">
         <div class="layout section-inner">
             <div class="logic-hd oh">
+                <span class="btn btn-primary changeLogic">更改项目逻辑</span>
                 <ul class="clearfix">
                     <li class="active"><span>项目逻辑</span></li>
                     <li><span>项目套件</span></li>
@@ -186,7 +198,9 @@
                             </div>
                         </div>
                         <!-- end item -->
-
+                    </div>
+                    <div class="progress-ft clearfix">
+                        <a class="btn btn-primary saveEdit" href="" style="width: 180px;">保存修改</a>
                         <!-- component: m-pagination -->
                         <div class="m-pagination">
                             <ul>
@@ -215,6 +229,7 @@
                             <ul class="list clearfix">
                                 <!-- item -->
                                 <li class="item">
+                                    <i class="operate-remove"></i>
                                     <a class="thumb" href=""><img src="assets/images/project-team-member01.jpg" alt="" width="80" height="80"/></a>
                                     <p class="thumb-name">张学进</p>
                                     <div class="info">
@@ -239,6 +254,7 @@
                                 <!-- end item -->
                                 <!-- item -->
                                 <li class="item">
+                                    <i class="operate-remove"></i>
                                     <a class="thumb" href=""><img src="assets/images/project-team-member01.jpg" alt="" width="80" height="80"/></a>
                                     <p class="thumb-name">张学进</p>
                                     <div class="info">
@@ -263,6 +279,7 @@
                                 <!-- end item -->
                                 <!-- item -->
                                 <li class="item">
+                                    <i class="operate-remove"></i>
                                     <a class="thumb" href=""><img src="assets/images/project-team-member01.jpg" alt="" width="80" height="80"/></a>
                                     <p class="thumb-name">张学进</p>
                                     <div class="info">
@@ -287,6 +304,7 @@
                                 <!-- end item -->
                                 <!-- item -->
                                 <li class="item">
+                                    <i class="operate-remove"></i>
                                     <a class="thumb" href=""><img src="assets/images/project-team-member01.jpg" alt="" width="80" height="80"/></a>
                                     <p class="thumb-name">张学进</p>
                                     <div class="info">
@@ -311,6 +329,7 @@
                                 <!-- end item -->
                                 <!-- item -->
                                 <li class="item">
+                                    <i class="operate-remove"></i>
                                     <a class="thumb" href=""><img src="assets/images/project-team-member01.jpg" alt="" width="80" height="80"/></a>
                                     <p class="thumb-name">张学进</p>
                                     <div class="info">
@@ -346,38 +365,12 @@
                 </div>
                 <!-- end team member -->
 
-                <!-- join-activity -->
-                <div class="join-activity">
-                    <div class="join-activity-hd mb20">
-                        <h2 class="section-title">参与活动</h2>
-                    </div>
-                    <div class="join-activity-bd">
-                        <ul class="list">
-                            <li class="item">
-                                <dl>
-                                    <dt><a href="">网络摄像头远程启停装置硬件创造远程启停装置网络摄像头</a></dt>
-                                    <dd>希望孩子脱离对电子屏幕的沉迷在可触碰的实体玩具中
-                                        发挥眼耳手脑的自然本体，希望孩子脱离对电子屏幕的
-                                        沉迷在可触碰的实体玩具中，发挥眼耳手脑的自然本体。
-                                        希望孩子脱离对电子屏幕的沉迷。</dd>
-                                </dl>
-                            </li>
-                            <li class="item">
-                                <dl>
-                                    <dt><a href="">网络摄像头远程启停装置硬件创造远程启停装置网络摄像头</a></dt>
-                                    <dd>希望孩子脱离对电子屏幕的沉迷在可触碰的实体玩具中
-                                        发挥眼耳手脑的自然本体，希望孩子脱离对电子屏幕的
-                                        沉迷在可触碰的实体玩具中，发挥眼耳手脑的自然本体。
-                                        希望孩子脱离对电子屏幕的沉迷。</dd>
-                                </dl>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- join-activity -->
-
                 <!-- worktile-->
                 <div class="work-tile">
+                    <div class="work-tile-hd">
+                        <h2>worktile平台地址</h2>
+                        <input class="work-tile-address" type="text" name="" id="" placeholder="http://www.worktile.com*****"/>
+                    </div>
                     <div class="work-tile-bd">
                         <a href="" class="work-tile-link"><img src="assets/images/work-tile.png" alt="" width="376" height="60"/></a>
                     </div>

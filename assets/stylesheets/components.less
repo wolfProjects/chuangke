@@ -10,6 +10,7 @@
  * ---------------------------------------- */
 .btn {
   display: inline-block;
+  cursor: pointer;
 }
 
 .btn-disabled,
@@ -30,7 +31,7 @@
   text-align: center;
   .c_white;
   .fs16;
-  background: #34b3ed;
+  background: #1aa9eb;
 }
 
 .btn-gray {
@@ -602,7 +603,9 @@
  * work tile
  * ---------------------------------------- */
 .work-tile {
+  margin-top: 30px;
   border: 1px solid #d9d9de;
+  background: #fff;
 }
 
 .work-tile-link {
@@ -618,6 +621,40 @@
 .work-tile:active {
   position: relative;
   top: 1px;
+}
+
+/* work tile edit status */
+.editing {
+  .work-tile-bd {
+    display: none;
+  }
+
+  .work-tile-hd {
+    padding: 15px 20px;
+
+    h2 {
+      .fs14;
+      .c_heavy;
+      .fn;
+      margin-bottom: 10px;
+    }
+  }
+
+  .work-tile-address {
+    display: block;
+    width: 100%;
+    height: 38px;
+    line-height: 18px;
+    padding: 10px;
+    .fs14;
+    .c_light;
+    border: 1px solid #efefef;
+    .box-sizing(border-box);
+  }
+}
+
+.work-tile.editing:active {
+  top: 0;
 }
 
 /* ----------------------------------------

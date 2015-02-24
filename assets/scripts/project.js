@@ -30,11 +30,22 @@ var project = {
             unitModule.find('.select-icon').click(function (){
                 $(this).toggleClass('active');
             });
+        },
+
+        logicTab: function (){
+            $('.logic-hd span').click(function (){
+                $(this).parents('li').addClass('active')
+                    .siblings('li').removeClass('active');
+
+                $('.logic-bd .item').eq($(this).parents('li').index()).fadeIn()
+                    .siblings('.item').hide();
+            });
         }
     },
     initUi: function (){
         project.comment();
         project.component.editUnit();
+        project.component.logicTab();
     }
 };
 
