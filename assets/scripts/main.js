@@ -66,6 +66,81 @@ var app = {
             }
         },
 
+        imageFilePreview: function (){
+            function upLoadImg (){
+                function change(obj, img) {
+                    var pic = $(img);
+                    var file = $(obj);
+                    var isCreatedImg = false;
+                    var ext=file.val().substring(file.val().lastIndexOf(".")+1).toLowerCase();
+                    // gif在IE浏览器暂时无法显示
+                    if(ext!='png'&&ext!='jpg'&&ext!='jpeg'){
+                        alert("文件必须为图片！"); return;
+                    }
+                    // IE浏览器
+                    if (document.all) {
+                        file.select();
+                        file.blur();
+                        var reallocalpath = document.selection.createRange().text;
+                        var ie6 = /msie 6/i.test(navigator.userAgent);
+                        // IE6浏览器设置img的src为本地路径可以直接显示图片
+                        if (ie6) pic.src = reallocalpath;
+                        else {
+                            /*这种方式不能控制大小*/
+                            // 非IE6版本的IE由于安全问题直接设置img的src无法显示本地图片，但是可以通过滤镜来实现
+                            //pic[0].style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='image',src=\"" + reallocalpath + "\")";
+                            // 设置img的src为base64编码的透明图片 取消显示浏览器默认图片
+                            // pic[0].src = 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==';
+                            pic = pic.parent('div');
+                            pic.html('');
+                            pic[0].style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale)";
+                            pic[0].filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = reallocalpath;
+                            pic[0].style.width = "580px";
+                            pic[0].style.height = "340px";
+                        }
+
+                        isCreatedImg = true;
+                    }else{
+                        html5Reader(file, img);
+                        isCreatedImg = true;
+                    }
+
+                    return isCreatedImg;
+                }
+
+                function html5Reader(file, img){
+                    var file = file[0].files[0];
+                    var reader = new FileReader();
+                    reader.readAsDataURL(file);
+                    reader.onload = function(e){
+                        var pic = $(img);
+                        pic.attr("src", this.result);
+
+                    }
+                }
+
+                // call
+                $('.chooseFile').change(function (){
+                    var changeResult = change($(this), '#img');
+
+                    if (changeResult) {
+                        $('.uploadImg-before').hide();
+                        $('.uploadImg-after').show();
+                    } else {
+                        $('.uploadImg-before').show();
+                        $('.uploadImg-after').hide();
+                    }
+                });
+
+                // reset upload;
+                $('.cancelSelect').click(function (){
+                    $('.uploadImg-before').show();
+                    $('.uploadImg-after').hide();
+                });
+            }
+            upLoadImg();
+        },
+
         log: {
             logIn: function (){
                 $('.m-floatpanel').fadeOut();
@@ -111,6 +186,7 @@ var app = {
         app.components.formValidation.init();
         app.components.floatPanel.init();
         app.components.log.init();
+        app.components.imageFilePreview();
     }
 };
 
