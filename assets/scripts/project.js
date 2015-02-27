@@ -41,6 +41,7 @@ var project = {
                     .siblings('.item').hide();
             });
         },
+
         editLogicUnit: function (){
             // operate text
             var textArr = ['更改项目套件', '完成编辑'];
@@ -78,6 +79,28 @@ var project = {
             function resetSelect (){
                 $('.project-unit-list .item').removeClass('selected');
             }
+        },
+
+        teamMember: function (){
+            var timer = null;
+
+            // show panel
+            $('.team-member-bd .item').mouseover(function (){
+                clearTimeout(timer);
+                $(this).find('.info').show();
+                $(this).siblings('.item').find('.info').hide();
+            })
+                .mouseout(function (){
+                    var panel = $(this).find('.info');
+                    timer = setTimeout(function (){
+                        panel.hide();
+                    }, 250);
+            });
+
+            // close panel
+            $('.team-member-bd .item .info .close').click(function (){
+                $(this).parent('.info').hide();
+            });
         }
     },
     initUi: function (){
@@ -86,6 +109,7 @@ var project = {
         project.component.logicTab();
         project.component.logicTab();
         project.component.editLogicUnit();
+        project.component.teamMember();
     }
 };
 
