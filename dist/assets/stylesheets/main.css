@@ -964,6 +964,25 @@ footer {
 .m-floatpanel.noLabel .m-form {
   margin-left: 320px;
 }
+/* badge */
+.item,
+.m-project-list-item {
+  position: relative;
+}
+.item .badge,
+.m-project-list-item .badge {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  width: 96px;
+  height: 96px;
+  background-repeat: no-repeat;
+}
+/* badge hot */
+.item.hot .badge,
+.m-project-list-item.hot .badge {
+  background-image: url("../images/badge-hot.png");
+}
 /*======================================================================
       Responsive
   ======================================================================*/
