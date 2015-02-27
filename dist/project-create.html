@@ -66,21 +66,22 @@
             <!--form -->
             <form action="">
                 <div class="main fl">
-                        <textarea class="name" name="" id="" placeholder="输入项目名称"></textarea>
+                        <input type="text" class="name" name="" id="" placeholder="输入项目名称"/>
                         <textarea class="description" name="" id="" placeholder="输入项目简介"></textarea>
                 </div>
                 <div class="summary-picture fr">
                     <div class="uploadImg">
                         <div class="uploadImg-before">
-                            <div class="btnWrap">
-                                <input type="file" name="" id="" class="chooseFile"/>
-                                <span class="btn btn-primary">上传项目封面</span>
-                            </div>
                             <p class="tips">建议图片尺寸：580x340px<br/>文件不大于300k</p>
                         </div>
                         <div class="uploadImg-after">
-                            <span class="cancelSelect btn btn-primary">重新选择</span>
                             <img id="img" src="" alt="" width="580" height="340"/>
+                        </div>
+                    </div>
+                    <div class="text-center mt20">
+                        <div class="btnWrap">
+                            <input type="file" name="" id="" class="chooseFile"/>
+                            <span class="btn btn-primary">上传项目封面</span>
                         </div>
                     </div>
                 </div>

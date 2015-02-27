@@ -1183,7 +1183,8 @@ button {
 .project-introduce.creating .summary .name {
   display: block;
   width: 612px;
-  height: 120px;
+  height: 70px;
+  line-height: 38px;
   padding: 15px 10px;
   margin: 50px 0 22px 0;
   border: 1px solid #dfdfdf;
@@ -1198,7 +1199,7 @@ button {
 .project-introduce.creating .summary .description {
   display: block;
   width: 612px;
-  height: 200px;
+  height: 250px;
   line-height: 30px;
   padding: 15px 10px;
   border: 1px solid #dfdfdf;
@@ -1219,25 +1220,8 @@ button {
 }
 .project-introduce.creating .summary .uploadImg-before {
   padding: 118px;
+  height: 104px;
   text-align: center;
-}
-.project-introduce.creating .summary .uploadImg-before .btnWrap {
-  display: inline-block;
-  overflow: hidden;
-  width: 167px;
-  position: relative;
-}
-.project-introduce.creating .summary .uploadImg-before .btnWrap .btn {
-  min-width: 0;
-  padding: 0 35px;
-}
-.project-introduce.creating .summary .uploadImg-before .btnWrap input {
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 200px;
-  opacity: 0;
-  cursor: pointer;
 }
 .project-introduce.creating .summary .uploadImg-before .tips {
   line-height: 22px;
@@ -1245,18 +1229,32 @@ button {
   font-size: 14px !important;
   color: #999;
 }
+.project-introduce.creating .summary .btnWrap {
+  display: inline-block;
+  overflow: hidden;
+  width: 167px;
+  height: 340px;
+  position: relative;
+}
+.project-introduce.creating .summary .btnWrap .btn {
+  min-width: 0;
+  padding: 0 35px;
+}
+.project-introduce.creating .summary .btnWrap input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 200px;
+  opacity: 0;
+  cursor: pointer;
+}
 .project-introduce.creating .summary .uploadImg-after {
   display: none;
   text-align: center;
   position: relative;
 }
-.project-introduce.creating .summary .uploadImg-after .cancelSelect {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-.project-introduce.creating .summary .uploadImg-after .cancelSelect:active {
-  top: 21px;
+.project-introduce.creating .summary .uploadImg-after img {
+  vertical-align: top;
 }
 .project-introduce.creating .logic-bd .unitSelect {
   display: block;
@@ -1285,7 +1283,7 @@ button {
   margin-bottom: 45px;
 }
 .project-unit .body-bd {
-  padding: 0 0 144px 0;
+  padding: 0 0 64px 0;
 }
 /* create unit */
 .project-unit-create {
