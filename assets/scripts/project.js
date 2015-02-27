@@ -70,11 +70,7 @@ var project = {
             $('.project-unit-list .thumb').click(function (){
                 // check isEditing status
                 if (isEditing) {
-                    if ($(this).parent('.item').hasClass('selected')) {
-                        $(this).parent('.item').removeClass('selected');
-                    } else {
-                        $(this).parent('.item').addClass('selected');
-                    }
+                    $(this).parent('.item').toggleClass('selected');
                 }
             });
 

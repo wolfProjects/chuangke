@@ -728,7 +728,8 @@
     .name {
       display: block;
       width: 612px;
-      height: 120px;
+      height: 70px;
+      line-height: 38px;
       padding: 15px 10px;
       margin: 50px 0 22px 0;
       border: 1px solid #dfdfdf;
@@ -742,7 +743,7 @@
     .description {
       display: block;
       width: 612px;
-      height: 200px;
+      height: 250px;
       line-height: 30px;
       padding: 15px 10px;
       border: 1px solid #dfdfdf;
@@ -763,28 +764,8 @@
 
     .uploadImg-before {
       padding: 118px;
+      height: 104px;
       text-align: center;
-
-      .btnWrap {
-        display: inline-block;
-        overflow: hidden;
-        width: 167px;
-        position: relative;
-
-        .btn {
-          min-width: 0;
-          padding: 0 35px;
-        }
-
-        input {
-          position: absolute;
-          top: 0;
-          left: 0;
-          font-size: 200px;
-          opacity: 0;
-          cursor: pointer;
-        }
-      }
 
       .tips {
         line-height: 22px;
@@ -794,19 +775,35 @@
       }
     }
 
+    .btnWrap {
+      display: inline-block;
+      overflow: hidden;
+      width: 167px;
+      height: 340px;
+      position: relative;
+
+      .btn {
+        min-width: 0;
+        padding: 0 35px;
+      }
+
+      input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 200px;
+        opacity: 0;
+        cursor: pointer;
+      }
+    }
+
     .uploadImg-after {
       display: none;
       text-align: center;
       position: relative;
 
-      .cancelSelect {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-      }
-
-      .cancelSelect:active {
-        top: 21px;
+      img {
+        vertical-align: top;
       }
     }
   }
