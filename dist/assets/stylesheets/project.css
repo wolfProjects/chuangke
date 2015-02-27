@@ -1110,7 +1110,7 @@ button {
 }
 .project-introduce.creating .summary .name {
   display: block;
-  width: 532px;
+  width: 612px;
   height: 120px;
   padding: 15px 10px;
   margin: 50px 0 22px 0;
@@ -1125,7 +1125,7 @@ button {
 }
 .project-introduce.creating .summary .description {
   display: block;
-  width: 532px;
+  width: 612px;
   height: 200px;
   line-height: 30px;
   padding: 15px 10px;
@@ -1139,7 +1139,7 @@ button {
   resize: none;
 }
 .project-introduce.creating .summary .summary-picture {
-  width: 660px;
+  width: 580px;
   height: 340px;
   margin-top: 50px;
   background: #fff;
@@ -1172,6 +1172,19 @@ button {
   margin-top: 25px;
   font-size: 14px !important;
   color: #999;
+}
+.project-introduce.creating .summary .uploadImg-after {
+  display: none;
+  text-align: center;
+  position: relative;
+}
+.project-introduce.creating .summary .uploadImg-after .cancelSelect {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.project-introduce.creating .summary .uploadImg-after .cancelSelect:active {
+  top: 21px;
 }
 .project-introduce.creating .logic-bd .unitSelect {
   display: block;

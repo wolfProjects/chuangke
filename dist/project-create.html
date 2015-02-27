@@ -73,146 +73,26 @@
                     <div class="uploadImg">
                         <div class="uploadImg-before">
                             <div class="btnWrap">
-                                <input type="file" name="" id=""/>
+                                <input type="file" name="" id="" class="chooseFile"/>
                                 <span class="btn btn-primary">上传项目封面</span>
                             </div>
                             <p class="tips">建议图片尺寸：580x340px<br/>文件不大于300k</p>
                         </div>
+                        <div class="uploadImg-after">
+                            <span class="cancelSelect btn btn-primary">重新选择</span>
+                            <img id="img" src="" alt="" width="580" height="340"/>
+                        </div>
                     </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="mt20">
+                    <a class="btn btn-primary" style="width: 180px;">创建项目</a>
                 </div>
             </form>
             <!-- form -->
         </div>
     </section>
     <!-- end  summary -->
-
-    <!-- logic -->
-    <section class="logic">
-        <div class="layout section-inner">
-            <div class="logic-hd">
-                <ul class="clearfix">
-                    <li class="active"><span>项目逻辑</span></li>
-                    <li><span>项目套件</span></li>
-                </ul>
-            </div>
-            <div class="logic-bd">
-                <!-- tab body -->
-                <div class="item logic-item-logic">
-                    <img class="show" src="assets/images/project-logic.png" alt="" width="1215" height="516"/>
-                </div>
-                <div class="item logic-item-unit">
-                    <!-- unit select -->
-                    <select class="unitSelect" name="" id="">
-                        <option value="">主板</option>
-                        <option value="">CPU</option>
-                        <option value="">内存条</option>
-                    </select>
-                    <!-- end unit select -->
-                    <img class="show" src="assets/images/project-units.jpg" alt="" width="1215" height="511"/>
-                </div>
-                <!-- end tab body -->
-            </div>
-        </div>
-    </section>
-    <!-- end logic -->
-
-    <!-- information -->
-    <section class="information">
-        <div class="layout section-inner clearfix">
-            <main class="fl">
-                <!-- project progress -->
-                <div class="progress">
-                    <div class="progress-hd">
-                        <h2 class="section-title">项目进展</h2>
-                    </div>
-                    <div class="progress-bd">
-                        <!-- component: comment -->
-                        <div class="m-comment">
-                            <form action="">
-                                <div class="m-comment-hd">
-                                    <input class="m-comment-title" type="text" name="" id="" placeholder="输入更新标题"/>
-                                </div>
-                                <div class="m-comment-bd mt10">
-                                    <!-- html editor -->
-                                    <div class="redactor-main"></div>
-                                    <!-- end html editor -->
-                                </div>
-                                <div class="m-comment-ft mt20">
-                                    <!--<button type="submit" class="btn btn-primary" href="">发布</button>-->
-                                </div>
-                            </form>
-                        </div>
-                        <!-- end comment -->
-                    </div>
-                    <div class="progress-ft clearfix">
-                        <p style="margin-top: 18px;">
-                            <a class="btn btn-primary" style="width: 180px;">创建项目</a>
-                        </p>
-                    </div>
-                </div>
-                <!-- end project progress -->
-            </main>
-            <aside class="fl">
-                <!-- team member -->
-                <div class="team-member">
-                    <div class="team-member-hd">
-                        <h2 class="section-title">团队成员</h2>
-                    </div>
-                    <div class="team-member-bd">
-                        <div class="listWrap">
-                            <ul class="list clearfix">
-                                <!-- item -->
-                                <li class="item">
-                                    <a class="thumb" href=""><img src="assets/images/project-team-member01.jpg" alt="" width="80" height="80"/></a>
-                                    <p class="thumb-name">张学进</p>
-                                    <div class="info">
-                                        <div class="info-bd">
-                                            <div class="clearfix">
-                                                <a class="avatar fl" href=""><img src="assets/images/project-team-member01.jpg" alt="" width="80" height="80"/></a>
-                                                <dl class="fl">
-                                                    <dt><a href="">张学进</a></dt>
-                                                    <dd>项目发起人</dd>
-                                                </dl>
-                                            </div>
-                                            <p class="desc">个人说明，没有个人说明没有个人说明没有个人</p>
-                                        </div>
-                                        <div class="info-ft">
-                                            <a class="btn" href="">移除</a>
-                                        </div>
-
-                                        <i class="arrow"></i>
-                                        <i class="close"></i>
-                                    </div>
-                                </li>
-                                <!-- end item -->
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="team-member-ft">
-                        <p class="fs14 c_normal">邀请队员</p>
-                        <div class="team-member-invalid clearfix mt10">
-                            <input class="fl" type="email" name="" id="" placeholder="请输入邮箱地址"/>
-                            <a class="btn fl" href="">邀请</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- end team member -->
-
-                <!-- worktile-->
-                <div class="work-tile">
-                    <div class="work-tile-hd">
-                        <h2>worktile平台地址</h2>
-                        <input class="work-tile-address" type="text" name="" id="" placeholder="http://www.worktile.com*****"/>
-                    </div>
-                    <div class="work-tile-bd">
-                        <a href="" class="work-tile-link"><img src="assets/images/work-tile.png" alt="" width="376" height="60"/></a>
-                    </div>
-                </div>
-                <!-- worktile-->
-            </aside>
-        </div>
-    </section>
-    <!-- information -->
 
 </div>
 <!-- end project -->
