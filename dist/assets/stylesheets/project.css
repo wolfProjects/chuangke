@@ -907,11 +907,6 @@ button {
 }
 .project-introduce .team-member-bd .thumb:hover {
   opacity: .85;
-  -webkit-transform: rotate(15deg);
-  -moz-transform: rotate(15deg);
-  -ms-transform: rotate(15deg);
-  -o-transform: rotate(15deg);
-  transform: rotate(15deg);
 }
 .project-introduce .team-member-bd .thumb:hover .info {
   display: block;
@@ -938,6 +933,7 @@ button {
   position: absolute;
   right: 94px;
   top: 45px;
+  z-index: 100;
   width: 302px;
   background: #fff;
   border: 1px solid #efefef;
@@ -994,6 +990,7 @@ button {
   position: absolute;
   top: 20px;
   right: 20px;
+  cursor: pointer;
 }
 .project-introduce .team-member-bd .operate-remove {
   position: absolute;
