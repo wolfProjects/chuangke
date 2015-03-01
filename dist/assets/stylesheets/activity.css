@@ -145,6 +145,22 @@ section {
   margin: 0;
   padding: 0;
 }
+/*html5*/
+article,
+aside,
+dialog,
+footer,
+header,
+section,
+footer,
+nav,
+figure,
+menu {
+  display: block;
+}
+a img {
+  border: none;
+}
 /* float */
 .fl {
   float: left;
