@@ -260,7 +260,6 @@
 
       .thumb:hover {
         opacity: .85;
-        .transform(rotate(15deg));
       }
 
       .name {
@@ -287,6 +286,13 @@
           position: absolute;
           top: 14px;
           right: 0;
+        }
+
+        i {
+          font-style: normal;
+          .fs16;
+          .c_light;
+          margin-left: 10px;
         }
       }
 
@@ -427,6 +433,10 @@
 
     .info-bd {
       padding: 20px 20px 9px 20px;
+
+      .avatar img:hover {
+        opacity: .85;
+      }
 
       dl {
         padding-top: 22px;

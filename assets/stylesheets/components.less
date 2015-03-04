@@ -21,6 +21,12 @@
   cursor: no-drop!important;
 }
 
+.btn-xm {
+  line-height: 30px!important;
+  padding: 0 15px!important;
+  min-width: 0!important;
+}
+
 .btn-disabled:active {
   top: 0px!important;
 }
@@ -49,6 +55,45 @@
   background-position: 0 -40px;
 }
 
+/* ----------------------------------------
+ * Special Button
+ * ---------------------------------------- */
+.m-upload-file {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+
+  .btn {
+    min-width: inherit;
+    padding: 0 36px;
+    background: #ccc;
+    color: #666;
+  }
+
+  .file {
+    font-size: 200px;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+  }
+}
+
+.m-upload-file:hover {
+  .btn {
+    color: #fff;
+    background: #1aa9eb;
+  }
+}
+
+.m-upload-file-xm {
+  .btn {
+    line-height: 25px;
+    padding: 0 15px;
+    .fs14;
+  }
+}
 
 /* ----------------------------------------
  * Kv
