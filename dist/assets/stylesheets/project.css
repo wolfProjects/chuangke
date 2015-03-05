@@ -807,11 +807,6 @@ button {
 }
 .project-introduce .progress-bd .user .thumb:hover {
   opacity: .85;
-  -webkit-transform: rotate(15deg);
-  -moz-transform: rotate(15deg);
-  -ms-transform: rotate(15deg);
-  -o-transform: rotate(15deg);
-  transform: rotate(15deg);
 }
 .project-introduce .progress-bd .user .name {
   font-size: 16px !important;
@@ -835,6 +830,12 @@ button {
   position: absolute;
   top: 14px;
   right: 0;
+}
+.project-introduce .progress-bd .detail h3 i {
+  font-style: normal;
+  font-size: 16px !important;
+  color: #999;
+  margin-left: 10px;
 }
 .project-introduce .progress-bd .detail .content {
   line-height: 30px;
@@ -956,6 +957,9 @@ button {
 }
 .project-introduce .team-member-bd .info-bd {
   padding: 20px 20px 9px 20px;
+}
+.project-introduce .team-member-bd .info-bd .avatar img:hover {
+  opacity: .85;
 }
 .project-introduce .team-member-bd .info-bd dl {
   padding-top: 22px;

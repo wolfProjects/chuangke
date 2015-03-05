@@ -652,11 +652,6 @@ button {
 }
 .zone .progress-bd .user .thumb:hover {
   opacity: .85;
-  -webkit-transform: rotate(15deg);
-  -moz-transform: rotate(15deg);
-  -ms-transform: rotate(15deg);
-  -o-transform: rotate(15deg);
-  transform: rotate(15deg);
 }
 .zone .progress-bd .user .name {
   font-size: 16px !important;
@@ -680,6 +675,12 @@ button {
   position: absolute;
   top: 14px;
   right: 0;
+}
+.zone .progress-bd .detail h3 i {
+  font-style: normal;
+  font-size: 16px !important;
+  color: #999;
+  margin-left: 10px;
 }
 .zone .progress-bd .detail .content {
   line-height: 30px;
@@ -742,6 +743,9 @@ button {
   margin-right: 30px;
   border-radius: 80px;
   overflow: hidden;
+}
+.zone .personal-info-bd .summary .thumb:hover {
+  opacity: .85;
 }
 .zone .personal-info-bd .summary dl {
   width: 225px;
