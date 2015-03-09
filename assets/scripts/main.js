@@ -6,6 +6,51 @@ var app = {
             jQuery(".m-kv").slide({titCell: '.m-kv-head ul', mainCell:".m-kv-body ul", delayTime: 450, autoPlay:true, autoPage: '<li></li>'});
         },
 
+        headerFloatPanel: {
+            headerWechat: function (){
+                $('.header-search').hide();
+                $('.header-tips').slideDown(function (){
+                    $('.header-wechat').fadeIn();
+                });
+            },
+
+            headerSearch: function (){
+                $('.header-wechat').hide();
+                $('.header-tips').slideDown(function (){
+                    $('.header-search').fadeIn();
+                });
+            },
+
+            init: function (){
+                var that = this;
+
+                $('.header-float .item02').click(function (){
+                    that.headerSearch();
+                });
+
+                $('.header-float .item03').click(function (){
+                    that.headerWechat();
+                });
+
+                // set tips auto hide
+                var headerTipsTimer = null;
+
+                $('.header-tips, .header-float .item').mouseout(function (){
+                    headerTipsTimer = setTimeout(function (){
+                        // hide tips
+                        $('.header-tips').fadeOut(function (){
+                            $('.header-wechat, .header-search').hide();
+                        });
+                    }, 200);
+                });
+
+                $('.header-tips, .header-float .item').mouseover(function (){
+                    // cancel auto hide
+                    clearTimeout(headerTipsTimer);
+                });
+            }
+        },
+
         waterfall: {
             data:  [
                 {
@@ -183,23 +228,25 @@ var app = {
     },
     initApp: function (){
         app.components.kv();
+        app.components.headerFloatPanel.init();
         app.components.formValidation.init();
         app.components.floatPanel.init();
         app.components.log.init();
         app.components.imageFilePreview();
+
+
+        // log & registration
+        $('.header-logInBtn').click(function (){
+            app.components.log.logIn();
+        });
+
+        $('.header-registerBtn').click(function (){
+            app.components.log.registration();
+        });
     }
 };
 
 $(function (){
     // init app
     app.initApp();
-
-    // log & registration
-    $('.header-logInBtn').click(function (){
-        app.components.log.logIn();
-    });
-
-    $('.header-registerBtn').click(function (){
-        app.components.log.registration();
-    });
 });

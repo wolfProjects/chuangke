@@ -193,6 +193,7 @@ header {
 
   .item {
     display: block;
+    cursor: pointer;
   }
 
   .item01 {
@@ -214,6 +215,82 @@ header {
     height: 58px;
     background: #dd3d57 url('../images/header-float04.png') no-repeat center center;
   }
+}
+
+.header-tips {
+  height: 180px;
+  background: #fff;
+  position: absolute;
+  top: 90px;
+  left: 0;
+  right: 0;
+  z-index: 900;
+
+  .item {
+    width: 1215px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.header-wechat {
+  position: relative;
+
+  h3 {
+    padding: 82px 0 0 230px;
+    .fs24;
+    color: #a1a1a1;
+    font-weight: normal;
+  }
+
+  .qrcode {
+    position: absolute;
+    top: 30px;
+    right: 205px;
+    width: 150px;
+
+    p {
+      margin-top: 5px;
+      .fs14;
+      color: #a1a1a1;
+    }
+  }
+}
+
+.header-search {
+  position: relative;
+}
+
+.header-search-body {
+  overflow: hidden;
+  width: 800px;
+  margin: 65px 0 0 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.header-search-text {
+  width: 630px;
+  line-height: 60px;
+  padding: 0 15px;
+  color: #666;
+  .fs26;
+  border: none;
+}
+
+.header-search-btn {
+  width: 140px;
+  line-height: 60px;
+  text-align: center;
+  .fs24;
+  color: #fff;
+  background: #d8d8d8;
+  border: none;
+  cursor: pointer;
+}
+
+.header-search-btn:hover {
+  background: #ccc;
 }
 
 
