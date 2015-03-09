@@ -243,6 +243,13 @@ var app = {
         $('.header-registerBtn').click(function (){
             app.components.log.registration();
         });
+
+        // header logo animate
+        $('.header-logo').mouseover(function (){
+            $(this).addClass('animation');
+        }).mouseout(function (){
+            $(this).removeClass('animation');
+        });
     }
 };
 
