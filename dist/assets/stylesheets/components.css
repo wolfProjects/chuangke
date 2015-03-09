@@ -672,6 +672,7 @@ button {
  * ---------------------------------------- */
 .m-kv {
   overflow: hidden;
+  height: 508px;
   position: relative;
 }
 .m-kv-body .m-kv-item {

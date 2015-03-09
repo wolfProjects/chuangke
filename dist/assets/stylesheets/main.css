@@ -684,6 +684,82 @@ header {
   height: 90px;
   background: url("../images/header-logo.png") no-repeat;
 }
+.header-logo-container {
+  display: inline-block;
+  width: 328px;
+  height: 90px;
+  position: relative;
+}
+.header-logo-container .trangle01 {
+  position: absolute;
+  top: 18px;
+  left: 148px;
+  width: 10px;
+  height: 10px;
+  background: url("../images/header-trangle01.png") no-repeat;
+}
+.header-logo-container .trangle02 {
+  position: absolute;
+  top: 26px;
+  left: 140px;
+  width: 4px;
+  height: 9px;
+  background: url("../images/header-trangle02.png") no-repeat;
+}
+.header-logo-container .trangle03 {
+  position: absolute;
+  top: 35px;
+  left: 148px;
+  width: 7px;
+  height: 8px;
+  background: url("../images/header-trangle03.png") no-repeat;
+}
+.header-logo-container .trangle04 {
+  position: absolute;
+  top: 35px;
+  left: 166px;
+  width: 8px;
+  height: 6px;
+  background: url("../images/header-trangle04.png") no-repeat;
+}
+.header-logo-container .trangle05 {
+  position: absolute;
+  top: 43px;
+  left: 155px;
+  width: 8px;
+  height: 8px;
+  background: url("../images/header-trangle05.png") no-repeat;
+}
+.header-logo.animation .trangle01 {
+  animation: logoRotate 3s infinite;
+  -webkit-animation: logoRotate 3s infinite;
+  -moz-animation: logoRotate 3s infinite;
+  -o-animation: logoRotate 3s infinite;
+}
+.header-logo.animation .trangle02 {
+  animation: logoRotate 4s infinite;
+  -webkit-animation: logoRotate 4s infinite;
+  -moz-animation: logoRotate 4s infinite;
+  -o-animation: logoRotate 4s infinite;
+}
+.header-logo.animation .trangle03 {
+  animation: logoRotate 4.2s infinite;
+  -webkit-animation: logoRotate 4.2s infinite;
+  -moz-animation: logoRotate 4.2s infinite;
+  -o-animation: logoRotate 4.2s infinite;
+}
+.header-logo.animation .trangle04 {
+  animation: logoRotate 3.5s infinite;
+  -webkit-animation: logoRotate 3.5s infinite;
+  -moz-animation: logoRotate 3.5s infinite;
+  -o-animation: logoRotate 3.5s infinite;
+}
+.header-logo.animation .trangle05 {
+  animation: logoRotate 2.6s infinite;
+  -webkit-animation: logoRotate 2.6s infinite;
+  -moz-animation: logoRotate 2.6s infinite;
+  -o-animation: logoRotate 2.6s infinite;
+}
 .header-nav {
   padding: 35px 0 0 54px;
 }
@@ -774,6 +850,7 @@ header {
 }
 .header-float .item {
   display: block;
+  cursor: pointer;
 }
 .header-float .item01 {
   height: 65px;
@@ -790,6 +867,71 @@ header {
 .header-float .item04 {
   height: 58px;
   background: #dd3d57 url('../images/header-float04.png') no-repeat center center;
+}
+.header-tips {
+  height: 180px;
+  background: #fff;
+  position: absolute;
+  top: 90px;
+  left: 0;
+  right: 0;
+  z-index: 900;
+}
+.header-tips .item {
+  width: 1215px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header-wechat {
+  position: relative;
+}
+.header-wechat h3 {
+  padding: 82px 0 0 230px;
+  font-size: 24px !important;
+  color: #a1a1a1;
+  font-weight: normal;
+}
+.header-wechat .qrcode {
+  position: absolute;
+  top: 30px;
+  right: 205px;
+  width: 150px;
+}
+.header-wechat .qrcode p {
+  margin-top: 5px;
+  font-size: 14px !important;
+  color: #a1a1a1;
+}
+.header-search {
+  position: relative;
+}
+.header-search-body {
+  overflow: hidden;
+  width: 800px;
+  margin: 65px 0 0 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.header-search-text {
+  width: 630px;
+  line-height: 60px;
+  padding: 0 15px;
+  color: #666;
+  font-size: 26px !important;
+  border: none;
+}
+.header-search-btn {
+  width: 140px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 24px !important;
+  color: #fff;
+  background: #d8d8d8;
+  border: none;
+  cursor: pointer;
+}
+.header-search-btn:hover {
+  background: #ccc;
 }
 /* inner page main */
 /* body */
