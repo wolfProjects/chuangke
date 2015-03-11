@@ -686,6 +686,12 @@ button {
   background: url("../images/btn-gray.png") repeat-x 0 -40px;
   border: 1px solid #edecec;
 }
+.unit-detail .summary .information .btn:hover {
+  margin-top: 1px;
+}
+.unit-detail .summary .information .btn:active {
+  margin-top: 2px;
+}
 .unit-detail .detail {
   padding: 0 0 60px 0;
   border-top: 1px solid #dfdfdf;

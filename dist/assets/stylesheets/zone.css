@@ -880,6 +880,9 @@ button {
   margin-top: 14px;
   position: relative;
 }
+.editPersonalInfo .avatarUpload .avatar-upload .btnWrap:hover .btn {
+  background: #2abcff;
+}
 .editPersonalInfo .avatarUpload .avatar-upload .avatarUploadFile {
   font-size: 400px;
   position: absolute;
@@ -903,6 +906,9 @@ button {
 }
 .editPersonalInfo .form-btn-submit {
   width: 235px;
+}
+.editPersonalInfo .form-btn-submit:hover {
+  background: #2abcff;
 }
 .editPersonalInfo .form-validation {
   margin-top: 8px;

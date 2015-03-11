@@ -623,6 +623,9 @@ button {
   font-size: 16px !important;
   background: #1aa9eb;
 }
+.btn-primary:hover {
+  background: #2abcff;
+}
 .btn-gray {
   min-width: 180px;
   line-height: 40px;
@@ -1428,6 +1431,9 @@ button {
   background: #1aa9eb;
   border: none;
   cursor: pointer;
+}
+.m-form .form-btn-submit:hover {
+  background: #2abcff;
 }
 .m-form .form-validation {
   display: none;

@@ -995,6 +995,10 @@ button {
   background: #fff;
   border: 1px solid #efefef;
 }
+.project-introduce .team-member-bd .info-ft .btn:hover {
+  color: #fff;
+  background: #2abcff;
+}
 .project-introduce .team-member-bd .arrow {
   width: 7px;
   height: 15px;
@@ -1057,6 +1061,9 @@ button {
   border-left: 1px solid #efefef;
   text-align: center;
   background: #1aa9eb;
+}
+.project-introduce .team-member-ft .team-member-invalid .btn:hover {
+  background: #2abcff;
 }
 .project-introduce .progress-ft .saveEdit {
   float: left;
@@ -1158,6 +1165,9 @@ button {
   height: 45px;
   overflow: hidden;
   position: relative;
+}
+.project-introduce.editing .summary-picture-hd .upload-picture:hover .btn {
+  background: #2abcff;
 }
 .project-introduce.editing .summary-picture-hd .btn {
   min-width: inherit;
@@ -1264,6 +1274,9 @@ button {
   font-size: 200px;
   opacity: 0;
   cursor: pointer;
+}
+.project-introduce.creating .summary .btnWrap:hover .btn {
+  background: #2abcff;
 }
 .project-introduce.creating .summary .uploadImg-after {
   display: none;
