@@ -6,17 +6,11 @@
     <title></title>
 
     <!-- injector:css -->
-    <link rel="stylesheet" href="assets/stylesheets/activity.css" />
-    <link rel="stylesheet" href="assets/stylesheets/base.css" />
-    <link rel="stylesheet" href="assets/stylesheets/components.css" />
-    <link rel="stylesheet" href="assets/stylesheets/index.css" />
-    <link rel="stylesheet" href="assets/stylesheets/main.css" />
-    <link rel="stylesheet" href="assets/stylesheets/point.css" />
-    <link rel="stylesheet" href="assets/stylesheets/project.css" />
-    <link rel="stylesheet" href="assets/stylesheets/search.css" />
-    <link rel="stylesheet" href="assets/stylesheets/sugguestion.css" />
-    <link rel="stylesheet" href="assets/stylesheets/unit.css" />
-    <link rel="stylesheet" href="assets/stylesheets/zone.css" />
+    <!-- basic css-->
+    <link rel="stylesheet/less" href="assets/stylesheets/base.less"/>
+    <link rel="stylesheet/less" href="assets/stylesheets/main.less"/>
+    <link rel="stylesheet/less" href="assets/stylesheets/components.less"/>
+    <link rel="stylesheet/less" href="assets/stylesheets/search.less"/>
     <!-- endinjector -->
 
     <!--[if lt IE9]>
@@ -107,267 +101,102 @@
 </section>
 <!-- end kv -->
 
-<!-- hot project -->
-<section class="hot-project">
-    <div class="layout">
-        <div class="row-title clearfix">
-            <a class="more fr" href="">更多</a>
-            <h2 class="tt fl">热门项目</h2>
+<!-- search -->
+<section class="search-list layout">
+    <div class="search-list-hd">
+        <div class="search-list-hd-wrap layout">
+            <h1>搜索“眼镜”的结果</h1>
+            <div class="search-list-category">
+                <span>分类:</span>
+                <a href="" class="active">项目</a>
+                <a href="">活动</a>
+                <a href="">套件</a>
+                <a href="">观点</a>
+            </div>
         </div>
-
-        <div class="hot-project-bd">
-            <!-- component: product list -->
-            <div class="m-project-list mt45">
-                <ul class="clearfix">
-                    <li class="m-project-list-item fl finished hot">
-                        <i class="badge"></i>
-                        <a class="thumb" href=""><img class="block" src="assets/images/index-project01.jpg" width="288" height="288" alt=""/></a>
-                        <div class="desc">
-                            <dl>
-                                <dt><a class="fs18 fw c_normal" href="">力沃开关面板无线模块遥控触摸开关智能家居产品</a></dt>
-                                <dd class="fs12 c_normal">是进行刺激性户外运动的首选测量装备，他不仅了最新的实用特点如深度计、日出和日落时间。</dd>
-                            </dl>
-                            <div class="m-info-meta clearfix">
-                                <div class="main">
-                                    <p>创建人 : Wayne</p>
-                                    <p>关注人数: 2564856</p>
-                                    <p>创建时间: 2015.02.15</p>
-                                </div>
-                                <div class="status">已完成</div>
-                            </div>
+    </div>
+    <div class="search-list-bd">
+        <!-- search result list  -->
+        <dl class="listWrap">
+            <dt>项目</dt>
+            <dd>
+                <ul class="list">
+                    <li class="item clearfix">
+                        <a class="thumb fl" href=""><img src="assets/images/project-unit-thumb02.jpg" alt="" width="98" height="98"/></a>
+                        <div class="info fl">
+                            <h2><a href="">网络摄像头远程启停装置硬件创造、软件开发、设计等手段</a></h2>
+                            <p>网络摄像头远程启停装置硬件创造、软件开发、设计等手段</p>
                         </div>
+                        <a class="more" href="">查看详情</a>
                     </li>
-                    <li class="m-project-list-item fl doing">
-                        <a class="thumb" href=""><img class="block" src="assets/images/index-project02.jpg" width="288" height="288" alt=""/></a>
-                        <div class="desc">
-                            <dl>
-                                <dt><a class="fs18 fw c_normal" href="">爱维视IVS-2便携3D视频眼镜</a></dt>
-                                <dd class="fs12 c_normal">是进行刺激性户外运动的首选测量装备，他不仅具有先进的高度计、气压计和罗盘功能</dd>
-                            </dl>
-                            <div class="m-info-meta">
-                                <div class="main">
-                                    <p>创建人 : Wayne</p>
-                                    <p>关注人数: 2564856</p>
-                                    <p>创建时间: 2015.02.15</p>
-                                </div>
-                                <div class="status">进行中</div>
-                            </div>
+                    <li class="item clearfix">
+                        <a class="thumb fl" href=""><img src="assets/images/project-unit-thumb02.jpg" alt="" width="98" height="98"/></a>
+                        <div class="info fl">
+                            <h2><a href="">网络摄像头远程启停装置硬件创造、软件开发、设计等手段</a></h2>
+                            <p>网络摄像头远程启停装置硬件创造、软件开发、设计等手段</p>
                         </div>
+                        <a class="more" href="">查看详情</a>
                     </li>
-                    <li class="m-project-list-item fl doing">
-                        <a class="thumb" href=""><img class="block" src="assets/images/index-project03.jpg" width="288" height="288" alt=""/></a>
-                        <div class="desc">
-                            <dl>
-                                <dt><a class="fs18 fw c_normal" href="">智能眼镜 98寸头戴式眼镜影院</a></dt>
-                                <dd class="fs12 c_normal">是进行刺激性户外运动的首选测量装备，他不仅具有先进的高度计、气压计和罗盘功能</dd>
-                            </dl>
-                            <div class="m-info-meta">
-                                <div class="main">
-                                    <p>创建人 : Wayne</p>
-                                    <p>关注人数: 2564856</p>
-                                    <p>创建时间: 2015.02.15</p>
-                                </div>
-                                <div class="status">进行中</div>
-                            </div>
+                    <li class="item clearfix">
+                        <a class="thumb fl" href=""><img src="assets/images/project-unit-thumb02.jpg" alt="" width="98" height="98"/></a>
+                        <div class="info fl">
+                            <h2><a href="">网络摄像头远程启停装置硬件创造、软件开发、设计等手段</a></h2>
+                            <p>网络摄像头远程启停装置硬件创造、软件开发、设计等手段</p>
                         </div>
+                        <a class="more" href="">查看详情</a>
                     </li>
-                    <li class="m-project-list-item fl doing">
-                        <a class="thumb" href=""><img class="block" src="assets/images/index-project04.jpg" width="288" height="288" alt=""/></a>
-                        <div class="desc">
-                            <dl>
-                                <dt><a class="fs18 fw c_normal" href="">家用台式嵌入式小型家庭用</a></dt>
-                                <dd class="fs12 c_normal">是进行刺激性户外运动的首选测量装备，他不仅具有先进的高度计、气压计和罗盘功能</dd>
-                            </dl>
-                            <div class="m-info-meta">
-                                <div class="main">
-                                    <p>创建人 : Wayne</p>
-                                    <p>关注人数: 2564856</p>
-                                    <p>创建时间: 2015.02.15</p>
-                                </div>
-                                <div class="status">进行中</div>
-                            </div>
+                    <li class="item clearfix">
+                        <a class="thumb fl" href=""><img src="assets/images/project-unit-thumb02.jpg" alt="" width="98" height="98"/></a>
+                        <div class="info fl">
+                            <h2><a href="">网络摄像头远程启停装置硬件创造、软件开发、设计等手段</a></h2>
+                            <p>网络摄像头远程启停装置硬件创造、软件开发、设计等手段</p>
                         </div>
+                        <a class="more" href="">查看详情</a>
+                    </li>
+                    <li class="item clearfix">
+                        <a class="thumb fl" href=""><img src="assets/images/project-unit-thumb02.jpg" alt="" width="98" height="98"/></a>
+                        <div class="info fl">
+                            <h2><a href="">网络摄像头远程启停装置硬件创造、软件开发、设计等手段</a></h2>
+                            <p>网络摄像头远程启停装置硬件创造、软件开发、设计等手段</p>
+                        </div>
+                        <a class="more" href="">查看详情</a>
+                    </li>
+                    <li class="item clearfix">
+                        <a class="thumb fl" href=""><img src="assets/images/project-unit-thumb02.jpg" alt="" width="98" height="98"/></a>
+                        <div class="info fl">
+                            <h2><a href="">网络摄像头远程启停装置硬件创造、软件开发、设计等手段</a></h2>
+                            <p>网络摄像头远程启停装置硬件创造、软件开发、设计等手段</p>
+                        </div>
+                        <a class="more" href="">查看详情</a>
+                    </li>
+                    <li class="item clearfix">
+                        <a class="thumb fl" href=""><img src="assets/images/project-unit-thumb02.jpg" alt="" width="98" height="98"/></a>
+                        <div class="info fl">
+                            <h2><a href="">网络摄像头远程启停装置硬件创造、软件开发、设计等手段</a></h2>
+                            <p>网络摄像头远程启停装置硬件创造、软件开发、设计等手段</p>
+                        </div>
+                        <a class="more" href="">查看详情</a>
                     </li>
                 </ul>
-            </div>
-            <!-- end product list-->
-        </div>
+                <!-- component: m-pagination -->
+                <div class="m-pagination">
+                    <ul>
+                        <li class="another first"><a href="">上一页</a></li>
+                        <li class="active"><a href="">1</a></li>
+                        <li><a href="">2</a></li>
+                        <li><a href="">3</a></li>
+                        <li class="split"><i>&nbsp;</i></li>
+                        <li><a href="">12</a></li>
+                        <li class="another last"><a href="">下一页</a></li>
+                    </ul>
+                </div>
+                <!-- end m-pagination -->
+            </dd>
+        </dl>
+        <!-- end search result list  -->
     </div>
 </section>
-<!-- end  hot project -->
-
-<!-- chuangke activity -->
-<section class="chuangke-activity">
-    <div class="layout">
-        <div class="row-title clearfix">
-            <a class="more fr" href="">更多</a>
-            <h2 class="tt fl">创客活动</h2>
-        </div>
-
-        <div class="chuangke-activity-bd" id="rotate">
-            <ul>
-                <li class="item item01 active">
-                    <a class="block" href="">
-                        <img src="assets/images/chuangke-activity01.jpg" alt=""/>
-                        <div class="txt">
-                            <dl>
-                                <dt>3D模型运动仿真</dt>
-                                <dd>主要面向没有3D建模经验的爱好者,拥有或想拥有3D打印机的爱好者们。</dd>
-                            </dl>
-                        </div>
-                    </a>
-                </li>
-                <li class="item item02">
-                    <a class="block" href="">
-                        <img src="assets/images/chuangke-activity01.jpg" alt=""/>
-                        <div class="txt">
-                            <dl>
-                                <dt>3D模型运动仿真</dt>
-                                <dd>主要面向没有3D建模经验的爱好者,拥有或想拥有3D打印机的爱好者们。</dd>
-                            </dl>
-                        </div>
-                    </a>
-                </li>
-                <li class="item item03">
-                    <a class="block" href="">
-                        <img src="assets/images/chuangke-activity01.jpg" alt=""/>
-                        <div class="txt">
-                            <dl>
-                                <dt>3D模型运动仿真</dt>
-                                <dd>主要面向没有3D建模经验的爱好者,拥有或想拥有3D打印机的爱好者们。</dd>
-                            </dl>
-                        </div>
-                    </a>
-                </li>
-                <li class="item item04">
-                    <a class="block" href="">
-                        <img src="assets/images/chuangke-activity01.jpg" alt=""/>
-                        <div class="txt">
-                            <dl>
-                                <dt>3D模型运动仿真</dt>
-                                <dd>主要面向没有3D建模经验的爱好者,拥有或想拥有3D打印机的爱好者们。</dd>
-                            </dl>
-                        </div>
-                    </a>
-                </li>
-                <li class="item item05">
-                    <a class="block" href="">
-                        <img src="assets/images/chuangke-activity01.jpg" alt=""/>
-                        <div class="txt">
-                            <dl>
-                                <dt>3D模型运动仿真</dt>
-                                <dd>主要面向没有3D建模经验的爱好者,拥有或想拥有3D打印机的爱好者们。</dd>
-                            </dl>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</section>
-<!-- end  chuangke activity -->
-
-<section class="layout indexTwoColumn clearfix">
-    <!-- chuangke-point -->
-    <div class="chuangke-point fl">
-        <div class="row-title clearfix">
-            <a class="more fr" href="">更多</a>
-            <h2 class="tt fl">创客观点</h2>
-        </div>
-
-        <div class="chuangke-point-bd">
-            <ul>
-                <li>
-                    <small>2015年1月27日</small>
-                    <p><a href="">坚守创新，持续实践，乐于分享追求美好生活</a></p>
-                </li>
-                <li>
-                    <small>2015年1月27日</small>
-                    <p><a href="">坚守创新，持续实践，乐于分享追求美好生活</a></p>
-                </li>
-                <li>
-                    <small>2015年1月27日</small>
-                    <p><a href="">坚守创新，持续实践，乐于分享追求美好生活</a></p>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <!-- end chuangke-point -->
-
-    <!-- recommend components -->
-    <div class="recommend-components fr">
-        <div class="row-title clearfix">
-            <a class="more fr" href="">更多</a>
-            <h2 class="tt fl">推荐套件</h2>
-        </div>
-
-        <div class="recommend-components-bd">
-            <div class="itemWrap">
-                <ul class="clearfix">
-                    <li class="clearfix fl">
-                        <div class="fl item">
-                            <a class="thumb" href=""><img src="assets/images/recommend-components01.jpg" width="258" height="183" alt=""/></a>
-                            <dl>
-                                <dt><a href="">ARM Cortex-M0+</a></dt>
-                                <dd>低外围资源，具备低功耗，二次开发简易拥有32位ARM的计算性能</dd>
-                                <dd class="count">关注人数：389</dd>
-                            </dl>
-                        </div>
-                        <div class="fr item">
-                            <a class="thumb" href=""><img src="assets/images/recommend-components02.jpg" width="258" height="183" alt=""/></a>
-                            <dl>
-                                <dt><a href="">ARM Cortex-M0+</a></dt>
-                                <dd>低外围资源，具备低功耗，二次开发简易拥有32位ARM的计算性能</dd>
-                                <dd class="count">关注人数：389</dd>
-                            </dl>
-                        </div>
-                    </li>
-
-                    <li class="clearfix fl">
-                        <div class="fl item">
-                            <a class="thumb" href=""><img src="assets/images/recommend-components01.jpg" width="258" height="183" alt=""/></a>
-                            <dl>
-                                <dt><a href="">ARM Cortex-M0+</a></dt>
-                                <dd>低外围资源，具备低功耗，二次开发简易拥有32位ARM的计算性能</dd>
-                                <dd class="count">关注人数：389</dd>
-                            </dl>
-                        </div>
-                        <div class="fr item">
-                            <a class="thumb" href=""><img src="assets/images/recommend-components01.jpg" width="258" height="183" alt=""/></a>
-                            <dl>
-                                <dt><a href="">ARM Cortex-M0+</a></dt>
-                                <dd>低外围资源，具备低功耗，二次开发简易拥有32位ARM的计算性能</dd>
-                                <dd class="count">关注人数：389</dd>
-                            </dl>
-                        </div>
-                    </li>
-
-                    <li class="clearfix fl">
-                        <div class="fl item">
-                            <a class="thumb" href=""><img src="assets/images/recommend-components01.jpg" width="258" height="183" alt=""/></a>
-                            <dl>
-                                <dt><a href="">ARM Cortex-M0+</a></dt>
-                                <dd>低外围资源，具备低功耗，二次开发简易拥有32位ARM的计算性能</dd>
-                                <dd class="count">关注人数：389</dd>
-                            </dl>
-                        </div>
-                        <div class="fr item">
-                            <a class="thumb" href=""><img src="assets/images/recommend-components01.jpg" width="258" height="183" alt=""/></a>
-                            <dl>
-                                <dt><a href="">ARM Cortex-M0+</a></dt>
-                                <dd>低外围资源，具备低功耗，二次开发简易拥有32位ARM的计算性能</dd>
-                                <dd class="count">关注人数：389</dd>
-                            </dl>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <i class="prev">&lt;</i>
-            <i class="next">&gt;</i>
-        </div>
-    </div>
-    <!-- end recommend components -->
-</section>
+<!-- end search -->
 
 <!-- footer -->
 <footer>
@@ -600,20 +429,16 @@
 <!-- end float panel -->
 
 <!-- injector:js -->
-<script src="assets/scripts/activity.js"></script>
-<script src="assets/scripts/html5shiv.js"></script>
-<script src="assets/scripts/index.js"></script>
+<!-- page script -->
+<script src="//localhost:35729/livereload.js"></script>
 <script src="assets/scripts/jquery-2.1.3.min.js"></script>
 <script src="assets/scripts/jquery.effectSlide.2.1.1.js"></script>
-<script src="assets/scripts/less.min.js"></script>
 <script src="assets/scripts/main.js"></script>
-<script src="assets/scripts/masonry-docs.min.js"></script>
-<script src="assets/scripts/point.js"></script>
-<script src="assets/scripts/project.js"></script>
-<script src="assets/scripts/redactor.js"></script>
 <script src="assets/scripts/search.js"></script>
-<script src="assets/scripts/unit.js"></script>
-<script src="assets/scripts/zone.js"></script>
+<!-- end page script -->
+
+<!-- less compiler -->
+<script src="assets/scripts/less.min.js"></script>
 <!-- endinjector -->
 </body>
 </html>
