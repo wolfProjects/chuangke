@@ -123,12 +123,139 @@
       min-height: 516px;
     }
 
-    .logic-item-logic {
+    .logic-item-unit {
       display: none;
     }
 
     .unitSelect {
       display: none;
+    }
+
+    .cancelChange {
+      color: #666;
+      background: #f1f1f1;
+    }
+
+    .cancelChange:hover{
+      color: #fff;
+      background: #999;
+    }
+  }
+
+  /* ----------------------------------------
+   * m-logic-editor
+   * ---------------------------------------- */
+  .logic-editor {
+  }
+
+  .logic-editor-bd {
+    #cytoscape-wrap {
+      height: 405px;
+    }
+
+    #cytoscape-wrap:hover {
+      outline: 1px dashed #1aa9eb;
+    }
+  }
+
+  .logic-editor-ft {
+    margin-top: 8px;
+
+    .type-intro {
+      display: inline-block;
+      .transition(margin-left, .8s);
+
+      .type-item {
+        float: left;
+        width: 96px;
+        padding: 56px 0 0 0;
+        line-height: 42px;
+        .fs18;
+        .c_light;
+      }
+
+      .item01 {
+        background: url("../images/cytoscape-type-action.png") no-repeat center 0;
+      }
+
+      .item02 {
+        background: url("../images/cytoscape-type-app.png") no-repeat center 0;
+      }
+
+      .item03 {
+        background: url("../images/cytoscape-type-service.png") no-repeat center 0;
+      }
+    }
+
+    .type-intro.active {
+      margin-left: 200px;
+    }
+
+    #cytoscape-editor {
+      position: absolute;
+      left: 0;
+      bottom: -80px;
+      opacity: 0;
+      padding: 10px;
+      background: #f9f9f9;
+      .transition(all, 0.8s);
+      transition-delay: 0.3s!important;
+      -webkit-transition-delay: 0.3s!important;
+      -moz-transition-delay: 0.3s!important;
+      -o-transition-delay: 0.3s!important;
+    }
+
+    #cytoscape-editor.active {
+      bottom: -48px;
+      opacity: 1;
+      box-shadow: 0 0 8px #ccc;
+    }
+
+    .cytoscape-btn {
+      background: #fff;
+      padding: 5px 15px;
+      margin-right: 5px;
+      color: #666;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      outline: none;
+    }
+
+    .cytoscape-btn:hover {
+      -webkit-box-shadow: inset 0 0 4px #ccc;
+      -moz-box-shadow: inset 0 0 4px #ccc;
+      box-shadow: inset 0 0 4px #ccc;
+    }
+
+    .operator-wrap {
+      margin-top: 20px;
+      .c_normal;
+
+      h5 {
+        font-size: 18px;
+      }
+
+      #add_type {
+        .fs14;
+        margin-top: 10px;
+      }
+
+      #add_description {
+        height: 32px;
+        line-height: 32px;
+        padding: 0 15px;
+      }
+
+      .btn {
+        min-width: 1px;
+        height: 30px;
+        line-height: 30px;
+        padding: 0 15px!important;
+      }
+
+      #add_btn {
+        margin-top: 5px;
+      }
     }
   }
 
