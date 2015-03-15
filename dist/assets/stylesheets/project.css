@@ -598,6 +598,9 @@ button {
   margin-bottom: 65px;
   /* section summary */
   /* section logic */
+  /* ----------------------------------------
+   * m-logic-editor
+   * ---------------------------------------- */
   /* section information */
   /* progress */
   /* team member */
@@ -697,11 +700,117 @@ button {
 .project-introduce .logic-bd .item {
   min-height: 516px;
 }
-.project-introduce .logic-bd .logic-item-logic {
+.project-introduce .logic-bd .logic-item-unit {
   display: none;
 }
 .project-introduce .logic-bd .unitSelect {
   display: none;
+}
+.project-introduce .logic-bd .cancelChange {
+  color: #666;
+  background: #f1f1f1;
+}
+.project-introduce .logic-bd .cancelChange:hover {
+  color: #fff;
+  background: #999;
+}
+.project-introduce .logic-editor-bd #cytoscape-wrap {
+  height: 405px;
+}
+.project-introduce .logic-editor-bd #cytoscape-wrap:hover {
+  outline: 1px dashed #1aa9eb;
+}
+.project-introduce .logic-editor-ft {
+  margin-top: 8px;
+}
+.project-introduce .logic-editor-ft .type-intro {
+  display: inline-block;
+  -webkit-transition: margin-left 0.8s;
+  -moz-transition: margin-left 0.8s;
+  -ms-transition: margin-left 0.8s;
+  -o-transition: margin-left 0.8s;
+  transition: margin-left 0.8s;
+}
+.project-introduce .logic-editor-ft .type-intro .type-item {
+  float: left;
+  width: 96px;
+  padding: 56px 0 0 0;
+  line-height: 42px;
+  font-size: 18px !important;
+  color: #999;
+}
+.project-introduce .logic-editor-ft .type-intro .item01 {
+  background: url("../images/cytoscape-type-action.png") no-repeat center 0;
+}
+.project-introduce .logic-editor-ft .type-intro .item02 {
+  background: url("../images/cytoscape-type-app.png") no-repeat center 0;
+}
+.project-introduce .logic-editor-ft .type-intro .item03 {
+  background: url("../images/cytoscape-type-service.png") no-repeat center 0;
+}
+.project-introduce .logic-editor-ft .type-intro.active {
+  margin-left: 200px;
+}
+.project-introduce .logic-editor-ft #cytoscape-editor {
+  position: absolute;
+  left: 0;
+  bottom: -80px;
+  opacity: 0;
+  padding: 10px;
+  background: #f9f9f9;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+  transition-delay: 0.3s!important;
+  -webkit-transition-delay: 0.3s!important;
+  -moz-transition-delay: 0.3s!important;
+  -o-transition-delay: 0.3s!important;
+}
+.project-introduce .logic-editor-ft #cytoscape-editor.active {
+  bottom: -48px;
+  opacity: 1;
+  box-shadow: 0 0 8px #ccc;
+}
+.project-introduce .logic-editor-ft .cytoscape-btn {
+  background: #fff;
+  padding: 5px 15px;
+  margin-right: 5px;
+  color: #666;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+.project-introduce .logic-editor-ft .cytoscape-btn:hover {
+  -webkit-box-shadow: inset 0 0 4px #ccc;
+  -moz-box-shadow: inset 0 0 4px #ccc;
+  box-shadow: inset 0 0 4px #ccc;
+}
+.project-introduce .logic-editor-ft .operator-wrap {
+  margin-top: 20px;
+  color: #666;
+}
+.project-introduce .logic-editor-ft .operator-wrap h5 {
+  font-size: 18px;
+}
+.project-introduce .logic-editor-ft .operator-wrap #add_type {
+  font-size: 14px !important;
+  margin-top: 10px;
+}
+.project-introduce .logic-editor-ft .operator-wrap #add_description {
+  height: 32px;
+  line-height: 32px;
+  padding: 0 15px;
+}
+.project-introduce .logic-editor-ft .operator-wrap .btn {
+  min-width: 1px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 15px!important;
+}
+.project-introduce .logic-editor-ft .operator-wrap #add_btn {
+  margin-top: 5px;
 }
 .project-introduce .logic .project-unit-list {
   margin-top: 36px;

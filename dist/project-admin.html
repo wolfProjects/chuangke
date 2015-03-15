@@ -94,17 +94,60 @@
         <div class="layout section-inner">
             <div class="logic-hd">
                 <ul class="clearfix">
-                    <li><span>项目逻辑</span></li>
-                    <li class="active"><span>项目套件</span></li>
+                    <li class="active"><span>项目逻辑</span></li>
+                    <li><span>项目套件</span></li>
                 </ul>
             </div>
             <div class="logic-bd">
                 <!-- tab body -->
                 <div class="item logic-item-logic">
                     <div class="operateWrap">
+                        <span class="btn btn-primary cancelChange hide mr5">取消更改</span>
                         <span class="btn btn-primary changeLogic">更改项目逻辑</span>
                     </div>
-                    <img class="show" src="assets/images/project-logic.png" alt="" width="1215" height="516"/>
+                    <!-- component: m-logic-editor -->
+                    <div class="logic-editor">
+                        <div class="logic-editor-bd">
+                            <!-- cytoscape show -->
+                            <div id="cytoscape-wrap"></div>
+                            <!-- end cytoscape show -->
+                        </div>
+                        <div class="logic-editor-ft">
+                            <div class="text-center">
+                                <ul class="type-intro">
+                                    <li class="type-item item01">动作</li>
+                                    <li class="type-item item02">应用</li>
+                                    <li class="type-item item03">服务&云</li>
+                                </ul>
+                            </div>
+
+                            <!-- node editor -->
+                            <div id="cytoscape-editor">
+                                <div class="operator-btn">
+                                    <button class="cytoscape-btn" id="modifyNode">修改节点的文本</button>
+                                    <button class="cytoscape-btn" id="removeNode">移除选中节点</button>
+                                    <div class="operator-wrap">
+                                        <h5>创建节点</h5>
+                                        <label for="">节点类型:</label>
+                                        <select id="add_type">
+                                            <option value="no">请选择节点类型</option>
+                                            <option value="app" selected>app</option>
+                                            <option value="action">action</option>
+                                            <option value="service">service</option>
+                                        </select>
+                                        &nbsp;&nbsp;
+                                        <label for="">节点的描述文本:</label>
+                                        &nbsp;
+                                        <input type="text" placeholder="请填写描述文本.." id="add_description"/>
+                                        <p>
+                                            <button class="btn btn-primary" id="add_btn">添加节点</button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end node editor -->
+                        </div>
+                    </div>
                 </div>
                 <div class="item logic-item-unit">
                     <div class="operateWrap">
@@ -564,6 +607,7 @@
 <script src="//localhost:35729/livereload.js"></script>
 <script src="assets/scripts/jquery-2.1.3.min.js"></script>
 <script src="assets/scripts/jquery.effectSlide.2.1.1.js"></script>
+<script src="assets/scripts/cytoscape.min.js"></script>
 <script src="assets/scripts/redactor.js"></script>
 <script src="assets/scripts/main.js"></script>
 <script src="assets/scripts/project.js"></script>
