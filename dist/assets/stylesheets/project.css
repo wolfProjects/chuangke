@@ -629,6 +629,15 @@ button {
   font-size: 26px;
   color: #333;
 }
+.project-introduce .summary .main .project-status * {
+  vertical-align: middle;
+}
+.project-introduce .summary .main .project-status .favorite {
+  min-width: 1px;
+  line-height: 30px;
+  padding: 0 30px;
+  margin-left: 5px;
+}
 .project-introduce .summary .main h1 {
   width: 512px;
   color: #000;
