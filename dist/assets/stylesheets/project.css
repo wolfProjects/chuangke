@@ -614,7 +614,14 @@ button {
 }
 .project-introduce .summary {
   background: #fbfcfc;
+  position: relative;
   /* summary picture */
+}
+.project-introduce .summary .toEdit {
+  position: absolute;
+  right: 20px;
+  top: 38px;
+  padding: 0 20px;
 }
 .project-introduce .summary .section-inner {
   position: relative;

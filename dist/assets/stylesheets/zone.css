@@ -639,7 +639,7 @@ button {
   text-align: center;
 }
 .zone .progress-bd .user .thumb {
-  display: block;
+  display: inline-block;
   width: 64px;
   height: 64px;
   margin-bottom: 9px;
