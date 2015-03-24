@@ -905,6 +905,10 @@ button {
 .project-introduce .progress-bd .m-comment {
   margin: 0 0 28px 0;
 }
+.project-introduce .progress-bd .m-comment .edui-default {
+  position: relative;
+  z-index: 10;
+}
 .project-introduce .progress-bd .item {
   position: relative;
   padding: 24px 28px 30px 28px;
@@ -1326,11 +1330,13 @@ button {
 }
 /* Creating status */
 .project-introduce.creating {
+  margin-bottom: 0;
   /* summary */
   /* logic */
 }
 .project-introduce.creating .summary .section-inner {
   min-height: 440px;
+  padding: 0 0 65px 0;
 }
 .project-introduce.creating .summary .name {
   display: block;
