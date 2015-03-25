@@ -363,7 +363,9 @@ var project = {
                     // invoke when cytoscape finish init
                     callback: function (){
                         cy.autolock( true )
-                            .fit( cy.$('*') );
+                            .fit( cy.$('*'))
+                            .reset()
+                            .center();
 
                         // switch editor state
                         $('.changeLogic').click(function (){
