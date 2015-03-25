@@ -1018,7 +1018,7 @@ footer {
 .footer-logo {
   width: 187px;
   height: 118px;
-  margin-right: 120px;
+  margin-right: 20px;
 }
 .footer-logo .footer-logo-container {
   display: inline-block;
@@ -1087,10 +1087,28 @@ footer {
   -moz-animation: logoRotate 5s infinite;
   -o-animation: logoRotate 5s infinite;
 }
+.footer-intel {
+  padding: 0 0 0 10px;
+  margin: -6px 0 0 0;
+  color: #999;
+  font-size: 12px;
+}
+.footer-intel a {
+  display: block;
+}
+.footer-intel a img {
+  display: block;
+}
+.footer-intel span {
+  display: block;
+  height: 36px;
+  line-height: 36px;
+  background: url("../images/footer-intel-split.png") no-repeat left bottom;
+}
 .footer-nav-item {
-  width: 218px;
+  width: 215px;
   padding-left: 18px;
-  margin-left: 43px;
+  margin-left: 30px;
   border-left: 1px solid #d9d9de;
 }
 .footer-nav-item li {
