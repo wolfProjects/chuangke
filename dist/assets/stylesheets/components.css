@@ -675,18 +675,18 @@ button {
  * ---------------------------------------- */
 .m-kv {
   overflow: hidden;
-  height: 508px;
+  height: 500px;
   position: relative;
 }
 .m-kv-body .m-kv-item {
-  height: 508px;
+  height: 500px;
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
 }
 .m-kv-body .m-kv-item a {
   display: block;
-  height: 508px;
+  height: 500px;
 }
 .m-kv-head {
   position: absolute;
