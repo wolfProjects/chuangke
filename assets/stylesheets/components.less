@@ -301,17 +301,17 @@
 /* m-project-list: waterfall */
 .m-project-list-waterfall {
   margin: 0 -18px 0 -18px;
-
-  .column {
-    width: 378px;
-    margin: 0 18px;
-  }
+  position: relative;
 
   .m-project-list-item {
     width: 378px;
     height: auto;
     padding: 0 0 30px 0;
     margin: 0 0 36px 0;
+    -webkit-transition: top 1s ease, left 1s ease;
+    -moz-transition: top 1s ease, left 1s ease;
+    -o-transition: top 1s ease, left 1s ease;
+    -ms-transition: top 1s ease, left 1s ease;
     
     .m-info-meta {
       .main {
