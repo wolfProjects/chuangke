@@ -682,6 +682,7 @@ button {
   height: 508px;
   background-repeat: no-repeat;
   background-position: center top;
+  background-size: cover;
 }
 .m-kv-body .m-kv-item a {
   display: block;
