@@ -766,7 +766,7 @@ button {
   color: #555;
 }
 .point-detail .article-detail-content img {
-  display: block;
+  display: inline-block;
   max-width: 100%;
   margin-bottom: 43px;
   border: 1px solid #ebebeb;

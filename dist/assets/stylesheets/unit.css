@@ -710,13 +710,11 @@ button {
   color: #333;
 }
 .unit-detail .unit-intro-bd .text-content * {
-  margin-bottom: 30px;
   font-size: 14px !important;
   line-height: 23px;
   color: #666;
 }
 .unit-detail .unit-intro-bd .text-content img {
-  display: block;
   max-width: 100%;
 }
 .unit-detail .unit-intro-bd .description > dt {
