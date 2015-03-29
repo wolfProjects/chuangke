@@ -770,6 +770,7 @@ button {
 .zone .personal-info-bd .options li p {
   float: left;
   width: 290px;
+  padding: 3px 0 0 0;
   color: #666;
 }
 .zone .personal-info-bd .options .icon {
