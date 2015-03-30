@@ -802,9 +802,23 @@ button {
   background: #fff;
   border: 1px solid #d9d9de;
 }
+.m-project-list-item .thumb {
+  display: block;
+  overflow: hidden;
+}
 .m-project-list-item .thumb img {
   display: block;
   width: 100%;
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
+  transform: scale(1.02);
+  -webkit-transition: all 0.45s;
+  -moz-transition: all 0.45s;
+  -ms-transition: all 0.45s;
+  -o-transition: all 0.45s;
+  transition: all 0.45s;
 }
 .m-project-list-item .desc {
   padding: 23px 18px 0 18px;
@@ -833,6 +847,13 @@ button {
   -webkit-box-shadow: 0 10px 8px -6px #cccccc;
   -moz-box-shadow: 0 10px 8px -6px #cccccc;
   box-shadow: 0 10px 8px -6px #cccccc;
+}
+.m-project-list-item:hover .thumb img {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
 }
 /* m-project-list: waterfall */
 .m-project-list-waterfall {
@@ -984,6 +1005,13 @@ button {
   -moz-box-shadow: 0 10px 8px -6px #cccccc;
   box-shadow: 0 10px 8px -6px #cccccc;
 }
+.m-unit-list .item:hover .thumb img {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
 .m-unit-list .item.add-item {
   position: relative;
 }
@@ -1002,9 +1030,22 @@ button {
   top: 1px;
 }
 .m-unit-list .thumb {
+  overflow: hidden;
   width: 288px;
   height: 288px;
   border-right: 1px solid #d9d9de;
+}
+.m-unit-list .thumb img {
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
+  transform: scale(1.02);
+  -webkit-transition: all 0.45s;
+  -moz-transition: all 0.45s;
+  -ms-transition: all 0.45s;
+  -o-transition: all 0.45s;
+  transition: all 0.45s;
 }
 .m-unit-list .info {
   width: 255px;
@@ -1067,6 +1108,11 @@ button {
   display: block;
   width: 301px;
   height: 260px;
+  -webkit-transition: opacity 0.25s;
+  -moz-transition: opacity 0.25s;
+  -ms-transition: opacity 0.25s;
+  -o-transition: opacity 0.25s;
+  transition: opacity 0.25s;
 }
 .m-unit-list02 .info {
   padding: 23px 23px 16px 23px;
@@ -1092,6 +1138,7 @@ button {
 }
 .m-unit-list02 .item:hover .item-content .thumb img {
   margin: -3px 0 0 -3px;
+  opacity: .85;
 }
 .m-unit-list02 .item:hover .info {
   margin: 0 0 -1px -3px;
